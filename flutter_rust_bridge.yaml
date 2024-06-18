@@ -1,0 +1,17 @@
+#rust_root: rust/
+#rust_input: crate::api,web-audio-api
+#dart_output: lib/src/rust
+#dump_all: true
+#local: true
+
+#rust_input: rust/src/api/**/*.rs
+#dart_output: lib/src/rust
+#stop_on_error: true
+#enable_lifetime: true
+build_runner: false
+
+rust_root: rust/
+rust_input: crate::api,web-audio-api
+dart_output: lib/src/rust
+dump_all: true
+local: true

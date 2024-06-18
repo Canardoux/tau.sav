@@ -1,0 +1,4 @@
+
+[submodule "web-audio-api-rs"]
+	path = web-audio-api-rs
+	url = https://github.com/Canardoux/web-audio-api-rs

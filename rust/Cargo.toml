@@ -1,0 +1,44 @@
+[package]
+name = "rust_lib_tau_core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+#crate-type = ["cdylib", "staticlib"]
+crate-type = ["lib", "cdylib", "staticlib"] # cdylib is NOT recommended
+
+[dependencies]
+env_logger = "0.11.3"
+#flutter_rust_bridge = "=2.0.0-dev.40"
+flutter_rust_bridge = { path = "../frb_rust" }
+#oboe = "0.6.1"
+#oboe = { version = "0.6.1", features = ["java-interface", "shared-stdcxx"] }
+
+#web-audio-api = "0.45.0"
+web-audio-api = { version = "1.0.0-rc.6", default-features = false }
+
+log = "0.4.21"
+anyhow = "1.0.86"
+trace = "0.1.7"
+oslog = "0.2.0"
+lazy_static = "1.4.0"
+simple-log = "1.6.0"
+parking_lot = "0.12.2"
+sink = "0.1.0"
+futures = "0.3.30"
+flutter_logger = "0.6.1"
+extend = "1.2.0"
+paste = "1.0.15"
+
+
+
+[profile.dev]
+debug = true
+strip = false
+opt-level = 0
+
+[profile.release]
+strip = true
+debug = false
+opt-level = 0
+

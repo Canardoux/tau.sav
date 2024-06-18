@@ -1,0 +1,2 @@
+librust_lib_tau_core.rlib filter=lfs diff=lfs merge=lfs -text
+librust_lib_tau_core.a filter=lfs diff=lfs merge=lfs -text
