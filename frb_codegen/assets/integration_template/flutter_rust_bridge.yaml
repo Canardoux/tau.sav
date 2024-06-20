@@ -1,3 +1,0 @@
-rust_input: crate::api
-rust_root: REPLACE_ME_RUST_CRATE_DIR/
-dart_output: lib/src/rust

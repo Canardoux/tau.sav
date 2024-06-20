@@ -1,4 +1,0 @@
-rust_input: crate::hello
-dart_output: hello.dart
-c_output: hello.h
-dart3: false

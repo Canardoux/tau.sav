@@ -1,0 +1,58 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_inappwebview_ios (0.0.1):
+    - Flutter
+    - flutter_inappwebview_ios/Core (= 0.0.1)
+    - OrderedSet (~> 5.0)
+  - flutter_inappwebview_ios/Core (0.0.1):
+    - Flutter
+    - OrderedSet (~> 5.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - OrderedSet (5.0.0)
+  - tau (0.0.5):
+    - Flutter
+    - tau_core (= 0.0.5)
+  - tau_core (0.0.5):
+    - Flutter
+  - tau_plugin (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_inappwebview_ios (from `.symlinks/plugins/flutter_inappwebview_ios/ios`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - tau (from `.symlinks/plugins/tau/ios`)
+  - tau_core (from `../../../tau_core`)
+  - tau_plugin (from `.symlinks/plugins/tau_plugin/ios`)
+
+SPEC REPOS:
+  trunk:
+    - OrderedSet
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_inappwebview_ios:
+    :path: ".symlinks/plugins/flutter_inappwebview_ios/ios"
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  tau:
+    :path: ".symlinks/plugins/tau/ios"
+  tau_core:
+    :path: "../../../tau_core"
+  tau_plugin:
+    :path: ".symlinks/plugins/tau_plugin/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_inappwebview_ios: 97215cf7d4677db55df76782dbd2930c5e1c1ea0
+  integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
+  OrderedSet: aaeb196f7fef5a9edf55d89760da9176ad40b93c
+  tau: 83d5c48230ceb9198b980b119430cdeefc8309fb
+  tau_core: 26c20a640c7170dc987b0fa415866a78172df9fe
+  tau_plugin: 3055d2673287b771c37f1fc62915e62f251579f7
+
+PODFILE CHECKSUM: a343b8dd77eb3fcdd9d80a03ea0b44db640d7d7a
+
+COCOAPODS: 1.15.2
