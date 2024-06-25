@@ -1,6 +1,6 @@
-# tau_plugin_example
+# hello_rust_ffi_plugin_example
 
-Demonstrates how to use the tau_plugin plugin.
+Demonstrates how to use the hello_rust_ffi_plugin plugin.
 
 ## Getting Started
 

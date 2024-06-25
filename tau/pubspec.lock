@@ -247,17 +247,12 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_rust_bridge
-      sha256: "4ab629fec14aa4a6a3b503d15ec81cf0cd2cf4d409eb2bbdd32491fea69d9f61"
+      sha256: f703c4b50e253e53efc604d50281bbaefe82d615856f8ae1e7625518ae252e98
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0-dev.40"
+    version: "2.0.0"
   flutter_test:
     dependency: "direct dev"
-    description: flutter
-    source: sdk
-    version: "0.0.0"
-  flutter_web_plugins:
-    dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
@@ -554,13 +549,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
-  tau_plugin:
-    dependency: "direct main"
-    description:
-      path: "../tau_plugin"
-      relative: true
-    source: path
-    version: "0.0.5"
   term_glyph:
     dependency: transitive
     description:

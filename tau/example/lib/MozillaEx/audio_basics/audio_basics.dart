@@ -18,7 +18,6 @@
  */
 
 import 'package:flutter/material.dart';
-//import 'package:tau/src/rust/api/simple.dart';
 import 'package:logger/logger.dart' as lg; // For call to setLogLevel()
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:tau/tau.dart';
@@ -27,10 +26,8 @@ import 'package:flutter/services.dart' show rootBundle;
 
 const pcmAsset = 'assets/samples-f32/sample-f32-48000-32kb_s.pcm';
 
-/// This is a very simple example for τ beginners,
-/// that show how to playback a file.
+/// This is a very simple example for τ beginners, that show how to playback a file.
 /// Its a translation to Dart from [Mozilla example](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
-///  Track credit: Outfoxing the Fox by Kevin MacLeod under Creative Commons
 /// This example is really basic.
 class AudioBasics extends StatefulWidget {
   const AudioBasics({super.key});
@@ -39,13 +36,16 @@ class AudioBasics extends StatefulWidget {
 }
 
 class _AudioBasics extends State<AudioBasics> {
-  AudioContext? audioCtx;
-  Float32List? pcmData;
+  late AudioContext audioCtx;
+  late AudioDestinationNode dest;
+  late GainNode gainNode;
+  late PannerNode panner;
+  late AudioBufferSourceNode src;
+  bool running = false;
 
   // load some sound
   //            <audio src="outfoxing.mp3" crossorigin="anonymous"></audio>
   //            const audioElement = document.querySelector("audio");
-  // instigate our audio context
 
   Future<Float32List> getAssetData(String path) async {
     var asset = await rootBundle.load(path);
@@ -53,144 +53,89 @@ class _AudioBasics extends State<AudioBasics> {
   }
 
   void initPlatformState() async {
+    audioCtx = AudioContext(
+        options: const AudioContextOptions(
+      latencyHint: AudioContextLatencyCategory.playback(),
+      sinkId: '',
+      renderSizeHint: AudioContextRenderSizeCategory.default_,
+      sampleRate: 48000,
+    ));
+
     Tau.tau.logger.d('Une bonne journée');
-    pcmData = await getAssetData(pcmAsset);
-    //audioCtx = AudioContext(options : AudioContextOptions());
-    List<Float32List> samples = List<Float32List>.filled(1, pcmData!);
-    //AudioBufferSourceNode src = audioCtx!.createBufferSource();
-    //src.connect(audioCtx.destination());
-    //src.start();
-    Tau.tau.logger.d('C\'est parti mon kiki');
+    Float32List pcmData = await getAssetData(pcmAsset);
 
+    AudioBuffer audioBuffer = await AudioBuffer.from(
+        samples: List<Float32List>.filled(2, pcmData), sampleRate: 48000);
 
-/*
-    MediaElementAudioSourceNode track = MediaElementAudioSourceNode(
-      audioCtx!,
-      audioElement,
-    );
-     [LARPOUX]
+    src = await audioCtx.createBufferSource();
 
-    // Create the node that controls the volume.
-    GainNode gainNode = GainNode(audioCtx!);
+    src.setBuffer(audioBuffer: audioBuffer);
 
-        const volumeControl = document.querySelector('[data-action="volume"]');
-        volumeControl.addEventListener(
-          "input",
-          () => {
-            gainNode.gain.value = volumeControl.value;
-          },
-          false
-        );
+    dest = await audioCtx.destination();
 
-    // Create the node that controls the panning
-    StereoPannerNode panner = StereoPannerNode(/* [LARPOUX]audioCtx!, pan: 0 */);
+    gainNode = await audioCtx.createGain();
+    panner = await audioCtx.createPanner();
 
-        const pannerControl = document.querySelector('[data-action="panner"]');
-        pannerControl.addEventListener(
-          "input",
-          () => {
-            panner.pan.value = pannerControl.value;
-          },
-          false
-        );
-    // connect our graph
-    track.connect(gainNode).connect(panner).connect(audioCtx!.destination);
-     */
-    if (mounted)
+    await src.connect(dest: gainNode);
+    await gainNode.connect(dest: panner);
+    await panner.connect(dest: dest);
+    await src.setOnEnded(callback: finished);
+
+    if (mounted) {
       setState(() {});
+    }
   }
 
-  void hitPlayButton() async {
-    //if (audioCtx == null) {
-    initPlatformState();
-    //}
-    String s = await greet(
-      name: "Tom", /* hint: 'la plume' */
-    );
-    Tau.tau.logger.i(s);
-    Tau().setLogLevel(lg.Level.trace);
-    // check if context is in suspended state (autoplay policy)
-    //!!!if (audioCtx!.state == 'suspended') {
-    //!!!audioCtx!.resume();
-    //!!!}
-    //!!!mediaElement.play();
-    /*
-       "click",
-        () => {
-          if (!audioCtx) {
-            init();
-          }
+  Future<void> finished(Event event) async
+  {
+    Tau.tau.logger.d('lolo');
+    await stop();
 
-          // check if context is in suspended state (autoplay policy)
-          if (audioCtx.state === "suspended") {
-            audioCtx.resume();
-          }
+  }
 
-          if (playButton.dataset.playing === "false") {
-            audioElement.play();
-            playButton.dataset.playing = "true";
-            // if track is playing pause it
-          } else if (playButton.dataset.playing === "true") {
-            audioElement.pause();
-            playButton.dataset.playing = "false";
-          }
+  Future<void> hitPlayButton() async {
+    //String s = await greet(
+    //  name: "Tom", /* hint: 'la plume' */
+    //);
+    //Tau.tau.logger.i(s);
+    //Tau().setLogLevel(lg.Level.trace);
+    if (!running)
+      {
+        running = true;
+        await src.start();
+        await src.setOnEnded(callback: finished);
 
-          // Toggle the state between play and not playing
-          let state =
-            playButton.getAttribute("aria-checked") === "true" ? true : false;
-          playButton.setAttribute("aria-checked", state ? "false" : "true");
-        },
-        false
-
-     */
-/*
-    void endTrack() {
-          // If track ends
-      audioElement.addEventListener(
-        "ended",
-        () => {
-          playButton.dataset.playing = "false";
-          playButton.setAttribute("aria-checked", "false");
-        },
-        false
-      );
+      }
+    else
+      {
+    AudioContextState state = await audioCtx.state();
+    if (state == AudioContextState.suspended) {
+      await audioCtx.resumeSync();
+    } else if (state == AudioContextState.running) {
+      await audioCtx.suspend();
+    } else if (state == AudioContextState.closed) {
+      await src.start();
 
     }
-    */
+      }
+    Tau.tau.logger.d('C\'est parti mon kiki');
 
-    /*
-  ======================================================================
-       console.clear();
+  }
 
-
-      const playButton = document.querySelector(".tape-controls-play");
-
-      // play pause audio
-      playButton.addEventListener(
-        "click",
-        () => {
-        },
-        false
-      );
-
-      // If track ends
-      audioElement.addEventListener(
-        "ended",
-        () => {
-          playButton.dataset.playing = "false";
-          playButton.setAttribute("aria-checked", "false");
-        },
-        false
-      );
-
-
-   */
+  Future<void> stop() async {
+    running = false;
+    await audioCtx.close();
   }
 
   @override
   void dispose() {
     print("dispose");
-    audioCtx!.dispose();
+    audioCtx.dispose();
+    dest.dispose();
+    gainNode.dispose();
+    panner.dispose();
+    src.dispose();
+
     super.dispose();
   }
 
@@ -209,9 +154,43 @@ class _AudioBasics extends State<AudioBasics> {
           // register a JavaScript handler with name "myHandlerName"
           controller.addJavaScriptHandler(
               handlerName: 'myHandlerName',
-              callback: (args) {
+              callback: (args) async {
+                // print arguments coming from the JavaScript side!
+                Tau.tau.logger.d(args[0]);
+                await hitPlayButton();
+
+                // return data to the JavaScript side!
+                return {'bar': 'bar_value', 'baz': 'baz_value'};
+              });
+
+          controller.addJavaScriptHandler(
+              handlerName: 'gainHandler',
+              callback: (args) async {
+                // print arguments coming from the JavaScript side!
+                Tau.tau.logger.d(args[0]);
+                gainNode.gain.value = double.parse(args[0]);
+
+                // return data to the JavaScript side!
+                return {'bar': 'bar_value', 'baz': 'baz_value'};
+              });
+
+          controller.addJavaScriptHandler(
+              handlerName: 'pannerHandler',
+              callback: (args) async {
                 // print arguments coming from the JavaScript side!
                 Tau.tau.logger.d(args);
+                //panner.pan.value = args[0];
+
+                // return data to the JavaScript side!
+                return {'bar': 'bar_value', 'baz': 'baz_value'};
+              });
+
+          controller.addJavaScriptHandler(
+              handlerName: 'finishedHandler',
+              callback: (args) async {
+                // print arguments coming from the JavaScript side!
+                Tau.tau.logger.d(args[0]);
+                await stop();
 
                 // return data to the JavaScript side!
                 return {'bar': 'bar_value', 'baz': 'baz_value'};
@@ -223,17 +202,8 @@ class _AudioBasics extends State<AudioBasics> {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: const Text('Plugin example app'),
+        title: const Text('Mozilla Audio Basics'),
         actions: <Widget>[
-          IconButton(
-            icon: const Icon(
-              Icons.stop,
-              color: Colors.white,
-            ),
-            onPressed: () {
-              // do something
-            },
-          ),
         ],
       ),
       body: makeBody(),
@@ -721,16 +691,47 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
     </div>
 
    <script type="text/javascript">
-      //console.clear();
-
-
+      console.clear();
+      const audioElement = document.querySelector("audio");
+ 
       const playButton = document.querySelector(".tape-controls-play");
             // play pause audio
       playButton.addEventListener(
         "click",
         () => {
         window.flutter_inappwebview.callHandler('myHandlerName', 'la plume de toto');
-        }
+        },
+        false
+      );
+      
+        const volumeControl = document.querySelector('[data-action="volume"]');
+        volumeControl.addEventListener(
+          "input",
+          () => {
+            window.flutter_inappwebview.callHandler('gainHandler',  volumeControl.value);
+          },
+        false
+        );
+
+        const pannerControl = document.querySelector('[data-action="panner"]');
+        pannerControl.addEventListener(
+          "input",
+          () => {
+            window.flutter_inappwebview.callHandler('pannerHandler',  pannerControl.value);
+          },
+        false
+        );
+
+
+      // If track ends
+      audioElement.addEventListener(
+        "ended",
+        () => {
+          playButton.dataset.playing = "false";
+          playButton.setAttribute("aria-checked", "false");
+          window.flutter_inappwebview.callHandler('finishedHandler',  'My Taylor is rich');
+        },
+        false
       );
 
   </script>
@@ -739,22 +740,4 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 
 
 ''';
-
-/*
-
-      // If track ends
-      audioElement.addEventListener(
-        "ended",
-        () => {
-          playButton.dataset.playing = "false";
-          playButton.setAttribute("aria-checked", "false");
-        },
-        false
-      );
-
-      function init() {
-      }
-
-      // Track credit: Outfoxing the Fox by Kevin MacLeod under Creative Commons
-*/
 }

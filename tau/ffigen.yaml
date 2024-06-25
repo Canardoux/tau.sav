@@ -1,5 +1,5 @@
 # Run with `dart run ffigen --config ffigen.yaml`.
-name: TauBindings
+name: tauBindings
 description: |
   Bindings for `src/tau.h`.
 

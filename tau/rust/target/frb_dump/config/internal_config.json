@@ -1,0 +1,149 @@
+{
+  "controller": {
+    "watch": false,
+    "watching_paths": [
+      "/Volumes/mac-J/larpoux/projmac/toto/tau/rust/src"
+    ],
+    "exclude_paths": [
+      "/Volumes/mac-J/larpoux/projmac/toto/tau/rust/src/frb_generated.rs"
+    ],
+    "max_count": null
+  },
+  "preparer": {
+    "dart_root": "/Volumes/mac-J/larpoux/projmac/toto/tau",
+    "deps_check": true,
+    "needs_ffigen": false
+  },
+  "parser": {
+    "hir": {
+      "rust_input_namespace_pack": {
+        "rust_input_namespace_prefixes": [
+          "crate::api",
+          "web_audio_api"
+        ],
+        "rust_output_path_namespace": "crate::frb_generated"
+      },
+      "rust_crate_dir": "/Volumes/mac-J/larpoux/projmac/toto/tau/rust",
+      "third_party_crate_names": [
+        "web-audio-api"
+      ]
+    },
+    "mir": {
+      "rust_input_namespace_pack": {
+        "rust_input_namespace_prefixes": [
+          "crate::api",
+          "web_audio_api"
+        ],
+        "rust_output_path_namespace": "crate::frb_generated"
+      },
+      "force_codec_mode_pack": {
+        "dart2rust": "Pde",
+        "rust2dart": "Pde"
+      },
+      "default_stream_sink_codec": "Sse",
+      "default_rust_opaque_codec": "Moi",
+      "stop_on_error": false,
+      "enable_lifetime": false,
+      "type_64bit_int": true,
+      "default_dart_async": true
+    }
+  },
+  "generator": {
+    "api_dart": {
+      "dart_enums_style": true,
+      "dart3": true,
+      "dart_decl_base_output_path": "/Volumes/mac-J/larpoux/projmac/toto/tau/lib/src/rust",
+      "dart_impl_output_path": {
+        "common": "/Volumes/mac-J/larpoux/projmac/toto/tau/lib/src/rust/frb_generated.dart",
+        "io": "/Volumes/mac-J/larpoux/projmac/toto/tau/lib/src/rust/frb_generated.io.dart",
+        "web": "/Volumes/mac-J/larpoux/projmac/toto/tau/lib/src/rust/frb_generated.web.dart"
+      },
+      "dart_entrypoint_class_name": "RustLib",
+      "dart_preamble": "",
+      "dart_type_rename": {}
+    },
+    "wire": {
+      "dart": {
+        "has_ffigen": false,
+        "web_enabled": true,
+        "llvm_path": [
+          "/opt/homebrew/opt/llvm",
+          "/usr/local/opt/llvm",
+          "/usr/lib/llvm-9",
+          "/usr/lib/llvm-10",
+          "/usr/lib/llvm-11",
+          "/usr/lib/llvm-12",
+          "/usr/lib/llvm-13",
+          "/usr/lib/llvm-14",
+          "/usr/lib/",
+          "/usr/lib64/",
+          "C:/Program Files/llvm",
+          "C:/msys64/mingw64"
+        ],
+        "llvm_compiler_opts": "",
+        "dart_root": "/Volumes/mac-J/larpoux/projmac/toto/tau",
+        "extra_headers": "",
+        "dart_impl_output_path": {
+          "common": "/Volumes/mac-J/larpoux/projmac/toto/tau/lib/src/rust/frb_generated.dart",
+          "io": "/Volumes/mac-J/larpoux/projmac/toto/tau/lib/src/rust/frb_generated.io.dart",
+          "web": "/Volumes/mac-J/larpoux/projmac/toto/tau/lib/src/rust/frb_generated.web.dart"
+        },
+        "dart_output_class_name_pack": {
+          "entrypoint_class_name": "RustLib",
+          "api_class_name": "RustLibApi",
+          "api_impl_class_name": "RustLibApiImpl",
+          "api_impl_platform_class_name": "RustLibApiImplPlatform",
+          "wire_class_name": "RustLibWire",
+          "wasm_module_name": "RustLibWasmModule"
+        },
+        "default_external_library_loader": {
+          "stem": "tau",
+          "io_directory": "rust/target/release/",
+          "web_prefix": "pkg/"
+        },
+        "c_symbol_prefix": "frbgen_tau_"
+      },
+      "rust": {
+        "rust_crate_dir": "/Volumes/mac-J/larpoux/projmac/toto/tau/rust",
+        "web_enabled": true,
+        "rust_output_path": "/Volumes/mac-J/larpoux/projmac/toto/tau/rust/src/frb_generated.rs",
+        "c_symbol_prefix": "frbgen_tau_",
+        "has_ffigen": false,
+        "default_stream_sink_codec": "Sse",
+        "default_rust_opaque_codec": "Moi",
+        "rust_preamble": ""
+      },
+      "c": {
+        "enable": false,
+        "rust_crate_dir": "/Volumes/mac-J/larpoux/projmac/toto/tau/rust",
+        "rust_output_path": "/Volumes/mac-J/larpoux/projmac/toto/tau/rust/src/frb_generated.rs",
+        "c_output_path": null,
+        "c_symbol_prefix": "frbgen_tau_"
+      }
+    }
+  },
+  "polisher": {
+    "duplicated_c_output_path": [],
+    "dart_format_line_length": 80,
+    "add_mod_to_lib": true,
+    "build_runner": true,
+    "web_enabled": true,
+    "dart_root": "/Volumes/mac-J/larpoux/projmac/toto/tau",
+    "rust_crate_dir": "/Volumes/mac-J/larpoux/projmac/toto/tau/rust",
+    "rust_output_path": "/Volumes/mac-J/larpoux/projmac/toto/tau/rust/src/frb_generated.rs",
+    "c_output_path": null,
+    "enable_auto_upgrade": true
+  },
+  "dumper": {
+    "dump_contents": [
+      "config",
+      "source",
+      "hir",
+      "mir",
+      "generator_info",
+      "generator_spec",
+      "generator_text"
+    ],
+    "dump_directory": "/Volumes/mac-J/larpoux/projmac/toto/tau/rust/target/frb_dump"
+  }
+}

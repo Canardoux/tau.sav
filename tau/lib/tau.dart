@@ -49,14 +49,13 @@ import 'package:tau/src/rust/api/simple.dart';
 //export 'logger.dart' ;
 
 import 'tau_bindings_generated.dart';
-import 'package:tau_plugin/tau_plugin.dart';
+//import 'package:tau_plugin/tau_plugin.dart';
 
 //export 'public/webaudio.dart';
 export 'package:tau/src/rust/api/simple.dart';
 //export 'package:logger/logger.dart'; // For call to setLogLevel()
 export 'package:tau/src/rust/api/toto.dart';
-//export 'package:tau/src/rust/third_party/web_audio_api.dart';
-
+export 'package:tau/src/rust/third_party/web_audio_api.dart';
 
 export 'package:tau/src/rust/frb_generated.dart';
 export 'package:tau/src/rust/third_party/web_audio_api/context.dart';
@@ -65,10 +64,9 @@ export 'package:tau/src/rust/third_party/web_audio_api/media_recorder.dart';
 export 'package:tau/src/rust/third_party/web_audio_api/media_streams.dart';
 export 'package:tau/src/rust/third_party/web_audio_api/node.dart';
 export 'package:tau/src/rust/third_party/web_audio_api/worklet.dart';
-
+export 'package:tau/src/rust/api/override_web_audio_api.dart';
+export 'package:tau/src/rust/api/media_element.dart';
 //export 'package:tau/public/media_element.dart';
-
-
 
 //==================================  Tau  ======================================
 
@@ -119,13 +117,13 @@ class Tau {
     await initTauCore(); // Initialisation of the TauCore module
     setLogLevel(lev); // Initialisation of the Logger
     await _setup(); // Creation of the Stream to receive Logs from TauCore.
-    String platformVersion;
+    //String platformVersion;
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
-    platformVersion = await TauPlugin.tauPlugin.getPlatformVersion() ??
-        'Unknown platform version';
+    //platformVersion = await TauPlugin.tauPlugin.getPlatformVersion() ??
+    //'Unknown platform version';
 
-    logger.t('Running on: $platformVersion\n');
+    //logger.t('Running on: $platformVersion\n');
   }
 
   /// The Tau Logger and the current Log level.
@@ -196,7 +194,7 @@ final DynamicLibrary _dylib = () {
 }();
 
 /// The bindings to the native functions in [_dylib].
-final TauBindings _bindings = TauBindings(_dylib);
+final tauBindings _bindings = tauBindings(_dylib);
 
 /// A request to compute `sum`.
 ///

@@ -1,7 +1,7 @@
 // The Android Gradle Plugin builds the native code with the Android NDK.
 
-group = "canardoux.xyz.tau"
-version '0.0.5'
+group = "com.example.hello_rust_ffi_plugin"
+version = "1.0"
 
 buildscript {
     repositories {
@@ -26,7 +26,7 @@ apply plugin: "com.android.library"
 
 android {
     if (project.android.hasProperty("namespace")) {
-        namespace = "canardoux.xyz.tau"
+        namespace = "com.example.hello_rust_ffi_plugin"
     }
 
     // Bumping the plugin compileSdk version requires all clients of this plugin

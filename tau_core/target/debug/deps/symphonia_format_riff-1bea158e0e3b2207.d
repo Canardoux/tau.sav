@@ -1,8 +1,0 @@
-/Volumes/mac-J/larpoux/projmac/flutter_rust_bridge/frb_example/integrate_third_party/target/debug/deps/libsymphonia_format_riff-1bea158e0e3b2207.rmeta: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/common.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/wave/mod.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/wave/chunks.rs
-
-/Volumes/mac-J/larpoux/projmac/flutter_rust_bridge/frb_example/integrate_third_party/target/debug/deps/symphonia_format_riff-1bea158e0e3b2207.d: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/common.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/wave/mod.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/wave/chunks.rs
-
-/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/lib.rs:
-/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/common.rs:
-/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/wave/mod.rs:
-/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-format-riff-0.5.4/src/wave/chunks.rs:

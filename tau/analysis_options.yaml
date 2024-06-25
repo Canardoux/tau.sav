@@ -1,7 +1,4 @@
-analyzer:
-  exclude:
-    - rust/target/**.dart # contains dumped debug info, instead of normal code
+include: package:flutter_lints/flutter.yaml
 
-linter:
-  rules:
-    - unawaited_futures
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options

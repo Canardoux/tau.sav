@@ -1,8 +1,0 @@
-/Volumes/mac-J/larpoux/projmac/flutter_rust_bridge/frb_example/integrate_third_party/target/debug/deps/libsymphonia_codec_adpcm-0e31d77f6fac506a.rmeta: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/codec_ima.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/codec_ms.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/common.rs
-
-/Volumes/mac-J/larpoux/projmac/flutter_rust_bridge/frb_example/integrate_third_party/target/debug/deps/symphonia_codec_adpcm-0e31d77f6fac506a.d: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/codec_ima.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/codec_ms.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/common.rs
-
-/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/lib.rs:
-/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/codec_ima.rs:
-/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/codec_ms.rs:
-/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-codec-adpcm-0.5.4/src/common.rs:
