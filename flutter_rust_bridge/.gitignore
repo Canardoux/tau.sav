@@ -1,0 +1,15 @@
+.DS_Store
+.idea
+*.iml
+target
+launch.json
+.local-chromium
+.local-chrome
+Makefile
+*.log
+.vscode
+.fvm/flutter_sdk
+coverage/
+lcov.info
+temp.txt
+frb_example/my_app
