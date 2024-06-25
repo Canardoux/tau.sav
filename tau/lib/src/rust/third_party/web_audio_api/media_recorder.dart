@@ -11,7 +11,6 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 
 // These functions are ignored because they have generic arguments: `set_ondataavailable`, `set_onerror`, `set_onstop`
 // These types are ignored because they are not used by any `pub` functions: `MediaRecorderInner`, `RecordedData`
-// These function are ignored because they are on traits that is not defined in current crate (put an empty `#[frb]` on it to unignore): `fmt`, `fmt`
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<BlobEvent>>
 abstract class BlobEvent implements RustOpaqueInterface {
@@ -21,11 +20,11 @@ abstract class BlobEvent implements RustOpaqueInterface {
 
   double get timecode;
 
-  set blob(Uint8List blob);
+  void set blob(Uint8List blob);
 
-  set event(Event event);
+  void set event(Event event);
 
-  set timecode(double timecode);
+  void set timecode(double timecode);
 }
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<MediaRecorder>>

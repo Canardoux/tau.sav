@@ -5,8 +5,9 @@
 #cargo clean
 #cd ..
 
-#cargo install 'flutter_rust_bridge_codegen@^2.0.0-dev.0'
+cargo install 'flutter_rust_bridge_codegen@^2.0.0-dev.0'
 
+cd tau
 rm -r lib/src/rust/api/*
 rm -r lib/src/rust/frb_*
 rm rust/src/frb_*
@@ -39,4 +40,5 @@ if [ $? -ne 0 ]; then
     exit -1
 fi
 
-cd ..
+cd .. # back into tau/tau
+cd .. # back into tau/
