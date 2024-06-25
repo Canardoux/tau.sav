@@ -16,7 +16,7 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$AudioNodeImplementor {
-  Object get field0 => throw _privateConstructorUsedError;
+  AudioNode get field0 => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(AnalyserNode field0) variant0,
@@ -6396,7 +6396,7 @@ abstract class AudioNodeImplementor_Variant22 extends AudioNodeImplementor {
 
 /// @nodoc
 mixin _$Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnum {
-  RustOpaqueInterface get field0 => throw _privateConstructorUsedError;
+  Object get field0 => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(AudioBufferSourceNode field0) variant0,

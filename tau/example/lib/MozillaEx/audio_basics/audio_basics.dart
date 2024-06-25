@@ -18,7 +18,7 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:logger/logger.dart' as lg; // For call to setLogLevel()
+// For call to setLogLevel()
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:tau/tau.dart';
 import 'dart:typed_data';
@@ -203,7 +203,7 @@ class _AudioBasics extends State<AudioBasics> {
       backgroundColor: Colors.blue,
       appBar: AppBar(
         title: const Text('Mozilla Audio Basics'),
-        actions: <Widget>[
+        actions: const <Widget>[
         ],
       ),
       body: makeBody(),
