@@ -1,0 +1,1276 @@
+{
+  "types": [
+    {
+      "safe_ident": "AnyhowException",
+      "dart_api_type": "AnyhowException"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAnalyserNode",
+      "dart_api_type": "AnalyserNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
+      "dart_api_type": "AudioBufferSourceNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioDestinationNode",
+      "dart_api_type": "AudioDestinationNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener",
+      "dart_api_type": "AudioListener"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioWorkletNode",
+      "dart_api_type": "AudioWorkletNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode",
+      "dart_api_type": "BiquadFilterNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelMergerNode",
+      "dart_api_type": "ChannelMergerNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelSplitterNode",
+      "dart_api_type": "ChannelSplitterNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode",
+      "dart_api_type": "ConstantSourceNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConvolverNode",
+      "dart_api_type": "ConvolverNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode",
+      "dart_api_type": "DelayNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode",
+      "dart_api_type": "DynamicsCompressorNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
+      "dart_api_type": "GainNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
+      "dart_api_type": "IirFilterNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
+      "dart_api_type": "MediaElementAudioSourceNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode",
+      "dart_api_type": "MediaStreamAudioDestinationNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioSourceNode",
+      "dart_api_type": "MediaStreamAudioSourceNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrackAudioSourceNode",
+      "dart_api_type": "MediaStreamTrackAudioSourceNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
+      "dart_api_type": "OscillatorNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
+      "dart_api_type": "PannerNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerScriptProcessorNode",
+      "dart_api_type": "ScriptProcessorNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
+      "dart_api_type": "StereoPannerNode"
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
+      "dart_api_type": "WaveShaperNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAnalyserNode",
+      "dart_api_type": "AnalyserNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
+      "dart_api_type": "AudioBuffer"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
+      "dart_api_type": "AudioBufferSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContext",
+      "dart_api_type": "AudioContext"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioDestinationNode",
+      "dart_api_type": "AudioDestinationNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener",
+      "dart_api_type": "AudioListener"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamId",
+      "dart_api_type": "AudioParamId"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioProcessingEvent",
+      "dart_api_type": "AudioProcessingEvent"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacity",
+      "dart_api_type": "AudioRenderCapacity"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacityEvent",
+      "dart_api_type": "AudioRenderCapacityEvent"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioWorkletNode",
+      "dart_api_type": "AudioWorkletNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode",
+      "dart_api_type": "BiquadFilterNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBlobEvent",
+      "dart_api_type": "BlobEvent"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelConfig",
+      "dart_api_type": "ChannelConfig"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelMergerNode",
+      "dart_api_type": "ChannelMergerNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelSplitterNode",
+      "dart_api_type": "ChannelSplitterNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConcreteBaseAudioContext",
+      "dart_api_type": "ConcreteBaseAudioContext"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode",
+      "dart_api_type": "ConstantSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConvolverNode",
+      "dart_api_type": "ConvolverNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode",
+      "dart_api_type": "DelayNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode",
+      "dart_api_type": "DynamicsCompressorNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerEvent",
+      "dart_api_type": "Event"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
+      "dart_api_type": "GainNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
+      "dart_api_type": "IirFilterNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
+      "dart_api_type": "MediaElementAudioSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaRecorder",
+      "dart_api_type": "MediaRecorder"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStream",
+      "dart_api_type": "MediaStream"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode",
+      "dart_api_type": "MediaStreamAudioDestinationNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioSourceNode",
+      "dart_api_type": "MediaStreamAudioSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamConstraints",
+      "dart_api_type": "MediaStreamConstraints"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrack",
+      "dart_api_type": "MediaStreamTrack"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrackAudioSourceNode",
+      "dart_api_type": "MediaStreamTrackAudioSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyMediaElement",
+      "dart_api_type": "MyMediaElement"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
+      "dart_api_type": "OfflineAudioCompletionEvent"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
+      "dart_api_type": "OfflineAudioContext"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
+      "dart_api_type": "OscillatorNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
+      "dart_api_type": "PannerNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
+      "dart_api_type": "PeriodicWave"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerScriptProcessorNode",
+      "dart_api_type": "ScriptProcessorNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
+      "dart_api_type": "StereoPannerNode"
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
+      "dart_api_type": "WaveShaperNode"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAnalyserNode",
+      "dart_api_type": "AnalyserNode"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
+      "dart_api_type": "AudioBuffer"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
+      "dart_api_type": "AudioBufferSourceNode"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioProcessingEvent",
+      "dart_api_type": "AudioProcessingEvent"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacityEvent",
+      "dart_api_type": "AudioRenderCapacityEvent"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode",
+      "dart_api_type": "BiquadFilterNode"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBlobEvent",
+      "dart_api_type": "BlobEvent"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode",
+      "dart_api_type": "ConstantSourceNode"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConvolverNode",
+      "dart_api_type": "ConvolverNode"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyMediaElement",
+      "dart_api_type": "MyMediaElement"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
+      "dart_api_type": "OfflineAudioCompletionEvent"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
+      "dart_api_type": "OfflineAudioContext"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
+      "dart_api_type": "OscillatorNode"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
+      "dart_api_type": "PannerNode"
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
+      "dart_api_type": "WaveShaperNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAnalyserNode",
+      "dart_api_type": "AnalyserNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
+      "dart_api_type": "AudioBuffer"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
+      "dart_api_type": "AudioBufferSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContext",
+      "dart_api_type": "AudioContext"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContextRegistration",
+      "dart_api_type": "AudioContextRegistration"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioDestinationNode",
+      "dart_api_type": "AudioDestinationNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener",
+      "dart_api_type": "AudioListener"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioProcessingEvent",
+      "dart_api_type": "AudioProcessingEvent"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacity",
+      "dart_api_type": "AudioRenderCapacity"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacityEvent",
+      "dart_api_type": "AudioRenderCapacityEvent"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioWorkletNode",
+      "dart_api_type": "AudioWorkletNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode",
+      "dart_api_type": "BiquadFilterNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBlobEvent",
+      "dart_api_type": "BlobEvent"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelMergerNode",
+      "dart_api_type": "ChannelMergerNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelSplitterNode",
+      "dart_api_type": "ChannelSplitterNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConcreteBaseAudioContext",
+      "dart_api_type": "ConcreteBaseAudioContext"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode",
+      "dart_api_type": "ConstantSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConvolverNode",
+      "dart_api_type": "ConvolverNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode",
+      "dart_api_type": "DelayNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode",
+      "dart_api_type": "DynamicsCompressorNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerEvent",
+      "dart_api_type": "Event"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
+      "dart_api_type": "GainNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
+      "dart_api_type": "IirFilterNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
+      "dart_api_type": "MediaElementAudioSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaRecorder",
+      "dart_api_type": "MediaRecorder"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStream",
+      "dart_api_type": "MediaStream"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode",
+      "dart_api_type": "MediaStreamAudioDestinationNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioSourceNode",
+      "dart_api_type": "MediaStreamAudioSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrack",
+      "dart_api_type": "MediaStreamTrack"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrackAudioSourceNode",
+      "dart_api_type": "MediaStreamTrackAudioSourceNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyMediaElement",
+      "dart_api_type": "MyMediaElement"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
+      "dart_api_type": "OfflineAudioCompletionEvent"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
+      "dart_api_type": "OfflineAudioContext"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
+      "dart_api_type": "OscillatorNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
+      "dart_api_type": "PannerNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerScriptProcessorNode",
+      "dart_api_type": "ScriptProcessorNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
+      "dart_api_type": "StereoPannerNode"
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
+      "dart_api_type": "WaveShaperNode"
+    },
+    {
+      "safe_ident": "CastedPrimitive_i_64",
+      "dart_api_type": "int"
+    },
+    {
+      "safe_ident": "CastedPrimitive_usize",
+      "dart_api_type": "int"
+    },
+    {
+      "safe_ident": "DartFn_Inputs_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerEvent_Output_unit_AnyhowException",
+      "dart_api_type": "FutureOr<void> Function(Event)"
+    },
+    {
+      "safe_ident": "DartFn_Inputs_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent_Output_unit_AnyhowException",
+      "dart_api_type": "FutureOr<void> Function(OfflineAudioCompletionEvent)"
+    },
+    {
+      "safe_ident": "DartFn_Inputs_String_Output_unit_AnyhowException",
+      "dart_api_type": "FutureOr<void> Function(String)"
+    },
+    {
+      "safe_ident": "DartOpaque",
+      "dart_api_type": "Object"
+    },
+    {
+      "safe_ident": "DynTrait_AudioNode",
+      "dart_api_type": "AudioNode"
+    },
+    {
+      "safe_ident": "ProxyEnum_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyEnum_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum",
+      "dart_api_type": "MediaStream"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode_detune",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode_playback_rate",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_forward_x",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_forward_y",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_forward_z",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_position_x",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_position_y",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_position_z",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_x",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_y",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_z",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode_detune",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode_frequency",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode_gain",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode_q",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode_offset",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode_delay_time",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_attack",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_knee",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_ratio",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_release",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_threshold",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode_gain",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode_stream",
+      "dart_api_type": "MediaStream"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode_detune",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode_frequency",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_orientation_x",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_orientation_y",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_orientation_z",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_position_x",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_position_y",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_position_z",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode_pan",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAnalyserNode",
+      "dart_api_type": "AnalyserNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
+      "dart_api_type": "AudioBuffer"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
+      "dart_api_type": "AudioBufferSourceNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContext",
+      "dart_api_type": "AudioContext"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContextRegistration",
+      "dart_api_type": "AudioContextRegistration"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioDestinationNode",
+      "dart_api_type": "AudioDestinationNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener",
+      "dart_api_type": "AudioListener"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
+      "dart_api_type": "AudioParam"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamId",
+      "dart_api_type": "AudioParamId"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioProcessingEvent",
+      "dart_api_type": "AudioProcessingEvent"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacity",
+      "dart_api_type": "AudioRenderCapacity"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacityEvent",
+      "dart_api_type": "AudioRenderCapacityEvent"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioWorkletNode",
+      "dart_api_type": "AudioWorkletNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode",
+      "dart_api_type": "BiquadFilterNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBlobEvent",
+      "dart_api_type": "BlobEvent"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelConfig",
+      "dart_api_type": "ChannelConfig"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelMergerNode",
+      "dart_api_type": "ChannelMergerNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelSplitterNode",
+      "dart_api_type": "ChannelSplitterNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConcreteBaseAudioContext",
+      "dart_api_type": "ConcreteBaseAudioContext"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode",
+      "dart_api_type": "ConstantSourceNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConvolverNode",
+      "dart_api_type": "ConvolverNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode",
+      "dart_api_type": "DelayNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode",
+      "dart_api_type": "DynamicsCompressorNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerEvent",
+      "dart_api_type": "Event"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
+      "dart_api_type": "GainNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
+      "dart_api_type": "IirFilterNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
+      "dart_api_type": "MediaElementAudioSourceNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaRecorder",
+      "dart_api_type": "MediaRecorder"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStream",
+      "dart_api_type": "MediaStream"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode",
+      "dart_api_type": "MediaStreamAudioDestinationNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioSourceNode",
+      "dart_api_type": "MediaStreamAudioSourceNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamConstraints",
+      "dart_api_type": "MediaStreamConstraints"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrack",
+      "dart_api_type": "MediaStreamTrack"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrackAudioSourceNode",
+      "dart_api_type": "MediaStreamTrackAudioSourceNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyMediaElement",
+      "dart_api_type": "MyMediaElement"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
+      "dart_api_type": "OfflineAudioCompletionEvent"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
+      "dart_api_type": "OfflineAudioContext"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
+      "dart_api_type": "OscillatorNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
+      "dart_api_type": "PannerNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
+      "dart_api_type": "PeriodicWave"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerScriptProcessorNode",
+      "dart_api_type": "ScriptProcessorNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
+      "dart_api_type": "StereoPannerNode"
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
+      "dart_api_type": "WaveShaperNode"
+    },
+    {
+      "safe_ident": "StreamSink_log_entry_Sse",
+      "dart_api_type": "RustStreamSink<LogEntry>"
+    },
+    {
+      "safe_ident": "String",
+      "dart_api_type": "String"
+    },
+    {
+      "safe_ident": "TraitDef_AnalyserNodeExt",
+      "dart_api_type": "AnalyserNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_AudioBufferSourceNodeExt",
+      "dart_api_type": "AudioBufferSourceNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_AudioBufferSourceNodeScheduledSourceNodeMiscExt",
+      "dart_api_type": "AudioBufferSourceNodeScheduledSourceNodeMiscExt"
+    },
+    {
+      "safe_ident": "TraitDef_AudioContextExt",
+      "dart_api_type": "AudioContextExt"
+    },
+    {
+      "safe_ident": "TraitDef_AudioDestinationNodeExt",
+      "dart_api_type": "AudioDestinationNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_AudioNode",
+      "dart_api_type": "AudioNode"
+    },
+    {
+      "safe_ident": "TraitDef_AudioParamExt",
+      "dart_api_type": "AudioParamExt"
+    },
+    {
+      "safe_ident": "TraitDef_AudioScheduledSourceNode",
+      "dart_api_type": "AudioScheduledSourceNode"
+    },
+    {
+      "safe_ident": "TraitDef_AudioWorkletProcessor",
+      "dart_api_type": "AudioWorkletProcessor"
+    },
+    {
+      "safe_ident": "TraitDef_BaseAudioContext",
+      "dart_api_type": "BaseAudioContext"
+    },
+    {
+      "safe_ident": "TraitDef_BiquadFilterNodeExt",
+      "dart_api_type": "BiquadFilterNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_ChannelMergerNodeExt",
+      "dart_api_type": "ChannelMergerNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_ChannelSplitterNodeExt",
+      "dart_api_type": "ChannelSplitterNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_ConstantSourceNodeExt",
+      "dart_api_type": "ConstantSourceNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_ConstantSourceNodeScheduledSourceNodeMiscExt",
+      "dart_api_type": "ConstantSourceNodeScheduledSourceNodeMiscExt"
+    },
+    {
+      "safe_ident": "TraitDef_ConvolverNodeExt",
+      "dart_api_type": "ConvolverNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_DelayNodeExt",
+      "dart_api_type": "DelayNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_DynamicsCompressorNodeExt",
+      "dart_api_type": "DynamicsCompressorNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_EventExt",
+      "dart_api_type": "EventExt"
+    },
+    {
+      "safe_ident": "TraitDef_GainNodeExt",
+      "dart_api_type": "GainNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_IIRFilterNodeExt",
+      "dart_api_type": "IIRFilterNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_MediaElementAudioSourceNodeExt",
+      "dart_api_type": "MediaElementAudioSourceNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_MediaStreamAudioDestinationNodeExt",
+      "dart_api_type": "MediaStreamAudioDestinationNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_MediaStreamAudioSourceNodeExt",
+      "dart_api_type": "MediaStreamAudioSourceNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_MediaStreamExt",
+      "dart_api_type": "MediaStreamExt"
+    },
+    {
+      "safe_ident": "TraitDef_MediaStreamTrackAudioSourceNodeExt",
+      "dart_api_type": "MediaStreamTrackAudioSourceNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_OfflineAudioContextExt",
+      "dart_api_type": "OfflineAudioContextExt"
+    },
+    {
+      "safe_ident": "TraitDef_OscillatorNodeExt",
+      "dart_api_type": "OscillatorNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_OscillatorNodeScheduledSourceNodeMiscExt",
+      "dart_api_type": "OscillatorNodeScheduledSourceNodeMiscExt"
+    },
+    {
+      "safe_ident": "TraitDef_PannerNodeExt",
+      "dart_api_type": "PannerNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_ScriptProcessorNodeExt",
+      "dart_api_type": "ScriptProcessorNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_StereoPannerNodeExt",
+      "dart_api_type": "StereoPannerNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_WaveShaperNodeExt",
+      "dart_api_type": "WaveShaperNodeExt"
+    },
+    {
+      "safe_ident": "TraitDef_WaveShaperNodeMiscExt",
+      "dart_api_type": "WaveShaperNodeMiscExt"
+    },
+    {
+      "safe_ident": "analyser_options",
+      "dart_api_type": "AnalyserOptions"
+    },
+    {
+      "safe_ident": "audio_buffer_options",
+      "dart_api_type": "AudioBufferOptions"
+    },
+    {
+      "safe_ident": "audio_buffer_source_options",
+      "dart_api_type": "AudioBufferSourceOptions"
+    },
+    {
+      "safe_ident": "audio_context_latency_category",
+      "dart_api_type": "AudioContextLatencyCategory"
+    },
+    {
+      "safe_ident": "audio_context_options",
+      "dart_api_type": "AudioContextOptions"
+    },
+    {
+      "safe_ident": "audio_context_render_size_category",
+      "dart_api_type": "AudioContextRenderSizeCategory"
+    },
+    {
+      "safe_ident": "audio_context_state",
+      "dart_api_type": "AudioContextState"
+    },
+    {
+      "safe_ident": "audio_node_implementor",
+      "dart_api_type": "AudioNodeImplementor"
+    },
+    {
+      "safe_ident": "audio_node_options",
+      "dart_api_type": "AudioNodeOptions"
+    },
+    {
+      "safe_ident": "audio_param_descriptor",
+      "dart_api_type": "AudioParamDescriptor"
+    },
+    {
+      "safe_ident": "audio_render_capacity_options",
+      "dart_api_type": "AudioRenderCapacityOptions"
+    },
+    {
+      "safe_ident": "auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum",
+      "dart_api_type": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnum"
+    },
+    {
+      "safe_ident": "auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum",
+      "dart_api_type": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnum"
+    },
+    {
+      "safe_ident": "automation_rate",
+      "dart_api_type": "AutomationRate"
+    },
+    {
+      "safe_ident": "biquad_filter_options",
+      "dart_api_type": "BiquadFilterOptions"
+    },
+    {
+      "safe_ident": "biquad_filter_type",
+      "dart_api_type": "BiquadFilterType"
+    },
+    {
+      "safe_ident": "bool",
+      "dart_api_type": "bool"
+    },
+    {
+      "safe_ident": "box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
+      "dart_api_type": "AudioBuffer"
+    },
+    {
+      "safe_ident": "box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
+      "dart_api_type": "PeriodicWave"
+    },
+    {
+      "safe_ident": "box_autoadd_audio_buffer_options",
+      "dart_api_type": "AudioBufferOptions"
+    },
+    {
+      "safe_ident": "box_autoadd_audio_context_options",
+      "dart_api_type": "AudioContextOptions"
+    },
+    {
+      "safe_ident": "box_autoadd_audio_node_implementor",
+      "dart_api_type": "AudioNodeImplementor"
+    },
+    {
+      "safe_ident": "box_autoadd_audio_param_descriptor",
+      "dart_api_type": "AudioParamDescriptor"
+    },
+    {
+      "safe_ident": "box_autoadd_audio_render_capacity_options",
+      "dart_api_type": "AudioRenderCapacityOptions"
+    },
+    {
+      "safe_ident": "box_autoadd_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum",
+      "dart_api_type": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamProxyEnum"
+    },
+    {
+      "safe_ident": "box_autoadd_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum",
+      "dart_api_type": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamProxyEnum"
+    },
+    {
+      "safe_ident": "box_autoadd_f_32",
+      "dart_api_type": "double"
+    },
+    {
+      "safe_ident": "box_autoadd_f_64",
+      "dart_api_type": "double"
+    },
+    {
+      "safe_ident": "box_autoadd_periodic_wave_options",
+      "dart_api_type": "PeriodicWaveOptions"
+    },
+    {
+      "safe_ident": "box_autoadd_u_32",
+      "dart_api_type": "int"
+    },
+    {
+      "safe_ident": "channel_count_mode",
+      "dart_api_type": "ChannelCountMode"
+    },
+    {
+      "safe_ident": "channel_interpretation",
+      "dart_api_type": "ChannelInterpretation"
+    },
+    {
+      "safe_ident": "channel_merger_options",
+      "dart_api_type": "ChannelMergerOptions"
+    },
+    {
+      "safe_ident": "channel_splitter_options",
+      "dart_api_type": "ChannelSplitterOptions"
+    },
+    {
+      "safe_ident": "constant_source_options",
+      "dart_api_type": "ConstantSourceOptions"
+    },
+    {
+      "safe_ident": "convolver_options",
+      "dart_api_type": "ConvolverOptions"
+    },
+    {
+      "safe_ident": "delay_options",
+      "dart_api_type": "DelayOptions"
+    },
+    {
+      "safe_ident": "distance_model_type",
+      "dart_api_type": "DistanceModelType"
+    },
+    {
+      "safe_ident": "dynamics_compressor_options",
+      "dart_api_type": "DynamicsCompressorOptions"
+    },
+    {
+      "safe_ident": "f_32",
+      "dart_api_type": "double"
+    },
+    {
+      "safe_ident": "f_64",
+      "dart_api_type": "double"
+    },
+    {
+      "safe_ident": "gain_options",
+      "dart_api_type": "GainOptions"
+    },
+    {
+      "safe_ident": "i_32",
+      "dart_api_type": "int"
+    },
+    {
+      "safe_ident": "i_64",
+      "dart_api_type": "PlatformInt64"
+    },
+    {
+      "safe_ident": "level",
+      "dart_api_type": "Level"
+    },
+    {
+      "safe_ident": "list_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrack",
+      "dart_api_type": "List<MediaStreamTrack>"
+    },
+    {
+      "safe_ident": "list_audio_param_descriptor",
+      "dart_api_type": "List<AudioParamDescriptor>"
+    },
+    {
+      "safe_ident": "list_list_prim_f_32_strict",
+      "dart_api_type": "List<Float32List>"
+    },
+    {
+      "safe_ident": "list_prim_f_32_loose",
+      "dart_api_type": "List<double>"
+    },
+    {
+      "safe_ident": "list_prim_f_32_strict",
+      "dart_api_type": "Float32List"
+    },
+    {
+      "safe_ident": "list_prim_f_64_loose",
+      "dart_api_type": "List<double>"
+    },
+    {
+      "safe_ident": "list_prim_f_64_strict",
+      "dart_api_type": "Float64List"
+    },
+    {
+      "safe_ident": "list_prim_u_8_strict",
+      "dart_api_type": "Uint8List"
+    },
+    {
+      "safe_ident": "log_entry",
+      "dart_api_type": "LogEntry"
+    },
+    {
+      "safe_ident": "media_stream_track_state",
+      "dart_api_type": "MediaStreamTrackState"
+    },
+    {
+      "safe_ident": "media_track_constraints",
+      "dart_api_type": "MediaTrackConstraints"
+    },
+    {
+      "safe_ident": "opt_String",
+      "dart_api_type": "String?"
+    },
+    {
+      "safe_ident": "opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
+      "dart_api_type": "AudioBuffer?"
+    },
+    {
+      "safe_ident": "opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
+      "dart_api_type": "PeriodicWave?"
+    },
+    {
+      "safe_ident": "opt_box_autoadd_f_32",
+      "dart_api_type": "double?"
+    },
+    {
+      "safe_ident": "opt_box_autoadd_f_64",
+      "dart_api_type": "double?"
+    },
+    {
+      "safe_ident": "opt_box_autoadd_u_32",
+      "dart_api_type": "int?"
+    },
+    {
+      "safe_ident": "opt_list_prim_f_32_strict",
+      "dart_api_type": "Float32List?"
+    },
+    {
+      "safe_ident": "oscillator_options",
+      "dart_api_type": "OscillatorOptions"
+    },
+    {
+      "safe_ident": "oscillator_type",
+      "dart_api_type": "OscillatorType"
+    },
+    {
+      "safe_ident": "over_sample_type",
+      "dart_api_type": "OverSampleType"
+    },
+    {
+      "safe_ident": "panner_options",
+      "dart_api_type": "PannerOptions"
+    },
+    {
+      "safe_ident": "panning_model_type",
+      "dart_api_type": "PanningModelType"
+    },
+    {
+      "safe_ident": "periodic_wave_options",
+      "dart_api_type": "PeriodicWaveOptions"
+    },
+    {
+      "safe_ident": "record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id",
+      "dart_api_type": "(AudioParam,AudioParamId)"
+    },
+    {
+      "safe_ident": "stereo_panner_options",
+      "dart_api_type": "StereoPannerOptions"
+    },
+    {
+      "safe_ident": "u_32",
+      "dart_api_type": "int"
+    },
+    {
+      "safe_ident": "u_8",
+      "dart_api_type": "int"
+    },
+    {
+      "safe_ident": "unit",
+      "dart_api_type": "void"
+    },
+    {
+      "safe_ident": "usize",
+      "dart_api_type": "BigInt"
+    },
+    {
+      "safe_ident": "wave_shaper_options",
+      "dart_api_type": "WaveShaperOptions"
+    }
+  ]
+}

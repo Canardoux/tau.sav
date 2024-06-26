@@ -1,0 +1,9 @@
+/Volumes/mac-J/larpoux/projmac/tau/tau_rust/rust/target/debug/deps/libconvert_case-c935117a33304a12.rmeta: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/case.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/converter.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/pattern.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/segmentation.rs
+
+/Volumes/mac-J/larpoux/projmac/tau/tau_rust/rust/target/debug/deps/convert_case-c935117a33304a12.d: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/case.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/converter.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/pattern.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/segmentation.rs
+
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/lib.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/case.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/converter.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/pattern.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/convert_case-0.5.0/src/segmentation.rs:

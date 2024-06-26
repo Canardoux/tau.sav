@@ -12,8 +12,11 @@ rm -r lib/src/rust/api/*
 rm -r lib/src/rust/frb_*
 rm rust/src/frb_*
 
-flutter_rust_bridge_codegen generate
+#flutter_rust_bridge_codegen generate
+cargo run --manifest-path ../flutter_rust_bridge/frb_codegen/Cargo.toml -- generate
 #~/bin/generate.sh
+
+
 if [ $? -ne 0 ]; then
     echo "Error: ~/bin/generate.sh"
     exit -1
