@@ -19,7 +19,7 @@
 
 import 'package:flutter/material.dart';
 //import 'package:tau/tau.dart';
-import 'StereoPanner/stereo_panner.dart';
+import 'StereoPanner/StereoPanner.dart';
 import 'display_graph.dart';
 
 /*

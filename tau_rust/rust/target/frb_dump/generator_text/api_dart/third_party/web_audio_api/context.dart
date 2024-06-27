@@ -235,7 +235,7 @@ factory AudioContext({required AudioContextOptions options })=>RustLib.instance.
 
 
 /// Returns an [`AudioRenderCapacity`] instance associated with an AudioContext.
- Future<AudioRenderCapacity>  renderCapacity();
+ Future<void>  renderCapacity();
 
 
 /// Resumes the progression of time in an audio context that has previously been
@@ -909,9 +909,7 @@ enum AudioContextRenderSizeCategory {
                     /// The default value of 128 frames
 default_,
                     ;
-                    static Future<AudioContextRenderSizeCategory>  default_()=>RustLib.instance.api.webAudioApiContextAudioContextRenderSizeCategoryDefault();
-
-
+                    
                 }
 
 /// Describes the current state of the `AudioContext`

@@ -57,8 +57,11 @@ class _AudioBasics extends State<AudioBasics> {
   }
 
   void loadStop(controller, url) async {
-    audioElement = flutterJs.evaluate("document.querySelector(\"audio\")");
-    audioCtx = flutterJs.evaluate("new window.AudioContext()");
+    //audioElement = flutterJs.evaluate("document.querySelector(\"audio\")");
+    //JsEvalResult jsResult = flutterJs.evaluate("import { spawn } from 'child_process'");
+    JsEvalResult jsResult = flutterJs.evaluate("import { AudioContext } from 'web-audio-api'");
+
+    audioCtx = flutterJs.evaluate("new AudioContext()");
     track = await controller.evaluateJavascript(
         source: "new MediaElementAudioSourceNode(audioCtx, {"
             " mediaElement: audioElement,"

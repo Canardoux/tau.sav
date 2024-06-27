@@ -592,17 +592,6 @@ mod capacity {
         receiver: Receiver<AudioRenderCapacityLoad>,
         stop_send: Arc<Mutex<Option<Sender<()>>>>,
     }
-    #[automatically_derived]
-    impl ::core::clone::Clone for AudioRenderCapacity {
-        #[inline]
-        fn clone(&self) -> AudioRenderCapacity {
-            AudioRenderCapacity {
-                context: ::core::clone::Clone::clone(&self.context),
-                receiver: ::core::clone::Clone::clone(&self.receiver),
-                stop_send: ::core::clone::Clone::clone(&self.stop_send),
-            }
-        }
-    }
     impl std::fmt::Debug for AudioRenderCapacity {
         fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
             f.debug_struct("AudioRenderCapacity").field("context",
@@ -1339,7 +1328,7 @@ pub mod context {
                                                 lvl,
                                                 &("web_audio_api::context::concrete_base",
                                                         "web_audio_api::context::concrete_base",
-                                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/concrete_base.rs"),
+                                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/concrete_base.rs"),
                                                 277u32, ());
                                         }
                                 };
@@ -2134,7 +2123,7 @@ pub mod context {
                                             options.sink_id), lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
                                         186u32, ());
                                 }
                         };
@@ -2195,11 +2184,6 @@ pub mod context {
             pub fn sink_id(&self) -> String {
                 self.backend_manager.lock().unwrap().sink_id().to_owned()
             }
-            /// Returns an [`AudioRenderCapacity`] instance associated with an AudioContext.
-            #[must_use]
-            pub fn render_capacity(&self) -> AudioRenderCapacity {
-                self.render_capacity.clone()
-            }
             /// Update the current audio output device.
             ///
             /// The provided `sink_id` string must match a device name `enumerate_devices_sync`.
@@ -2220,8 +2204,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                288u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                282u32, ());
                         }
                 };
                 if self.sink_id() == sink_id {
@@ -2233,8 +2217,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        290u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        284u32, ());
                                 }
                         };
                         return Ok(());
@@ -2255,8 +2239,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                298u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                292u32, ());
                         }
                 };
                 let mut backend_manager_guard =
@@ -2271,8 +2255,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        302u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        296u32, ());
                                 }
                         };
                         return Ok(());
@@ -2285,8 +2269,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                307u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                301u32, ());
                         }
                 };
                 let ctrl_msg_send = self.base.lock_control_msg_sender();
@@ -2305,8 +2289,8 @@ pub mod context {
                                             lvl,
                                             &("web_audio_api::context::online",
                                                     "web_audio_api::context::online",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                            317u32, ());
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                            311u32, ());
                                     }
                             };
                             let msg = pending_msgs.remove(0);
@@ -2324,8 +2308,8 @@ pub mod context {
                                            lvl,
                                            &("web_audio_api::context::online",
                                                    "web_audio_api::context::online",
-                                                   "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                           326u32, ());
+                                                   "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                           320u32, ());
                                    }
                            };
                            let (graph_send, graph_recv) =
@@ -2346,8 +2330,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                339u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                333u32, ());
                         }
                 };
                 backend_manager_guard.close();
@@ -2366,8 +2350,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                349u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                343u32, ());
                         }
                 };
                 *backend_manager_guard =
@@ -2381,8 +2365,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        354u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        348u32, ());
                                 }
                         };
                         backend_manager_guard.suspend();
@@ -2401,8 +2385,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                373u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                367u32, ());
                         }
                 };
                 Ok(())
@@ -2473,8 +2457,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                445u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                439u32, ());
                         }
                 };
                 if self.state() != AudioContextState::Running {
@@ -2486,8 +2470,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        448u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        442u32, ());
                                 }
                         };
                         return;
@@ -2505,8 +2489,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                460u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                454u32, ());
                         }
                 };
                 receiver.await.unwrap();
@@ -2518,8 +2502,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                464u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                458u32, ());
                         }
                 };
                 self.backend_manager.lock().unwrap().suspend();
@@ -2531,8 +2515,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                467u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                461u32, ());
                         }
                 };
             }
@@ -2545,56 +2529,54 @@ pub mod context {
             ///
             /// * The audio device is not available
             /// * For a `BackendSpecificError`
+            #[allow(clippy::await_holding_lock)]
             pub async fn resume(&self) {
-                let (sender, receiver) = oneshot::channel();
                 {
-                    {
-                        let lvl = ::log::Level::Debug;
-                        if lvl <= ::log::STATIC_MAX_LEVEL &&
-                                    lvl <= ::log::max_level() {
-                                ::log::__private_api::log(format_args!("Resume called, locking backend manager"),
-                                    lvl,
-                                    &("web_audio_api::context::online",
-                                            "web_audio_api::context::online",
-                                            "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                    484u32, ());
-                            }
-                    };
-                    let backend_manager_guard =
-                        self.backend_manager.lock().unwrap();
-                    if self.state() != AudioContextState::Suspended {
-                            {
-                                let lvl = ::log::Level::Debug;
-                                if lvl <= ::log::STATIC_MAX_LEVEL &&
-                                            lvl <= ::log::max_level() {
-                                        ::log::__private_api::log(format_args!("Resume no-op - context is not suspended"),
-                                            lvl,
-                                            &("web_audio_api::context::online",
-                                                    "web_audio_api::context::online",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                            488u32, ());
-                                    }
-                            };
-                            return;
+                    let lvl = ::log::Level::Debug;
+                    if lvl <= ::log::STATIC_MAX_LEVEL &&
+                                lvl <= ::log::max_level() {
+                            ::log::__private_api::log(format_args!("Resume called, locking backend manager"),
+                                lvl,
+                                &("web_audio_api::context::online",
+                                        "web_audio_api::context::online",
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                476u32, ());
                         }
-                    backend_manager_guard.resume();
-                    {
-                        let lvl = ::log::Level::Debug;
-                        if lvl <= ::log::STATIC_MAX_LEVEL &&
-                                    lvl <= ::log::max_level() {
-                                ::log::__private_api::log(format_args!("Resumed audio stream, waking audio graph"),
-                                    lvl,
-                                    &("web_audio_api::context::online",
-                                            "web_audio_api::context::online",
-                                            "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                    496u32, ());
-                            }
-                    };
-                    let notify = OneshotNotify::Async(sender);
-                    self.base.send_control_msg(ControlMessage::Resume {
-                            notify,
-                        });
-                }
+                };
+                let backend_manager_guard =
+                    self.backend_manager.lock().unwrap();
+                if self.state() != AudioContextState::Suspended {
+                        {
+                            let lvl = ::log::Level::Debug;
+                            if lvl <= ::log::STATIC_MAX_LEVEL &&
+                                        lvl <= ::log::max_level() {
+                                    ::log::__private_api::log(format_args!("Resume no-op - context is not suspended"),
+                                        lvl,
+                                        &("web_audio_api::context::online",
+                                                "web_audio_api::context::online",
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        480u32, ());
+                                }
+                        };
+                        return;
+                    }
+                backend_manager_guard.resume();
+                {
+                    let lvl = ::log::Level::Debug;
+                    if lvl <= ::log::STATIC_MAX_LEVEL &&
+                                lvl <= ::log::max_level() {
+                            ::log::__private_api::log(format_args!("Resumed audio stream, waking audio graph"),
+                                lvl,
+                                &("web_audio_api::context::online",
+                                        "web_audio_api::context::online",
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                488u32, ());
+                        }
+                };
+                let (sender, receiver) = oneshot::channel();
+                let notify = OneshotNotify::Async(sender);
+                self.base.send_control_msg(ControlMessage::Resume { notify });
+                drop(backend_manager_guard);
                 receiver.await.unwrap();
                 {
                     let lvl = ::log::Level::Debug;
@@ -2604,8 +2586,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                507u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                500u32, ());
                         }
                 };
             }
@@ -2625,8 +2607,8 @@ pub mod context {
                             ::log::__private_api::log(format_args!("Close called"), lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                520u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                513u32, ());
                         }
                 };
                 if self.state() == AudioContextState::Closed {
@@ -2638,8 +2620,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        523u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        516u32, ());
                                 }
                         };
                         return;
@@ -2658,8 +2640,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        535u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        528u32, ());
                                 }
                         };
                         receiver.await.unwrap();
@@ -2672,8 +2654,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                543u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                536u32, ());
                         }
                 };
                 self.backend_manager.lock().unwrap().close();
@@ -2686,8 +2668,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                549u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                542u32, ());
                         }
                 };
             }
@@ -2714,8 +2696,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                568u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                561u32, ());
                         }
                 };
                 let backend_manager_guard =
@@ -2729,8 +2711,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        572u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        565u32, ());
                                 }
                         };
                         return;
@@ -2748,8 +2730,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                584u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                577u32, ());
                         }
                 };
                 receiver.recv().ok();
@@ -2761,8 +2743,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                588u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                581u32, ());
                         }
                 };
                 backend_manager_guard.suspend();
@@ -2774,8 +2756,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                591u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                584u32, ());
                         }
                 };
             }
@@ -2800,8 +2782,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                608u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                601u32, ());
                         }
                 };
                 let backend_manager_guard =
@@ -2815,8 +2797,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        612u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        605u32, ());
                                 }
                         };
                         return;
@@ -2830,8 +2812,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                620u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                613u32, ());
                         }
                 };
                 let (sender, receiver) = crossbeam_channel::bounded(0);
@@ -2846,8 +2828,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                629u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                622u32, ());
                         }
                 };
             }
@@ -2871,8 +2853,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                645u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                638u32, ());
                         }
                 };
                 let backend_manager_guard =
@@ -2886,8 +2868,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        649u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        642u32, ());
                                 }
                         };
                         return;
@@ -2906,8 +2888,8 @@ pub mod context {
                                         lvl,
                                         &("web_audio_api::context::online",
                                                 "web_audio_api::context::online",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                        661u32, ());
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                        654u32, ());
                                 }
                         };
                         receiver.recv().ok();
@@ -2920,8 +2902,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                669u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                662u32, ());
                         }
                 };
                 backend_manager_guard.close();
@@ -2934,8 +2916,8 @@ pub mod context {
                                 lvl,
                                 &("web_audio_api::context::online",
                                         "web_audio_api::context::online",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/context/online.rs"),
-                                675u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/context/online.rs"),
+                                668u32, ());
                         }
                 };
             }
@@ -2976,6 +2958,11 @@ pub mod context {
                 let opts =
                     node::MediaElementAudioSourceOptions { media_element };
                 node::MediaElementAudioSourceNode::new(self, opts)
+            }
+            /// Returns an [`AudioRenderCapacity`] instance associated with an AudioContext.
+            #[must_use]
+            pub fn render_capacity(&self) -> &AudioRenderCapacity {
+                &self.render_capacity
             }
         }
     }
@@ -3456,7 +3443,7 @@ pub mod media_devices {
                                     options.sink_id), lvl,
                                 &("web_audio_api::media_devices",
                                         "web_audio_api::media_devices",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/media_devices/mod.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/media_devices/mod.rs"),
                                 228u32, ());
                         }
                 };
@@ -5474,7 +5461,7 @@ pub mod node {
                                     msg), lvl,
                                 &("web_audio_api::node::audio_buffer_source",
                                         "web_audio_api::node::audio_buffer_source",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/audio_buffer_source.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/audio_buffer_source.rs"),
                                 772u32, ());
                         }
                 };
@@ -6191,7 +6178,7 @@ pub mod node {
                                     msg), lvl,
                                 &("web_audio_api::node::biquad_filter",
                                         "web_audio_api::node::biquad_filter",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/biquad_filter.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/biquad_filter.rs"),
                                 702u32, ());
                         }
                 };
@@ -6874,7 +6861,7 @@ pub mod node {
                                     msg), lvl,
                                 &("web_audio_api::node::constant_source",
                                         "web_audio_api::node::constant_source",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/constant_source.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/constant_source.rs"),
                                 256u32, ());
                         }
                 };
@@ -7279,7 +7266,7 @@ pub mod node {
                                     msg), lvl,
                                 &("web_audio_api::node::convolver",
                                         "web_audio_api::node::convolver",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/convolver.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/convolver.rs"),
                                 460u32, ());
                         }
                 };
@@ -8898,7 +8885,7 @@ pub mod node {
                                                 lvl,
                                                 &("web_audio_api::node::iir_filter",
                                                         "web_audio_api::node::iir_filter",
-                                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/iir_filter.rs"),
+                                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/iir_filter.rs"),
                                                 399u32, ());
                                         }
                                 };
@@ -9143,7 +9130,7 @@ pub mod node {
                                         lvl,
                                         &("web_audio_api::node::media_stream_destination",
                                                 "web_audio_api::node::media_stream_destination",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/media_stream_destination.rs"),
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/media_stream_destination.rs"),
                                         136u32, ());
                                 }
                         };
@@ -9855,7 +9842,7 @@ pub mod node {
                                     msg), lvl,
                                 &("web_audio_api::node::oscillator",
                                         "web_audio_api::node::oscillator",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/oscillator.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/oscillator.rs"),
                                 458u32, ());
                         }
                 };
@@ -10883,7 +10870,7 @@ pub mod node {
                                     msg), lvl,
                                 &("web_audio_api::node::panner",
                                         "web_audio_api::node::panner",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/panner.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/panner.rs"),
                                 919u32, ());
                         }
                 };
@@ -11267,7 +11254,7 @@ pub mod node {
                                     msg), lvl,
                                 &("web_audio_api::node::script_processor",
                                         "web_audio_api::node::script_processor",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/script_processor.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/script_processor.rs"),
                                 272u32, ());
                         }
                 };
@@ -12141,7 +12128,7 @@ pub mod node {
                                     msg), lvl,
                                 &("web_audio_api::node::waveshaper",
                                         "web_audio_api::node::waveshaper",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/waveshaper.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/waveshaper.rs"),
                                 517u32, ());
                         }
                 };
@@ -12239,7 +12226,7 @@ pub mod node {
                                 ::log::__private_api::log(format_args!("Error playing audio stream: {0}",
                                         e), lvl,
                                     &("web_audio_api::node", "web_audio_api::node",
-                                            "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/mod.rs"),
+                                            "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/mod.rs"),
                                     118u32, ());
                             }
                     };
@@ -12255,7 +12242,7 @@ pub mod node {
                                         ::log::__private_api::log(format_args!("Stream finished"),
                                             lvl,
                                             &("web_audio_api::node", "web_audio_api::node",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/node/mod.rs"),
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/node/mod.rs"),
                                             124u32, ());
                                     }
                             };
@@ -12638,7 +12625,7 @@ mod events {
                         ::log::__private_api::log(format_args!("Entering event thread"),
                             lvl,
                             &("web_audio_api::events", "web_audio_api::events",
-                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/events.rs"),
+                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/events.rs"),
                             226u32, ());
                     }
             };
@@ -12656,7 +12643,7 @@ mod events {
                                     ::log::__private_api::log(format_args!("Event loop has terminated"),
                                         lvl,
                                         &("web_audio_api::events", "web_audio_api::events",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/events.rs"),
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/events.rs"),
                                         240u32, ());
                                 }
                         };
@@ -13482,7 +13469,7 @@ mod param {
                         ::log::__private_api::log(format_args!("AudioParamProcessor: Dropping incoming message {0:?}",
                                 msg), lvl,
                             &("web_audio_api::param", "web_audio_api::param",
-                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/param.rs"),
+                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/param.rs"),
                             726u32, ());
                     }
             };
@@ -15110,7 +15097,7 @@ mod render {
                                 lvl,
                                 &("web_audio_api::render::thread",
                                         "web_audio_api::render::thread",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/render/thread.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/render/thread.rs"),
                                 521u32, ());
                         }
                 };
@@ -15144,7 +15131,7 @@ mod render {
                             lvl,
                             &("web_audio_api::render::thread",
                                     "web_audio_api::render::thread",
-                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/render/thread.rs"),
+                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/render/thread.rs"),
                             538u32, ());
                     }
             };
@@ -15160,7 +15147,7 @@ mod render {
                                                 lvl,
                                                 &("web_audio_api::render::thread",
                                                         "web_audio_api::render::thread",
-                                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/render/thread.rs"),
+                                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/render/thread.rs"),
                                                 546u32, ());
                                         }
                                 };
@@ -15178,7 +15165,7 @@ mod render {
                             lvl,
                             &("web_audio_api::render::thread",
                                     "web_audio_api::render::thread",
-                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/render/thread.rs"),
+                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/render/thread.rs"),
                             554u32, ());
                     }
             };
@@ -15327,7 +15314,7 @@ mod render {
                                 lvl,
                                 &("web_audio_api::render::processor",
                                         "web_audio_api::render::processor",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/render/processor.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/render/processor.rs"),
                                 157u32, ());
                         }
                 };
@@ -16390,7 +16377,6 @@ mod io {
         use crossbeam_channel::Receiver;
         use super::{AudioBackendManager, RenderThreadInit};
         use crate::buffer::AudioBuffer;
-        use crate::context::AudioContextLatencyCategory;
         use crate::context::AudioContextOptions;
         use crate::io::microphone::MicrophoneRender;
         use crate::media_devices::{MediaDeviceInfo, MediaDeviceInfoKind};
@@ -16476,8 +16462,8 @@ mod io {
                             ::log::__private_api::log(format_args!("Audio Output Host: cpal {0:?}",
                                     host.id()), lvl,
                                 &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                124u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                123u32, ());
                         }
                 };
                 let RenderThreadInit {
@@ -16505,8 +16491,8 @@ mod io {
                             ::log::__private_api::log(format_args!("Output device: {0:?}",
                                     device.name()), lvl,
                                 &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                148u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                147u32, ());
                         }
                 };
                 let default_device_config =
@@ -16531,13 +16517,6 @@ mod io {
                     };
                 preferred_config.buffer_size =
                     cpal::BufferSize::Fixed(clamped_buffer_size);
-                if false {
-                        if let AudioContextLatencyCategory::Balanced |
-                                    AudioContextLatencyCategory::Interactive =
-                                    options.latency_hint {
-                                preferred_config.buffer_size = cpal::BufferSize::Default;
-                            }
-                    }
                 let mut sample_rate = preferred_config.sample_rate.0 as f32;
                 let output_latency = Arc::new(AtomicF64::new(0.));
                 let mut renderer =
@@ -16554,8 +16533,8 @@ mod io {
                             ::log::__private_api::log(format_args!("Attempt output stream with preferred config: {0:?}",
                                     &preferred_config), lvl,
                                 &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                212u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                201u32, ());
                         }
                 };
                 let spawned =
@@ -16572,8 +16551,8 @@ mod io {
                                         ::log::__private_api::log(format_args!("Output stream set up successfully"),
                                             lvl,
                                             &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                            227u32, ());
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                            216u32, ());
                                     }
                             };
                             stream
@@ -16586,8 +16565,8 @@ mod io {
                                         ::log::__private_api::log(format_args!("Output stream build failed with preferred config: {0}",
                                                 e), lvl,
                                             &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                            231u32, ());
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                            220u32, ());
                                     }
                             };
                             let mut supported_config: StreamConfig =
@@ -16601,8 +16580,8 @@ mod io {
                                         ::log::__private_api::log(format_args!("Attempt output stream with fallback config: {0:?}",
                                                 &supported_config), lvl,
                                             &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                            239u32, ());
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                            228u32, ());
                                     }
                             };
                             let mut renderer =
@@ -16638,8 +16617,8 @@ mod io {
                             ::log::__private_api::log(format_args!("Audio Input Host: cpal {0:?}",
                                     host.id()), lvl,
                                 &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                291u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                280u32, ());
                         }
                 };
                 let device =
@@ -16661,8 +16640,8 @@ mod io {
                             ::log::__private_api::log(format_args!("Input device: {0:?}",
                                     device.name()), lvl,
                                 &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                307u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                296u32, ());
                         }
                 };
                 let supported =
@@ -16701,8 +16680,8 @@ mod io {
                             ::log::__private_api::log(format_args!("Attempt input stream with preferred config: {0:?}",
                                     &preferred), lvl,
                                 &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                345u32, ());
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                334u32, ());
                         }
                 };
                 let spawned =
@@ -16718,8 +16697,8 @@ mod io {
                                         ::log::__private_api::log(format_args!("Input stream set up successfully"),
                                             lvl,
                                             &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                            356u32, ());
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                            345u32, ());
                                     }
                             };
                             stream
@@ -16732,8 +16711,8 @@ mod io {
                                         ::log::__private_api::log(format_args!("Output stream build failed with preferred config: {0}",
                                                 e), lvl,
                                             &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                            360u32, ());
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                            349u32, ());
                                     }
                             };
                             let supported_config: StreamConfig =
@@ -16747,8 +16726,8 @@ mod io {
                                         ::log::__private_api::log(format_args!("Attempt output stream with fallback config: {0:?}",
                                                 &supported_config), lvl,
                                             &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                            367u32, ());
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                            356u32, ());
                                     }
                             };
                             let (sender, receiver2) =
@@ -16848,8 +16827,8 @@ mod io {
                                 ::log::__private_api::log(format_args!("an error occurred on the output audio stream: {0}",
                                         err), lvl,
                                     &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                            "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                    509u32, ());
+                                            "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                    498u32, ());
                             }
                     };
             match sample_format {
@@ -16958,8 +16937,8 @@ mod io {
                                 ::log::__private_api::log(format_args!("an error occurred on the input audio stream: {0}",
                                         err), lvl,
                                     &("web_audio_api::io::cpal", "web_audio_api::io::cpal",
-                                            "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/cpal.rs"),
-                                    620u32, ());
+                                            "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/cpal.rs"),
+                                    609u32, ());
                             }
                     };
             match sample_format {
@@ -17043,7 +17022,7 @@ mod io {
                                 lvl,
                                 &("web_audio_api::io::microphone",
                                         "web_audio_api::io::microphone",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/microphone.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/microphone.rs"),
                                 32u32, ());
                         }
                 };
@@ -17065,7 +17044,7 @@ mod io {
                                             lvl,
                                             &("web_audio_api::io::microphone",
                                                     "web_audio_api::io::microphone",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/microphone.rs"),
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/microphone.rs"),
                                             48u32, ());
                                     }
                             };
@@ -17111,7 +17090,7 @@ mod io {
                                         lvl,
                                         &("web_audio_api::io::microphone",
                                                 "web_audio_api::io::microphone",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/microphone.rs"),
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/microphone.rs"),
                                         101u32, ());
                                 }
                         };
@@ -17128,7 +17107,7 @@ mod io {
                                 lvl,
                                 &("web_audio_api::io::microphone",
                                         "web_audio_api::io::microphone",
-                                        "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/io/microphone.rs"),
+                                        "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/io/microphone.rs"),
                                 108u32, ());
                         }
                 };
@@ -17807,7 +17786,7 @@ mod decoding {
                                                         ::log::__private_api::log(format_args!("Decoding finished after {0} packet(s)",
                                                                 packet_count), lvl,
                                                             &("web_audio_api::decoding", "web_audio_api::decoding",
-                                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/decoding.rs"),
+                                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/decoding.rs"),
                                                             137u32, ());
                                                     }
                                             };
@@ -17820,7 +17799,7 @@ mod decoding {
                                                                 ::log::__private_api::log(format_args!("Verification of decoded data failed"),
                                                                     lvl,
                                                                     &("web_audio_api::decoding", "web_audio_api::decoding",
-                                                                            "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/decoding.rs"),
+                                                                            "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/decoding.rs"),
                                                                     140u32, ());
                                                             }
                                                     };
@@ -17835,7 +17814,7 @@ mod decoding {
                                         ::log::__private_api::log(format_args!("Failed to fetch next packet following packet #{0}: {1}",
                                                 packet_count, err), lvl,
                                             &("web_audio_api::decoding", "web_audio_api::decoding",
-                                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/decoding.rs"),
+                                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/decoding.rs"),
                                             145u32, ());
                                     }
                             };
@@ -17852,7 +17831,7 @@ mod decoding {
                                     ::log::__private_api::log(format_args!("Skipping packet from other track {0} while decoding track {1}",
                                             packet_track_id, track_id), lvl,
                                         &("web_audio_api::decoding", "web_audio_api::decoding",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/decoding.rs"),
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/decoding.rs"),
                                         159u32, ());
                                 }
                         };
@@ -17871,7 +17850,7 @@ mod decoding {
                                     ::log::__private_api::log(format_args!("Failed to decode packet #{0}: {1}",
                                             packet_count, err), lvl,
                                         &("web_audio_api::decoding", "web_audio_api::decoding",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/decoding.rs"),
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/decoding.rs"),
                                         173u32, ());
                                 }
                         };
@@ -17884,7 +17863,7 @@ mod decoding {
                                     ::log::__private_api::log(format_args!("I/O error while decoding packet #{0}: {1}",
                                             packet_count, err), lvl,
                                         &("web_audio_api::decoding", "web_audio_api::decoding",
-                                                "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/decoding.rs"),
+                                                "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/decoding.rs"),
                                         177u32, ());
                                 }
                         };
@@ -18230,9 +18209,6 @@ pub mod worklet {
             let id = self.map.get(name).unwrap();
             self.values.get(id)
         }
-        pub fn keys(&self) -> impl Iterator<Item = &str> {
-            self.map.keys().map(|s| s.as_ref())
-        }
     }
     /// Audio processing code that runs on the audio rendering thread.
     pub trait AudioWorkletProcessor {
@@ -18297,8 +18273,8 @@ pub mod worklet {
                         ::log::__private_api::log(format_args!("AudioWorkletProcessor: Ignoring incoming message"),
                             lvl,
                             &("web_audio_api::worklet", "web_audio_api::worklet",
-                                    "/Volumes/mac-J/larpoux/projmac/tau/web-audio-api-rs/src/worklet.rs"),
-                            112u32, ());
+                                    "/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/web-audio-api-1.0.0-rc.6/src/worklet.rs"),
+                            108u32, ());
                     }
             };
         }
@@ -18552,7 +18528,7 @@ pub mod worklet {
                 self.inputs_grouped.push(left_static);
                 inputs_flat = right;
             }
-            if !outputs.is_empty() && self.output_channel_count.is_empty() {
+            if self.output_channel_count.is_empty() {
                     outputs[0].set_number_of_channels(inputs[0].number_of_channels());
                 } else {
                    outputs.iter_mut().zip(self.output_channel_count.iter()).for_each(|(output,
@@ -18572,15 +18548,13 @@ pub mod worklet {
                         unsafe {
                             std::mem::transmute(output_channel)
                         }).for_each(|c| self.outputs_flat.push(c));
-            if !outputs.is_empty() {
-                    let mut outputs_flat = &mut self.outputs_flat[..];
-                    for c in output_channel_count {
-                        let (left, right) = outputs_flat.split_at_mut(*c);
-                        let left_static = unsafe { std::mem::transmute(left) };
-                        self.outputs_grouped.push(left_static);
-                        outputs_flat = right;
-                    }
-                }
+            let mut outputs_flat = &mut self.outputs_flat[..];
+            for c in output_channel_count {
+                let (left, right) = outputs_flat.split_at_mut(*c);
+                let left_static = unsafe { std::mem::transmute(left) };
+                self.outputs_grouped.push(left_static);
+                outputs_flat = right;
+            }
             let param_getter =
                 AudioParamValues {
                     values: params,

@@ -12,7 +12,7 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 // These types are ignored because they are not used by any `pub` functions: `AudioParamValues`, `AudioWorkletNodeOptions`, `AudioWorkletRenderer`, `Processor`
 // These function are ignored because they are on traits that is not defined in current crate (put an empty `#[frb]` on it to unignore): `clone`, `fmt`, `fmt`, `fmt`, `has_side_effects`, `onmessage`, `process`
 // These functions are ignored (category: IgnoreBecauseExplicitAttribute): `constructor`, `onmessage`, `port`
-// These functions are ignored (category: IgnoreBecauseOwnerTyShouldIgnore): `default`, `keys`
+// These functions are ignored (category: IgnoreBecauseOwnerTyShouldIgnore): `default`
 
 
             
@@ -69,18 +69,6 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
 

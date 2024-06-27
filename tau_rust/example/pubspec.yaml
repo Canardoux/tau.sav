@@ -89,8 +89,9 @@ flutter:
  
 
   # To add assets to your application, add an assets section, like this:
-  - lib/RustEx/StereoPanner/RustEx_StereoPanner.png
-  - lib/MozillaEx/audio_basics/outfoxing.mp3
+  - lib/RustEx/StereoPanner/RustEx_StereoPanner_graph.png
+  - lib/MozillaEx/AudioBasics/MozillaEx_AudioBasics_graph.png
+  - lib/MozillaEx/AudioBasics/outfoxing.mp3
  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

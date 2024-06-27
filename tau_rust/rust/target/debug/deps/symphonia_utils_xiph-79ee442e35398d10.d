@@ -1,0 +1,8 @@
+/Volumes/mac-J/larpoux/projmac/tau/tau_rust/rust/target/debug/deps/libsymphonia_utils_xiph-79ee442e35398d10.rmeta: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/flac/mod.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/flac/metadata.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/vorbis/mod.rs
+
+/Volumes/mac-J/larpoux/projmac/tau/tau_rust/rust/target/debug/deps/symphonia_utils_xiph-79ee442e35398d10.d: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/flac/mod.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/flac/metadata.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/vorbis/mod.rs
+
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/lib.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/flac/mod.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/flac/metadata.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/symphonia-utils-xiph-0.5.4/src/vorbis/mod.rs:

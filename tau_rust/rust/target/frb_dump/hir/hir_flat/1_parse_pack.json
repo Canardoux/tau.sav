@@ -1990,6 +1990,20 @@
       "item_fn": "GeneralizedItemFn(name=base, vis=None, attrs=[# [frb (ignore)]])"
     },
     {
+      "namespace": "web_audio_api::context",
+      "owner": {
+        "StructOrEnum": {
+          "impl_ty": "AudioContextRenderSizeCategory",
+          "trait_def_name": "Default"
+        }
+      },
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "item_fn": "GeneralizedItemFn(name=default, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)], # [frb (external)], # [frb (external)]])"
+    },
+    {
       "namespace": "web_audio_api::media_devices",
       "owner": "Function",
       "sources": [
@@ -2215,6 +2229,45 @@
         "MoveFromCrateThirdPartyFolder"
       ],
       "item_fn": "GeneralizedItemFn(name=disconnect_dest_from_output_to_input, vis=None, attrs=[# [frb (ignore)]])"
+    },
+    {
+      "namespace": "web_audio_api::node",
+      "owner": {
+        "TraitDef": {
+          "trait_def_name": "web_audio_api::node/AudioNode"
+        }
+      },
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [frb (ignore)]])"
+    },
+    {
+      "namespace": "web_audio_api::node",
+      "owner": {
+        "TraitDef": {
+          "trait_def_name": "web_audio_api::node/AudioNode"
+        }
+      },
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [frb (ignore)]])"
+    },
+    {
+      "namespace": "web_audio_api::node",
+      "owner": {
+        "TraitDef": {
+          "trait_def_name": "web_audio_api::node/AudioNode"
+        }
+      },
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -4508,7 +4561,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=assert_valid_sample_rate, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5958904..5958909) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given sample rate is valid.\"], # [doc = \"\"], # [doc = \" Note that in practice sample rates should stand between 8000Hz (lower bound for\"], # [doc = \" voice based applications, e.g. see phone bandwidth) and 96000Hz (for very high\"], # [doc = \" quality audio applications and spectrum manipulation).\"], # [doc = \" Most common sample rates for musical applications are 44100 and 48000.\"], # [doc = \"\"], # [doc = \" - see <https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-samplerate>\"], # [doc = \" > An implementation MUST support sample rates in at least the range 8000 to 96000.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given sample rate is lower than 4000 or greater than 192000\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
+      "item_fn": "GeneralizedItemFn(name=assert_valid_sample_rate, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5962459..5962464) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given sample rate is valid.\"], # [doc = \"\"], # [doc = \" Note that in practice sample rates should stand between 8000Hz (lower bound for\"], # [doc = \" voice based applications, e.g. see phone bandwidth) and 96000Hz (for very high\"], # [doc = \" quality audio applications and spectrum manipulation).\"], # [doc = \" Most common sample rates for musical applications are 44100 and 48000.\"], # [doc = \"\"], # [doc = \" - see <https://webaudio.github.io/web-audio-api/#dom-baseaudiocontext-samplerate>\"], # [doc = \" > An implementation MUST support sample rates in at least the range 8000 to 96000.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given sample rate is lower than 4000 or greater than 192000\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
     },
     {
       "namespace": "web_audio_api",
@@ -4516,7 +4569,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=assert_valid_number_of_channels, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5959634..5959639) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given number of channels is valid.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given number of channels is outside the [1, 32] range,\"], # [doc = \" 32 being defined by the MAX_CHANNELS constant.\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
+      "item_fn": "GeneralizedItemFn(name=assert_valid_number_of_channels, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5963189..5963194) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given number of channels is valid.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given number of channels is outside the [1, 32] range,\"], # [doc = \" 32 being defined by the MAX_CHANNELS constant.\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
     },
     {
       "namespace": "web_audio_api",
@@ -4524,7 +4577,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=assert_valid_channel_number, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5960339..5960344) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given channel number is valid according to the number of channels\"], # [doc = \" of an Audio asset (e.g. [`AudioBuffer`]).\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given channel number is greater than or equal to the given number of channels.\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
+      "item_fn": "GeneralizedItemFn(name=assert_valid_channel_number, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5963894..5963899) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given channel number is valid according to the number of channels\"], # [doc = \" of an Audio asset (e.g. [`AudioBuffer`]).\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given channel number is greater than or equal to the given number of channels.\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
     },
     {
       "namespace": "web_audio_api",
@@ -4532,7 +4585,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=assert_valid_buffer_length, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5960960..5960965) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given value number is a valid buffer length, i.e. greater than zero\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given value is not lower than or equal to zero\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
+      "item_fn": "GeneralizedItemFn(name=assert_valid_buffer_length, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5964515..5964520) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given value number is a valid buffer length, i.e. greater than zero\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given value is not lower than or equal to zero\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
     },
     {
       "namespace": "web_audio_api",
@@ -4540,7 +4593,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=assert_valid_time_value, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5961529..5961534) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given value number is a valid time information, i.e. greater\"], # [doc = \" than or equal to zero and finite.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given value is not finite and lower than zero\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
+      "item_fn": "GeneralizedItemFn(name=assert_valid_time_value, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5965084..5965089) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Assert that the given value number is a valid time information, i.e. greater\"], # [doc = \" than or equal to zero and finite.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given value is not finite and lower than zero\"], # [doc = \"\"], # [track_caller], # [inline (always)]])"
     },
     {
       "namespace": "web_audio_api::buffer",
@@ -4761,7 +4814,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=from_channels, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2718777..2718782) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Create a multi-channel audiobuffer directly from `ChannelData`s.\"]])"
+      "item_fn": "GeneralizedItemFn(name=from_channels, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2719361..2719366) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Create a multi-channel audiobuffer directly from `ChannelData`s.\"]])"
     },
     {
       "namespace": "web_audio_api::buffer",
@@ -4774,7 +4827,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=channels, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2718968..2718973) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Channel data as slice\"]])"
+      "item_fn": "GeneralizedItemFn(name=channels, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2719552..2719557) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Channel data as slice\"]])"
     },
     {
       "namespace": "web_audio_api::buffer",
@@ -4787,7 +4840,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=channels_mut, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2719087..2719092) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Channel data as slice (mutable)\"]])"
+      "item_fn": "GeneralizedItemFn(name=channels_mut, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2719671..2719676) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Channel data as slice (mutable)\"]])"
     },
     {
       "namespace": "web_audio_api::buffer",
@@ -4800,7 +4853,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=channel_data, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2719347..2719352) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Get the samples from this specific channel.\"], # [doc = \"\"], # [doc = \" Panics if the index is greater than the available number of channels\"]])"
+      "item_fn": "GeneralizedItemFn(name=channel_data, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2719931..2719936) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Get the samples from this specific channel.\"], # [doc = \"\"], # [doc = \" Panics if the index is greater than the available number of channels\"]])"
     },
     {
       "namespace": "web_audio_api::buffer",
@@ -4813,7 +4866,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=channel_data_mut, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2719624..2719629) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Get the samples (mutable) from this specific channel.\"], # [doc = \"\"], # [doc = \" Panics if the index is greater than the available number of channels\"]])"
+      "item_fn": "GeneralizedItemFn(name=channel_data_mut, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2720208..2720213) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Get the samples (mutable) from this specific channel.\"], # [doc = \"\"], # [doc = \" Panics if the index is greater than the available number of channels\"]])"
     },
     {
       "namespace": "web_audio_api::buffer",
@@ -4826,7 +4879,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=extend, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2719935..2719940) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Extends an AudioBuffer with the contents of another.\"], # [doc = \"\"], # [doc = \" This function will panic if the sample_rate and channel_count are not equal\"]])"
+      "item_fn": "GeneralizedItemFn(name=extend, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2720519..2720524) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Extends an AudioBuffer with the contents of another.\"], # [doc = \"\"], # [doc = \" This function will panic if the sample_rate and channel_count are not equal\"]])"
     },
     {
       "namespace": "web_audio_api::buffer",
@@ -4839,7 +4892,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=split_off, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2721325..2721330) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Split an AudioBuffer in two at the given index.\"]])"
+      "item_fn": "GeneralizedItemFn(name=split_off, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2721909..2721914) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Split an AudioBuffer in two at the given index.\"]])"
     },
     {
       "namespace": "web_audio_api::buffer",
@@ -4852,7 +4905,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=resample, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2722099..2722104) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Resample to the desired sample rate. The method performs a simple linear\"], # [doc = \" interpolation an keep the first and last sample intact. The new number\"], # [doc = \" of samples is always ceiled according the ratio defined by old and new\"], # [doc = \" sample rates.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given sample rate is zero\"]])"
+      "item_fn": "GeneralizedItemFn(name=resample, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2722683..2722688) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Resample to the desired sample rate. The method performs a simple linear\"], # [doc = \" interpolation an keep the first and last sample intact. The new number\"], # [doc = \" of samples is always ceiled according the ratio defined by old and new\"], # [doc = \" sample rates.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if:\"], # [doc = \" - the given sample rate is zero\"]])"
     },
     {
       "namespace": "web_audio_api::buffer",
@@ -5080,19 +5133,6 @@
       "owner": {
         "StructOrEnum": {
           "impl_ty": "AudioRenderCapacity",
-          "trait_def_name": "Clone"
-        }
-      },
-      "sources": [
-        "Normal"
-      ],
-      "item_fn": "GeneralizedItemFn(name=clone, vis=Some(Visibility::Inherited), attrs=[# [inline], # [automatically_derived]])"
-    },
-    {
-      "namespace": "web_audio_api::capacity",
-      "owner": {
-        "StructOrEnum": {
-          "impl_ty": "AudioRenderCapacity",
           "trait_def_name": "Debug"
         }
       },
@@ -5112,7 +5152,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2732156..2732161) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2732311..2732316) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::capacity",
@@ -5346,7 +5386,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=id, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2862556..2862561) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Get the audio node id of the registration\"], # [must_use]])"
+      "item_fn": "GeneralizedItemFn(name=id, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2864543..2864548) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Get the audio node id of the registration\"], # [must_use]])"
     },
     {
       "namespace": "web_audio_api::context",
@@ -5359,7 +5399,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=context, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2862726..2862731) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Get the [`BaseAudioContext`] concrete type associated with this `AudioContext`\"], # [must_use]])"
+      "item_fn": "GeneralizedItemFn(name=context, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2864713..2864718) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Get the [`BaseAudioContext`] concrete type associated with this `AudioContext`\"], # [must_use]])"
     },
     {
       "namespace": "web_audio_api::context",
@@ -5372,7 +5412,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=post_message, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2863047..2863052) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Send a message to the corresponding audio processor of this node\"], # [doc = \"\"], # [doc = \" The message will be handled by\"], # [doc = \" [`AudioProcessor::onmessage`](crate::render::AudioProcessor::onmessage).\"]])"
+      "item_fn": "GeneralizedItemFn(name=post_message, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2865034..2865039) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Send a message to the corresponding audio processor of this node\"], # [doc = \"\"], # [doc = \" The message will be handled by\"], # [doc = \" [`AudioProcessor::onmessage`](crate::render::AudioProcessor::onmessage).\"]])"
     },
     {
       "namespace": "web_audio_api::context",
@@ -5812,7 +5852,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2763367..2763372) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Creates a `BaseAudioContext` instance\"], # [allow (clippy :: too_many_arguments)]])"
+      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2763522..2763527) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Creates a `BaseAudioContext` instance\"], # [allow (clippy :: too_many_arguments)]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5825,7 +5865,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=address, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2767804..2767809) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=address, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2767959..2767964) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5838,7 +5878,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=register, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2767997..2768002) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Construct a new pair of [`AudioNode`] and [`AudioProcessor`]\"]])"
+      "item_fn": "GeneralizedItemFn(name=register, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2768152..2768157) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Construct a new pair of [`AudioNode`] and [`AudioProcessor`]\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5851,7 +5891,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=send_control_msg, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2769542..2769547) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Send a control message to the render thread\"], # [doc = \"\"], # [doc = \" When the render thread is closed or crashed, the message is discarded and a log warning is\"], # [doc = \" emitted.\"]])"
+      "item_fn": "GeneralizedItemFn(name=send_control_msg, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2769697..2769702) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Send a control message to the render thread\"], # [doc = \"\"], # [doc = \" When the render thread is closed or crashed, the message is discarded and a log warning is\"], # [doc = \" emitted.\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5864,7 +5904,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=send_event, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2770816..2770821) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=send_event, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2771020..2771025) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5877,7 +5917,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=lock_control_msg_sender, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2771000..2771005) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=lock_control_msg_sender, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2771204..2771209) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5890,7 +5930,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=mark_node_dropped, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2771196..2771201) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=mark_node_dropped, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2771400..2771405) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5916,7 +5956,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=destination_channel_config, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2772157..2772162) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" `ChannelConfig` of the `AudioDestinationNode`\"]])"
+      "item_fn": "GeneralizedItemFn(name=destination_channel_config, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2772361..2772366) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" `ChannelConfig` of the `AudioDestinationNode`\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5929,7 +5969,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=listener, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2772392..2772397) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Returns the `AudioListener` which is used for 3D spatialization\"]])"
+      "item_fn": "GeneralizedItemFn(name=listener, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2772596..2772601) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Returns the `AudioListener` which is used for 3D spatialization\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5942,7 +5982,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=state, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2774143..2774148) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Returns state of current context\"], # [must_use]])"
+      "item_fn": "GeneralizedItemFn(name=state, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2774347..2774352) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Returns state of current context\"], # [must_use]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5955,7 +5995,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_state, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2774332..2774337) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Updates state of current context\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_state, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2774536..2774541) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Updates state of current context\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5968,7 +6008,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=sample_rate, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2774827..2774832) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" The sample rate (in sample-frames per second) at which the `AudioContext` handles audio.\"], # [must_use]])"
+      "item_fn": "GeneralizedItemFn(name=sample_rate, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2775031..2775036) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" The sample rate (in sample-frames per second) at which the `AudioContext` handles audio.\"], # [must_use]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5981,7 +6021,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=current_time, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2775184..2775189) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" This is the time in seconds of the sample frame immediately following the last sample-frame\"], # [doc = \" in the block of audio most recently processed by the context’s rendering graph.\"], # [must_use], # [allow (clippy :: cast_precision_loss)]])"
+      "item_fn": "GeneralizedItemFn(name=current_time, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2775388..2775393) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" This is the time in seconds of the sample frame immediately following the last sample-frame\"], # [doc = \" in the block of audio most recently processed by the context’s rendering graph.\"], # [must_use], # [allow (clippy :: cast_precision_loss)]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -5994,7 +6034,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=max_channel_count, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2775469..2775474) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Maximum available channels for the audio destination\"], # [must_use]])"
+      "item_fn": "GeneralizedItemFn(name=max_channel_count, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2775673..2775678) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Maximum available channels for the audio destination\"], # [must_use]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -6020,7 +6060,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=connect, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2776455..2776460) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Connects the output of the `from` audio node to the input of the `to` audio node\"]])"
+      "item_fn": "GeneralizedItemFn(name=connect, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2776659..2776664) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Connects the output of the `from` audio node to the input of the `to` audio node\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -6033,7 +6073,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=queue_audio_param_connect, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2777068..2777073) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Schedule a connection of an `AudioParam` to the `AudioNode` it belongs to\"], # [doc = \"\"], # [doc = \" It is not performed immediately as the `AudioNode` is not registered at this point.\"]])"
+      "item_fn": "GeneralizedItemFn(name=queue_audio_param_connect, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2777272..2777277) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Schedule a connection of an `AudioParam` to the `AudioNode` it belongs to\"], # [doc = \"\"], # [doc = \" It is not performed immediately as the `AudioNode` is not registered at this point.\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -6046,7 +6086,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=disconnect, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2777660..2777665) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Disconnects outputs of the audio node, possibly filtered by output node, input, output.\"]])"
+      "item_fn": "GeneralizedItemFn(name=disconnect, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2777864..2777869) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Disconnects outputs of the audio node, possibly filtered by output node, input, output.\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -6059,7 +6099,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=connect_listener_to_panner, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2779368..2779373) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Connect the `AudioListener` to a `PannerNode`\"]])"
+      "item_fn": "GeneralizedItemFn(name=connect_listener_to_panner, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2779572..2779577) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Connect the `AudioListener` to a `PannerNode`\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -6072,7 +6112,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=ensure_audio_listener_present, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2779630..2779635) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Add the [`AudioListener`] to the audio graph (if not already)\"]])"
+      "item_fn": "GeneralizedItemFn(name=ensure_audio_listener_present, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2779834..2779839) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Add the [`AudioListener`] to the audio graph (if not already)\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -6085,7 +6125,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=offline, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2780410..2780415) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Returns true if this is `OfflineAudioContext` (false when it is an `AudioContext`)\"]])"
+      "item_fn": "GeneralizedItemFn(name=offline, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2780614..2780619) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Returns true if this is `OfflineAudioContext` (false when it is an `AudioContext`)\"]])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -6098,7 +6138,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_event_handler, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2780482..2780487) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_event_handler, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2780686..2780691) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::context::concrete_base",
@@ -6111,7 +6151,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=clear_event_handler, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2780675..2780680) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=clear_event_handler, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2780879..2780884) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::context::offline",
@@ -6501,19 +6541,6 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=render_capacity, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns an [`AudioRenderCapacity`] instance associated with an AudioContext.\"], # [must_use]])"
-    },
-    {
-      "namespace": "web_audio_api::context::online",
-      "owner": {
-        "StructOrEnum": {
-          "impl_ty": "AudioContext",
-          "trait_def_name": null
-        }
-      },
-      "sources": [
-        "Normal"
-      ],
       "item_fn": "GeneralizedItemFn(name=set_sink_id_sync, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Update the current audio output device.\"], # [doc = \"\"], # [doc = \" The provided `sink_id` string must match a device name `enumerate_devices_sync`.\"], # [doc = \"\"], # [doc = \" Supplying `\\\"none\\\"` for the `sink_id` will process the audio graph without playing through an\"], # [doc = \" audio output device.\"], # [doc = \"\"], # [doc = \" This function operates synchronously and might block the current thread. An async version\"], # [doc = \" is currently not implemented.\"], # [allow (clippy :: needless_collect , clippy :: missing_panics_doc)]])"
     },
     {
@@ -6579,7 +6606,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=resume, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Resumes the progression of time in an audio context that has previously been\"], # [doc = \" suspended/paused.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" Will panic if:\"], # [doc = \"\"], # [doc = \" * The audio device is not available\"], # [doc = \" * For a `BackendSpecificError`\"]])"
+      "item_fn": "GeneralizedItemFn(name=resume, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Resumes the progression of time in an audio context that has previously been\"], # [doc = \" suspended/paused.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" Will panic if:\"], # [doc = \"\"], # [doc = \" * The audio device is not available\"], # [doc = \" * For a `BackendSpecificError`\"], # [allow (clippy :: await_holding_lock)]])"
     },
     {
       "namespace": "web_audio_api::context::online",
@@ -6686,6 +6713,19 @@
       "item_fn": "GeneralizedItemFn(name=create_media_element_source, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Creates a [`MediaElementAudioSourceNode`](node::MediaElementAudioSourceNode) from a\"], # [doc = \" [`MediaElement`]\"], # [must_use]])"
     },
     {
+      "namespace": "web_audio_api::context::online",
+      "owner": {
+        "StructOrEnum": {
+          "impl_ty": "AudioContext",
+          "trait_def_name": null
+        }
+      },
+      "sources": [
+        "Normal"
+      ],
+      "item_fn": "GeneralizedItemFn(name=render_capacity, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns an [`AudioRenderCapacity`] instance associated with an AudioContext.\"], # [must_use]])"
+    },
+    {
       "namespace": "web_audio_api::media_devices",
       "owner": "Function",
       "sources": [
@@ -6717,7 +6757,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=as_string, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2865420..2865425) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=as_string, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2867407..2867412) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::media_devices",
@@ -6808,7 +6848,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2868644..2868649) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2870631..2870636) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::media_devices",
@@ -6873,7 +6913,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=device, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2869564..2869569) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=device, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2871551..2871556) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::media_devices",
@@ -7404,7 +7444,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=precomputed_sine_table, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5656456..5656461) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Precomputed sine table\"]])"
+      "item_fn": "GeneralizedItemFn(name=precomputed_sine_table, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5658982..5658987) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Precomputed sine table\"]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -7989,7 +8029,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=count_mode, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2904347..2904352) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Represents an enumerated value describing the way channels must be matched between the\"], # [doc = \" node's inputs and outputs.\"]])"
+      "item_fn": "GeneralizedItemFn(name=count_mode, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2906383..2906388) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Represents an enumerated value describing the way channels must be matched between the\"], # [doc = \" node's inputs and outputs.\"]])"
     },
     {
       "namespace": "web_audio_api::node::audio_node",
@@ -8002,7 +8042,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_count_mode, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2904481..2904486) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_count_mode, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2906517..2906522) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::node::audio_node",
@@ -8015,7 +8055,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=interpretation, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2905191..2905196) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Represents an enumerated value describing the meaning of the channels. This interpretation\"], # [doc = \" will define how audio up-mixing and down-mixing will happen.\"]])"
+      "item_fn": "GeneralizedItemFn(name=interpretation, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2907227..2907232) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Represents an enumerated value describing the meaning of the channels. This interpretation\"], # [doc = \" will define how audio up-mixing and down-mixing will happen.\"]])"
     },
     {
       "namespace": "web_audio_api::node::audio_node",
@@ -8028,7 +8068,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_interpretation, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2905338..2905343) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_interpretation, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2907374..2907379) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::node::audio_node",
@@ -8041,7 +8081,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=count, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2906061..2906066) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Represents an integer used to determine how many channels are used when up-mixing and\"], # [doc = \" down-mixing connections to any inputs to the node.\"]])"
+      "item_fn": "GeneralizedItemFn(name=count, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2908097..2908102) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Represents an integer used to determine how many channels are used when up-mixing and\"], # [doc = \" down-mixing connections to any inputs to the node.\"]])"
     },
     {
       "namespace": "web_audio_api::node::audio_node",
@@ -8054,7 +8094,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_count, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2906174..2906179) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_count, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: super, span: bytes(2908210..2908215) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::node::audio_node",
@@ -8067,7 +8107,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=inner, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2906735..2906740) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=inner, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(2908771..2908776) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::node::audio_node",
@@ -10563,7 +10603,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(3088191..3088196) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(3090423..3090428) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::node::destination",
@@ -10576,7 +10616,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=into_channel_config, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(3089008..3089013) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=into_channel_config, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(3091240..3091245) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::node::destination",
@@ -10589,7 +10629,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=from_raw_parts, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(3089129..3089134) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=from_raw_parts, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(3091361..3091366) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::node::destination",
@@ -13943,7 +13983,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=from_node, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5676746..5676751) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=from_node, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5679468..5679473) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::message_port",
@@ -14502,7 +14542,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_automation_rate_constrained, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5696524..5696529) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_automation_rate_constrained, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5699246..5699251) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::param",
@@ -14775,7 +14815,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=into_raw_parts, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5705502..5705507) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=into_raw_parts, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5708224..5708229) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::param",
@@ -14788,7 +14828,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=from_raw_parts, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5705658..5705663) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=from_raw_parts, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5708380..5708385) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::param",
@@ -15061,7 +15101,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=as_slice, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5747945..5747950) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=as_slice, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5750716..5750721) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::periodic_wave",
@@ -15399,7 +15439,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_load_value_sender, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5772036..5772041) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_load_value_sender, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5774807..5774812) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::thread",
@@ -15412,7 +15452,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=spawn_garbage_collector_thread, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5772245..5772250) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=spawn_garbage_collector_thread, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5775016..5775021) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::thread",
@@ -15594,7 +15634,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=send_ended_event, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5794963..5794968) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=send_ended_event, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5797930..5797935) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::processor",
@@ -15607,7 +15647,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=send_audio_processing_event, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5795143..5795148) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=send_audio_processing_event, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5798110..5798115) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::processor",
@@ -15620,7 +15660,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=report_error, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5795754..5795759) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=report_error, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5798721..5798726) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::processor",
@@ -15672,7 +15712,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=from, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5802390..5802395) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=from, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5805406..5805411) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::processor",
@@ -15698,7 +15738,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=listener_params, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5803169..5803174) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=listener_params, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5806185..5806190) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -15815,7 +15855,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=is_silent, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5807847..5807852) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" `O(1)` check if this buffer is equal to the 'silence buffer'\"], # [doc = \"\"], # [doc = \" If this function returns false, it is still possible for all samples to be zero.\"]])"
+      "item_fn": "GeneralizedItemFn(name=is_silent, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5810863..5810868) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" `O(1)` check if this buffer is equal to the 'silence buffer'\"], # [doc = \"\"], # [doc = \" If this function returns false, it is still possible for all samples to be zero.\"]])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -15828,7 +15868,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=add, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5808006..5808011) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Sum two channels\"]])"
+      "item_fn": "GeneralizedItemFn(name=add, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5811022..5811027) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Sum two channels\"]])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -15841,7 +15881,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=silence, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5808318..5808323) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=silence, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5811334..5811339) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -15932,7 +15972,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=from, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5811423..5811428) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Create a new `AudioRenderQuantum` from a single channel buffer\"]])"
+      "item_fn": "GeneralizedItemFn(name=from, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5814439..5814444) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Create a new `AudioRenderQuantum` from a single channel buffer\"]])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -15945,7 +15985,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=single_valued, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5811662..5811667) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=single_valued, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5814678..5814683) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -15958,7 +15998,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_single_valued, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5811740..5811745) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_single_valued, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5814756..5814761) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -16062,7 +16102,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=stereo_mut, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5814140..5814145) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=stereo_mut, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5817156..5817161) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -16075,7 +16115,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=mix, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5815155..5815160) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Up/Down-mix to the desired number of channels\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if the given number of channels is outside the [1, 32] range, 32\"], # [doc = \" being defined by the MAX_CHANNELS constant.\"], # [inline (always)]])"
+      "item_fn": "GeneralizedItemFn(name=mix, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5818171..5818176) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Up/Down-mix to the desired number of channels\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" This function will panic if the given number of channels is outside the [1, 32] range, 32\"], # [doc = \" being defined by the MAX_CHANNELS constant.\"], # [inline (always)]])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -16114,7 +16154,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=force_mono, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5826220..5826225) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Convert to a single channel buffer, dropping excess channels\"]])"
+      "item_fn": "GeneralizedItemFn(name=force_mono, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5829236..5829241) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Convert to a single channel buffer, dropping excess channels\"]])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -16127,7 +16167,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=modify_channels, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5826352..5826357) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Modify every channel in the same way\"]])"
+      "item_fn": "GeneralizedItemFn(name=modify_channels, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5829368..5829373) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Modify every channel in the same way\"]])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -16140,7 +16180,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=add, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5826696..5826701) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Sum two `AudioRenderQuantum`s\"], # [doc = \"\"], # [doc = \" Both buffers will be mixed up front according to the supplied `channel_config`\"]])"
+      "item_fn": "GeneralizedItemFn(name=add, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5829712..5829717) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Sum two `AudioRenderQuantum`s\"], # [doc = \"\"], # [doc = \" Both buffers will be mixed up front according to the supplied `channel_config`\"]])"
     },
     {
       "namespace": "web_audio_api::render::quantum",
@@ -16647,7 +16687,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=void, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5845373..5845378) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Creates a mock backend to be used as tombstones\"]])"
+      "item_fn": "GeneralizedItemFn(name=void, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5848389..5848394) }, arguments: PathArguments::None }] } }), attrs=[# [doc = \" Creates a mock backend to be used as tombstones\"]])"
     },
     {
       "namespace": "web_audio_api::io::none",
@@ -17011,7 +17051,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5884777..5884782) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=new, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5888044..5888049) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::io::microphone",
@@ -17492,7 +17532,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=take_stream, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5929624..5929629) }, arguments: PathArguments::None }] } }), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=take_stream, vis=Some(Visibility::Restricted { pub_token: Pub, paren_token: Paren, in_token: None, path: Path { leading_colon: None, segments: [PathSegment { ident: Ident { sym: crate, span: bytes(5933381..5933386) }, arguments: PathArguments::None }] } }), attrs=[])"
     },
     {
       "namespace": "web_audio_api::media_element",
@@ -17675,19 +17715,6 @@
         "Normal"
       ],
       "item_fn": "GeneralizedItemFn(name=get, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Get the computed values for the given [`AudioParam`]\"], # [doc = \"\"], # [doc = \" For k-rate params or if the (a-rate) parameter is constant for this block, it will provide\"], # [doc = \" a slice of length 1. In other cases, i.e. a-rate param with scheduled automations it will\"], # [doc = \" provide a slice of length equal to the render quantum size (default: 128)\"], # [allow (clippy :: missing_panics_doc)]])"
-    },
-    {
-      "namespace": "web_audio_api::worklet",
-      "owner": {
-        "StructOrEnum": {
-          "impl_ty": "AudioParamValues < 'a >",
-          "trait_def_name": null
-        }
-      },
-      "sources": [
-        "Normal"
-      ],
-      "item_fn": "GeneralizedItemFn(name=keys, vis=Some(Visibility::Public(Pub)), attrs=[])"
     },
     {
       "namespace": "web_audio_api::worklet",
@@ -18131,6 +18158,15 @@
     },
     {
       "name": "web_audio_api::media_devices/MediaDeviceInfo",
+      "visibility": "Public",
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "mirror": true
+    },
+    {
+      "name": "web_audio_api::media_devices/MediaTrackConstraints",
       "visibility": "Public",
       "sources": [
         "Normal",
@@ -19291,6 +19327,10 @@
       "impl_ty": "WaveShaperNode"
     },
     {
+      "trait_name": "Default",
+      "impl_ty": "AudioContextRenderSizeCategory"
+    },
+    {
       "trait_name": "Debug",
       "impl_ty": "AtomicF32"
     },
@@ -19365,10 +19405,6 @@
     {
       "trait_name": "Debug",
       "impl_ty": "AudioRenderCapacityEvent"
-    },
-    {
-      "trait_name": "Clone",
-      "impl_ty": "AudioRenderCapacity"
     },
     {
       "trait_name": "Debug",

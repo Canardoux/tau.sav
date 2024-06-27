@@ -20,8 +20,9 @@
 import 'package:flutter/material.dart';
 import 'display_graph.dart';
 
-import 'RustEx/StereoPanner/stereo_panner.dart';
-import 'MozillaEx/audio_basics/audio_basics.dart';
+import 'RustEx/StereoPanner/StereoPanner.dart';
+import 'MozillaEx/AudioBasics/AudioBasics.dart';
+import 'MozillaEx/AudioAnalyser/AudioAnalyser.dart';
 
 /*
     This APP is just a driver to call the various Tau examples.
@@ -40,15 +41,6 @@ final List<Example> rustExampleTable = [
       description: '''This is an example from Web Audio Api Rust.
 Un superbe example
 '''),
-  Example(
-      title: 'Zozo',
-      subTitle: 'Un autre exemple de Web Audio Api - Rust',
-      flags: 0,
-      route: (_) => const StereoPanner(),
-      graphImage: 'StereoPanner',
-      mod: 'Rust',
-      description: '''Un autre exemple.
-'''),
 ];
 final List<Example> mozillaExampleTable = [
   Example(
@@ -57,15 +49,17 @@ final List<Example> mozillaExampleTable = [
       flags: 0,
       route: (_) => const AudioBasics(),
       mod: 'Mozilla',
+      graphImage: 'AudioBasics',
       description: '''This is an example from mozilla.
 '''),
   Example(
-      title: 'Zozo',
-      subTitle: 'Un autre exemple de Mozilla',
+      title: 'Audio Analyser',
+      subTitle: 'Stereo Panner Example',
       flags: 0,
-      route: (_) => const AudioBasics(),
+      route: (_) => const AudioAnalyser(),
+      graphImage: 'AudioAnalyser',
       mod: 'Mozilla',
-      description: '''Un autre exemple.
+      description: '''This is an other example from Mozilla.
 '''),
 ];
 

@@ -230,15 +230,6 @@ static Future<AudioBuffer>  newInstance({required AudioBufferOptions options })=
  Future<void>  setAutomationRate({required AutomationRate value });
 
 
- Future<void>  setChannelCount({required int v });
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
 
 

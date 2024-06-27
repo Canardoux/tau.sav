@@ -98,18 +98,6 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeAnalyserNodeRegistration(that: this, );
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeAnalyserNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeAnalyserNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeAnalyserNodeSetChannelInterpretation(that: this, v: v);
-
-
 /// Set FFT size
 ///
 /// # Panics
@@ -318,18 +306,6 @@
 /// Panics if a buffer has already been given to the source (though `new` or through
 /// `set_buffer`)
  Future<void>  setBuffer({required AudioBuffer audioBuffer })=>RustLib.instance.api.webAudioApiNodeAudioBufferSourceNodeSetBuffer(that: this, audioBuffer: audioBuffer);
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeAudioBufferSourceNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeAudioBufferSourceNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeAudioBufferSourceNodeSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setLoop({required bool value })=>RustLib.instance.api.webAudioApiNodeAudioBufferSourceNodeSetLoop(that: this, value: value);
@@ -571,7 +547,7 @@
 
 
 /// Returns an [`AudioRenderCapacity`] instance associated with an AudioContext.
- Future<AudioRenderCapacity>  renderCapacity()=>RustLib.instance.api.webAudioApiContextAudioContextRenderCapacity(that: this, );
+ Future<void>  renderCapacity()=>RustLib.instance.api.webAudioApiContextAudioContextRenderCapacity(that: this, );
 
 
 /// Resumes the progression of time in an audio context that has previously been
@@ -724,16 +700,6 @@
 
 
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeAudioDestinationNodeRegistration(that: this, );
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeAudioDestinationNodeSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeAudioDestinationNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeAudioDestinationNodeSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeAudioDestinationNodeSetOnProcessorError(that: this, callback: callback);
@@ -920,15 +886,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -1151,18 +1108,6 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiWorkletAudioWorkletNodeRegistration(that: this, );
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiWorkletAudioWorkletNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiWorkletAudioWorkletNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiWorkletAudioWorkletNodeSetChannelInterpretation(that: this, v: v);
-
-
             }
             @sealed class BiquadFilterNodeImpl extends RustOpaque implements BiquadFilterNode {
                 // Not to be used by end users
@@ -1240,18 +1185,6 @@
 
 
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeBiquadFilterNodeRegistration(that: this, );
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeBiquadFilterNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeBiquadFilterNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeBiquadFilterNodeSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeBiquadFilterNodeSetOnProcessorError(that: this, callback: callback);
@@ -1383,16 +1316,6 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeChannelMergerNodeRegistration(that: this, );
 
 
- Future<void>  setChannelCount({required int count })=>RustLib.instance.api.webAudioApiNodeChannelMergerNodeSetChannelCount(that: this, count: count);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode })=>RustLib.instance.api.webAudioApiNodeChannelMergerNodeSetChannelCountMode(that: this, mode: mode);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeChannelMergerNodeSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeChannelMergerNodeSetOnProcessorError(that: this, callback: callback);
 
 
@@ -1457,15 +1380,6 @@
 
 
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeChannelSplitterNodeRegistration(that: this, );
-
-
- Future<void>  setChannelCount({required int count })=>RustLib.instance.api.webAudioApiNodeChannelSplitterNodeSetChannelCount(that: this, count: count);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode })=>RustLib.instance.api.webAudioApiNodeChannelSplitterNodeSetChannelCountMode(that: this, mode: mode);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation interpretation })=>RustLib.instance.api.webAudioApiNodeChannelSplitterNodeSetChannelInterpretation(that: this, interpretation: interpretation);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeChannelSplitterNodeSetOnProcessorError(that: this, callback: callback);
@@ -1686,18 +1600,6 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeConstantSourceNodeRegistration(that: this, );
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeConstantSourceNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeConstantSourceNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeConstantSourceNodeSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnEnded({required FutureOr<void> Function(Event) callback })=>RustLib.instance.api.webAudioApiNodeConstantSourceNodeSetOnEnded(that: this, callback: callback);
 
 
@@ -1792,18 +1694,6 @@
  Future<void>  setBuffer({required AudioBuffer buffer })=>RustLib.instance.api.webAudioApiNodeConvolverNodeSetBuffer(that: this, buffer: buffer);
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeConvolverNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeConvolverNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeConvolverNodeSetChannelInterpretation(that: this, v: v);
-
-
 /// Update the `normalize` setting. This will only have an effect when `set_buffer` is called.
  Future<void>  setNormalize({required bool value })=>RustLib.instance.api.webAudioApiNodeConvolverNodeSetNormalize(that: this, value: value);
 
@@ -1876,18 +1766,6 @@
 
 
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeDelayNodeRegistration(that: this, );
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeDelayNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeDelayNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeDelayNodeSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeDelayNodeSetOnProcessorError(that: this, callback: callback);
@@ -1969,16 +1847,6 @@
 
 
  AudioParam get release=>AudioParamProxyVariantDynamicsCompressorNodeRelease(this);
-
-
- Future<void>  setChannelCount({required int count })=>RustLib.instance.api.webAudioApiNodeDynamicsCompressorNodeSetChannelCount(that: this, count: count);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode })=>RustLib.instance.api.webAudioApiNodeDynamicsCompressorNodeSetChannelCountMode(that: this, mode: mode);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeDynamicsCompressorNodeSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeDynamicsCompressorNodeSetOnProcessorError(that: this, callback: callback);
@@ -2072,18 +1940,6 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeGainNodeRegistration(that: this, );
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeGainNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeGainNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeGainNodeSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeGainNodeSetOnProcessorError(that: this, callback: callback);
 
 
@@ -2150,18 +2006,6 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeIirFilterNodeRegistration(that: this, );
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeIirFilterNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeIirFilterNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeIirFilterNodeSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeIirFilterNodeSetOnProcessorError(that: this, callback: callback);
 
 
@@ -2226,18 +2070,6 @@
 
 
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeMediaElementAudioSourceNodeRegistration(that: this, );
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeMediaElementAudioSourceNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeMediaElementAudioSourceNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeMediaElementAudioSourceNodeSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeMediaElementAudioSourceNodeSetOnProcessorError(that: this, callback: callback);
@@ -2342,18 +2174,6 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioDestinationNodeRegistration(that: this, );
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioDestinationNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioDestinationNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioDestinationNodeSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioDestinationNodeSetOnProcessorError(that: this, callback: callback);
 
 
@@ -2423,18 +2243,6 @@
 
 
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioSourceNodeRegistration(that: this, );
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioSourceNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioSourceNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioSourceNodeSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeMediaStreamAudioSourceNodeSetOnProcessorError(that: this, callback: callback);
@@ -2537,18 +2345,6 @@
 
 
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeMediaStreamTrackAudioSourceNodeRegistration(that: this, );
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeMediaStreamTrackAudioSourceNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeMediaStreamTrackAudioSourceNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeMediaStreamTrackAudioSourceNodeSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeMediaStreamTrackAudioSourceNodeSetOnProcessorError(that: this, callback: callback);
@@ -2964,18 +2760,6 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeOscillatorNodeRegistration(that: this, );
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeOscillatorNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeOscillatorNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeOscillatorNodeSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnEnded({required FutureOr<void> Function(Event) callback })=>RustLib.instance.api.webAudioApiNodeOscillatorNodeSetOnEnded(that: this, callback: callback);
 
 
@@ -3122,16 +2906,6 @@
  Future<double>  rolloffFactor()=>RustLib.instance.api.webAudioApiNodePannerNodeRolloffFactor(that: this, );
 
 
- Future<void>  setChannelCount({required int count })=>RustLib.instance.api.webAudioApiNodePannerNodeSetChannelCount(that: this, count: count);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode })=>RustLib.instance.api.webAudioApiNodePannerNodeSetChannelCountMode(that: this, mode: mode);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodePannerNodeSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setConeInnerAngle({required double value })=>RustLib.instance.api.webAudioApiNodePannerNodeSetConeInnerAngle(that: this, value: value);
 
 
@@ -3272,16 +3046,6 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeScriptProcessorNodeRegistration(that: this, );
 
 
- Future<void>  setChannelCount({required int count })=>RustLib.instance.api.webAudioApiNodeScriptProcessorNodeSetChannelCount(that: this, count: count);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode })=>RustLib.instance.api.webAudioApiNodeScriptProcessorNodeSetChannelCountMode(that: this, mode: mode);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeScriptProcessorNodeSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeScriptProcessorNodeSetOnProcessorError(that: this, callback: callback);
 
 
@@ -3350,16 +3114,6 @@
 
 
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeStereoPannerNodeRegistration(that: this, );
-
-
- Future<void>  setChannelCount({required int count })=>RustLib.instance.api.webAudioApiNodeStereoPannerNodeSetChannelCount(that: this, count: count);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode })=>RustLib.instance.api.webAudioApiNodeStereoPannerNodeSetChannelCountMode(that: this, mode: mode);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeStereoPannerNodeSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeStereoPannerNodeSetOnProcessorError(that: this, callback: callback);
@@ -3433,18 +3187,6 @@
 
 
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeWaveShaperNodeRegistration(that: this, );
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiNodeWaveShaperNodeSetChannelCount(that: this, v: v);
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiNodeWaveShaperNodeSetChannelCountMode(that: this, v: v);
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiNodeWaveShaperNodeSetChannelInterpretation(that: this, v: v);
 
 
 /// Set the distortion `curve` of this node
@@ -3581,15 +3323,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -3749,15 +3482,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -3913,15 +3637,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -4081,15 +3796,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -4245,15 +3951,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -4413,15 +4110,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -4577,15 +4265,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -4745,15 +4424,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -4909,15 +4579,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -5077,15 +4738,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -5241,15 +4893,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -5409,15 +5052,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -5573,15 +5207,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -5741,15 +5366,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -5905,15 +5521,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -6073,15 +5680,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -6237,15 +5835,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -6405,15 +5994,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -6569,15 +6149,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -6737,15 +6308,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -6901,15 +6463,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -7069,15 +6622,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -7233,15 +6777,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -7401,15 +6936,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -7565,15 +7091,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -7733,15 +7250,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -7897,15 +7405,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -8065,15 +7564,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -8229,15 +7719,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
@@ -8397,15 +7878,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -8563,15 +8035,6 @@
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
 
 
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);
 
 
@@ -8727,15 +8190,6 @@
 ///
 /// Some nodes have automation rate constraints and may panic when updating the value.
  Future<void>  setAutomationRate({required AutomationRate value })=>RustLib.instance.api.webAudioApiAudioParamSetAutomationRate(that: this, value: value);
-
-
- Future<void>  setChannelCount({required int v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCount(that: this, v: v);
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelCountMode(that: this, v: v);
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation v })=>RustLib.instance.api.webAudioApiAudioParamSetChannelInterpretation(that: this, v: v);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiAudioParamSetOnProcessorError(that: this, callback: callback);

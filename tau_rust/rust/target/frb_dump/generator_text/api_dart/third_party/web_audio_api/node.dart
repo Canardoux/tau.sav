@@ -14,7 +14,7 @@ import 'worklet.dart';
             // These functions are ignored because they have generic arguments: `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect_from_output_to_input`, `connect`, `connect`, `connect`, `set_onended`, `set_onended`, `set_onended`, `set_onended`
 // These types are ignored because they are not used by any `pub` functions: `IIRFilterOptions`, `MediaElementAudioSourceOptions`, `MediaStreamAudioSourceOptions`, `MediaStreamRenderer`, `MediaStreamTrackAudioSourceOptions`, `ScriptProcessorOptions`
 // These function are ignored because they are on traits that is not defined in current crate (put an empty `#[frb]` on it to unignore): `process`
-// These functions are ignored (category: IgnoreBecauseExplicitAttribute): `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`
+// These functions are ignored (category: IgnoreBecauseExplicitAttribute): `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `context`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest_from_output`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `disconnect_dest`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count_mode`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_count`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_channel_interpretation`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`, `set_onprocessorerror`
 // These functions are ignored (category: IgnoreBecauseNotAllowedOwner): `channel_count_mode`, `channel_count`, `channel_interpretation`, `clear_onprocessorerror`, `context`, `disconnect_dest_from_output_to_input`, `disconnect_dest_from_output`, `disconnect_dest`, `disconnect_output`, `disconnect`, `set_onprocessorerror`
 
 
@@ -102,18 +102,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
 /// Set FFT size
@@ -268,18 +256,6 @@ import 'worklet.dart';
  Future<void>  setBuffer({required AudioBuffer audioBuffer });
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setLoop({required bool value });
 
 
@@ -384,16 +360,6 @@ import 'worklet.dart';
  Future<void>  registration();
 
 
- Future<void>  setChannelCount({required int v });
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
 
 
@@ -466,18 +432,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
@@ -561,16 +515,6 @@ import 'worklet.dart';
  Future<void>  registration();
 
 
- Future<void>  setChannelCount({required int count });
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
 
 
@@ -627,15 +571,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
- Future<void>  setChannelCount({required int count });
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode });
-
-
- Future<void>  setChannelInterpretation({required ChannelInterpretation interpretation });
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
@@ -701,18 +636,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
  Future<void>  setOnEnded({required FutureOr<void> Function(Event) callback });
@@ -801,18 +724,6 @@ import 'worklet.dart';
  Future<void>  setBuffer({required AudioBuffer buffer });
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
 /// Update the `normalize` setting. This will only have an effect when `set_buffer` is called.
  Future<void>  setNormalize({required bool value });
 
@@ -877,18 +788,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
@@ -964,16 +863,6 @@ import 'worklet.dart';
  AudioParam get release;
 
 
- Future<void>  setChannelCount({required int count });
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
 
 
@@ -1038,18 +927,6 @@ import 'worklet.dart';
  Future<void>  registration();
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
 
 
@@ -1106,18 +983,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
@@ -1178,18 +1043,6 @@ import 'worklet.dart';
  Future<void>  registration();
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
 
 
@@ -1246,18 +1099,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
@@ -1323,18 +1164,6 @@ import 'worklet.dart';
  Future<void>  registration();
 
 
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
 
 
@@ -1391,18 +1220,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
@@ -1483,18 +1300,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
  Future<void>  setOnEnded({required FutureOr<void> Function(Event) callback });
@@ -1635,16 +1440,6 @@ import 'worklet.dart';
  Future<double>  rolloffFactor();
 
 
- Future<void>  setChannelCount({required int count });
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setConeInnerAngle({required double value });
 
 
@@ -1760,16 +1555,6 @@ import 'worklet.dart';
  Future<void>  registration();
 
 
- Future<void>  setChannelCount({required int count });
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
-
-
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
 
 
@@ -1830,16 +1615,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
- Future<void>  setChannelCount({required int count });
-
-
- Future<void>  setChannelCountMode({required ChannelCountMode mode });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
@@ -1905,18 +1680,6 @@ import 'worklet.dart';
 
 
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
 /// Set the distortion `curve` of this node
@@ -2000,18 +1763,6 @@ import 'worklet.dart';
 ///
 /// Only when implementing the AudioNode trait manually, this struct is of any concern.
  Future<void>  registration();
-
-
-/// Update the `channel_count` attribute
- Future<void>  setChannelCount({required int v });
-
-
-/// Update the `channel_count_mode` attribute
- Future<void>  setChannelCountMode({required ChannelCountMode v });
-
-
-/// Update the `channel_interpretation` attribute
- Future<void>  setChannelInterpretation({required ChannelInterpretation v });
 
 
                 }

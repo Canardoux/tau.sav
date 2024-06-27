@@ -46,7 +46,7 @@ class DisplayGraph extends StatelessWidget {
         child: Container(
           color: Colors.blue,
           child: Image.asset(
-            "lib/${mod}Ex/${graphImage!}/${mod}Ex_${graphImage!}.png",
+            "lib/${mod}Ex/${graphImage!}/${mod}Ex_${graphImage!}_graph.png",
           ),
         ),
       ),

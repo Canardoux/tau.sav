@@ -1990,6 +1990,20 @@
       "item_fn": "GeneralizedItemFn(name=base, vis=None, attrs=[# [frb (ignore)]])"
     },
     {
+      "namespace": "web_audio_api::context",
+      "owner": {
+        "StructOrEnum": {
+          "impl_ty": "AudioContextRenderSizeCategory",
+          "trait_def_name": "Default"
+        }
+      },
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "item_fn": "GeneralizedItemFn(name=default, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)], # [frb (external)], # [frb (external)]])"
+    },
+    {
       "namespace": "web_audio_api::media_devices",
       "owner": "Function",
       "sources": [
@@ -2215,6 +2229,45 @@
         "MoveFromCrateThirdPartyFolder"
       ],
       "item_fn": "GeneralizedItemFn(name=disconnect_dest_from_output_to_input, vis=None, attrs=[# [frb (ignore)]])"
+    },
+    {
+      "namespace": "web_audio_api::node",
+      "owner": {
+        "TraitDef": {
+          "trait_def_name": "web_audio_api::node/AudioNode"
+        }
+      },
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [frb (ignore)]])"
+    },
+    {
+      "namespace": "web_audio_api::node",
+      "owner": {
+        "TraitDef": {
+          "trait_def_name": "web_audio_api::node/AudioNode"
+        }
+      },
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [frb (ignore)]])"
+    },
+    {
+      "namespace": "web_audio_api::node",
+      "owner": {
+        "TraitDef": {
+          "trait_def_name": "web_audio_api::node/AudioNode"
+        }
+      },
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -4923,19 +4976,6 @@
       "owner": {
         "StructOrEnum": {
           "impl_ty": "AudioRenderCapacity",
-          "trait_def_name": "Clone"
-        }
-      },
-      "sources": [
-        "Normal"
-      ],
-      "item_fn": "GeneralizedItemFn(name=clone, vis=Some(Visibility::Inherited), attrs=[# [inline], # [automatically_derived]])"
-    },
-    {
-      "namespace": "web_audio_api::capacity",
-      "owner": {
-        "StructOrEnum": {
-          "impl_ty": "AudioRenderCapacity",
           "trait_def_name": "Debug"
         }
       },
@@ -5954,19 +5994,6 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=render_capacity, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns an [`AudioRenderCapacity`] instance associated with an AudioContext.\"], # [must_use]])"
-    },
-    {
-      "namespace": "web_audio_api::context::online",
-      "owner": {
-        "StructOrEnum": {
-          "impl_ty": "AudioContext",
-          "trait_def_name": null
-        }
-      },
-      "sources": [
-        "Normal"
-      ],
       "item_fn": "GeneralizedItemFn(name=set_sink_id_sync, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Update the current audio output device.\"], # [doc = \"\"], # [doc = \" The provided `sink_id` string must match a device name `enumerate_devices_sync`.\"], # [doc = \"\"], # [doc = \" Supplying `\\\"none\\\"` for the `sink_id` will process the audio graph without playing through an\"], # [doc = \" audio output device.\"], # [doc = \"\"], # [doc = \" This function operates synchronously and might block the current thread. An async version\"], # [doc = \" is currently not implemented.\"], # [allow (clippy :: needless_collect , clippy :: missing_panics_doc)]])"
     },
     {
@@ -6032,7 +6059,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=resume, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Resumes the progression of time in an audio context that has previously been\"], # [doc = \" suspended/paused.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" Will panic if:\"], # [doc = \"\"], # [doc = \" * The audio device is not available\"], # [doc = \" * For a `BackendSpecificError`\"]])"
+      "item_fn": "GeneralizedItemFn(name=resume, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Resumes the progression of time in an audio context that has previously been\"], # [doc = \" suspended/paused.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" Will panic if:\"], # [doc = \"\"], # [doc = \" * The audio device is not available\"], # [doc = \" * For a `BackendSpecificError`\"], # [allow (clippy :: await_holding_lock)]])"
     },
     {
       "namespace": "web_audio_api::context::online",
@@ -6137,6 +6164,19 @@
         "Normal"
       ],
       "item_fn": "GeneralizedItemFn(name=create_media_element_source, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Creates a [`MediaElementAudioSourceNode`](node::MediaElementAudioSourceNode) from a\"], # [doc = \" [`MediaElement`]\"], # [must_use]])"
+    },
+    {
+      "namespace": "web_audio_api::context::online",
+      "owner": {
+        "StructOrEnum": {
+          "impl_ty": "AudioContext",
+          "trait_def_name": null
+        }
+      },
+      "sources": [
+        "Normal"
+      ],
+      "item_fn": "GeneralizedItemFn(name=render_capacity, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns an [`AudioRenderCapacity`] instance associated with an AudioContext.\"], # [must_use]])"
     },
     {
       "namespace": "web_audio_api::media_devices",
@@ -15374,19 +15414,6 @@
     {
       "namespace": "web_audio_api::worklet",
       "owner": {
-        "StructOrEnum": {
-          "impl_ty": "AudioParamValues < 'a >",
-          "trait_def_name": null
-        }
-      },
-      "sources": [
-        "Normal"
-      ],
-      "item_fn": "GeneralizedItemFn(name=keys, vis=Some(Visibility::Public(Pub)), attrs=[])"
-    },
-    {
-      "namespace": "web_audio_api::worklet",
-      "owner": {
         "TraitDef": {
           "trait_def_name": "web_audio_api::worklet/AudioWorkletProcessor"
         }
@@ -15800,6 +15827,15 @@
     },
     {
       "name": "web_audio_api::media_devices/MediaDeviceInfo",
+      "visibility": "Public",
+      "sources": [
+        "Normal",
+        "MoveFromCrateThirdPartyFolder"
+      ],
+      "mirror": true
+    },
+    {
+      "name": "web_audio_api::media_devices/MediaTrackConstraints",
       "visibility": "Public",
       "sources": [
         "Normal",
@@ -16960,6 +16996,10 @@
       "impl_ty": "WaveShaperNode"
     },
     {
+      "trait_name": "Default",
+      "impl_ty": "AudioContextRenderSizeCategory"
+    },
+    {
       "trait_name": "Debug",
       "impl_ty": "AtomicF32"
     },
@@ -17034,10 +17074,6 @@
     {
       "trait_name": "Debug",
       "impl_ty": "AudioRenderCapacityEvent"
-    },
-    {
-      "trait_name": "Clone",
-      "impl_ty": "AudioRenderCapacity"
     },
     {
       "trait_name": "Debug",

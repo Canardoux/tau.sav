@@ -558,7 +558,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -572,7 +572,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -586,7 +586,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::analyser",
@@ -1368,7 +1368,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -1382,7 +1382,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -1396,7 +1396,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::audio_buffer_source",
@@ -2138,7 +2138,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=resume, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Resumes the progression of time in an audio context that has previously been\"], # [doc = \" suspended/paused.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" Will panic if:\"], # [doc = \"\"], # [doc = \" * The audio device is not available\"], # [doc = \" * For a `BackendSpecificError`\"], # [frb (ignore)], # [frb (external)], # [frb (external)]])"
+      "item_fn": "GeneralizedItemFn(name=resume, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Resumes the progression of time in an audio context that has previously been\"], # [doc = \" suspended/paused.\"], # [doc = \"\"], # [doc = \" # Panics\"], # [doc = \"\"], # [doc = \" Will panic if:\"], # [doc = \"\"], # [doc = \" * The audio device is not available\"], # [doc = \" * For a `BackendSpecificError`\"], # [allow (clippy :: await_holding_lock)], # [frb (ignore)], # [frb (external)], # [frb (external)]])"
     },
     {
       "namespace": "web_audio_api::context::online",
@@ -2386,7 +2386,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=default, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=default, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)], # [frb (external)], # [frb (external)]])"
     },
     {
       "namespace": "web_audio_api::node::destination",
@@ -2633,7 +2633,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::destination",
@@ -2646,7 +2646,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -2660,7 +2660,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -3088,7 +3088,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::spatial",
@@ -3101,7 +3101,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::spatial",
@@ -3114,7 +3114,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -3332,7 +3332,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -3344,7 +3344,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -3356,7 +3356,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -3732,7 +3732,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::param",
@@ -3745,7 +3745,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::param",
@@ -3758,7 +3758,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -3902,19 +3902,6 @@
         "Normal"
       ],
       "item_fn": "GeneralizedItemFn(name=get, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Get the computed values for the given [`crate::param::AudioParam`]\"], # [doc = \"\"], # [doc = \" For k-rate params or if the (a-rate) parameter is constant for this block, it will provide\"], # [doc = \" a slice of length 1. In other cases, i.e. a-rate param with scheduled automations it will\"], # [doc = \" provide a slice of length equal to the render quantum size (default: 128)\"], # [allow (clippy :: missing_panics_doc)]])"
-    },
-    {
-      "namespace": "web_audio_api::worklet",
-      "owner": {
-        "StructOrEnum": {
-          "impl_ty": "AudioParamValues < 'a >",
-          "trait_def_name": null
-        }
-      },
-      "sources": [
-        "Normal"
-      ],
-      "item_fn": "GeneralizedItemFn(name=keys, vis=Some(Visibility::Public(Pub)), attrs=[])"
     },
     {
       "namespace": "web_audio_api::capacity",
@@ -4441,7 +4428,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -4455,7 +4442,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -4469,7 +4456,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -5193,7 +5180,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -5207,7 +5194,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -5221,7 +5208,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -5663,7 +5650,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::channel_merger",
@@ -5676,7 +5663,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -5690,7 +5677,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -6002,7 +5989,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::channel_splitter",
@@ -6015,7 +6002,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::channel_splitter",
@@ -6028,7 +6015,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -6785,7 +6772,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -6799,7 +6786,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -6813,7 +6800,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -7256,7 +7243,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -7270,7 +7257,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -7284,7 +7271,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::convolver",
@@ -7617,7 +7604,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -7631,7 +7618,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -7645,7 +7632,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -8035,7 +8022,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::dynamics_compressor",
@@ -8048,7 +8035,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -8062,7 +8049,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -8608,7 +8595,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -8622,7 +8609,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -8636,7 +8623,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -9131,7 +9118,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -9145,7 +9132,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -9159,7 +9146,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -9654,7 +9641,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -9668,7 +9655,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -9682,7 +9669,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -10140,7 +10127,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -10154,7 +10141,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -10168,7 +10155,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -10481,7 +10468,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -10495,7 +10482,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -10509,7 +10496,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -10874,7 +10861,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -10888,7 +10875,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -10902,7 +10889,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -12152,7 +12139,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -12166,7 +12153,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -12180,7 +12167,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -12830,7 +12817,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::panner",
@@ -12843,7 +12830,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -12857,7 +12844,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::panner",
@@ -13455,7 +13442,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::script_processor",
@@ -13468,7 +13455,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -13482,7 +13469,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -13807,7 +13794,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::stereo_panner",
@@ -13820,7 +13807,7 @@
       "sources": [
         "Normal"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=Some(Visibility::Inherited), attrs=[# [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -13834,7 +13821,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "crate::api::override_web_audio_api",
@@ -14227,7 +14214,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count, vis=None, attrs=[# [doc = \" Update the `channel_count` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -14241,7 +14228,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_count_mode, vis=None, attrs=[# [doc = \" Update the `channel_count_mode` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node",
@@ -14255,7 +14242,7 @@
         "Normal",
         "CopyFromTraitDef"
       ],
-      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"]])"
+      "item_fn": "GeneralizedItemFn(name=set_channel_interpretation, vis=None, attrs=[# [doc = \" Update the `channel_interpretation` attribute\"], # [frb (ignore)]])"
     },
     {
       "namespace": "web_audio_api::node::waveshaper",
@@ -15896,10 +15883,6 @@
     },
     {
       "trait_name": "Clone",
-      "impl_ty": "AudioRenderCapacity"
-    },
-    {
-      "trait_name": "Clone",
       "impl_ty": "AudioNodeId"
     },
     {
@@ -16768,6 +16751,10 @@
     },
     {
       "trait_name": "Default",
+      "impl_ty": "AudioContextRenderSizeCategory"
+    },
+    {
+      "trait_name": "Default",
       "impl_ty": "AudioRenderCapacityOptions"
     },
     {
@@ -17454,10 +17441,6 @@
     },
     {
       "name": "web_audio_api::capacity/fmt",
-      "reason": "IgnoreBecauseNotDefinedTrait"
-    },
-    {
-      "name": "web_audio_api::capacity/clone",
       "reason": "IgnoreBecauseNotDefinedTrait"
     },
     {

@@ -1077,16 +1077,8 @@
       "dart_api_type": "double"
     },
     {
-      "safe_ident": "box_autoadd_f_64",
-      "dart_api_type": "double"
-    },
-    {
       "safe_ident": "box_autoadd_periodic_wave_options",
       "dart_api_type": "PeriodicWaveOptions"
-    },
-    {
-      "safe_ident": "box_autoadd_u_32",
-      "dart_api_type": "int"
     },
     {
       "safe_ident": "channel_count_mode",
@@ -1189,14 +1181,6 @@
       "dart_api_type": "MediaStreamTrackState"
     },
     {
-      "safe_ident": "media_track_constraints",
-      "dart_api_type": "MediaTrackConstraints"
-    },
-    {
-      "safe_ident": "opt_String",
-      "dart_api_type": "String?"
-    },
-    {
       "safe_ident": "opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
       "dart_api_type": "AudioBuffer?"
     },
@@ -1207,14 +1191,6 @@
     {
       "safe_ident": "opt_box_autoadd_f_32",
       "dart_api_type": "double?"
-    },
-    {
-      "safe_ident": "opt_box_autoadd_f_64",
-      "dart_api_type": "double?"
-    },
-    {
-      "safe_ident": "opt_box_autoadd_u_32",
-      "dart_api_type": "int?"
     },
     {
       "safe_ident": "opt_list_prim_f_32_strict",
@@ -1251,10 +1227,6 @@
     {
       "safe_ident": "stereo_panner_options",
       "dart_api_type": "StereoPannerOptions"
-    },
-    {
-      "safe_ident": "u_32",
-      "dart_api_type": "int"
     },
     {
       "safe_ident": "u_8",

@@ -659,11 +659,7 @@ CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_WaveShaperNodePtr 
 
 @protected double dco_decode_box_autoadd_f_32(dynamic raw);
 
-@protected double dco_decode_box_autoadd_f_64(dynamic raw);
-
 @protected PeriodicWaveOptions dco_decode_box_autoadd_periodic_wave_options(dynamic raw);
-
-@protected int dco_decode_box_autoadd_u_32(dynamic raw);
 
 @protected ChannelCountMode dco_decode_channel_count_mode(dynamic raw);
 
@@ -715,19 +711,11 @@ CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_WaveShaperNodePtr 
 
 @protected MediaStreamTrackState dco_decode_media_stream_track_state(dynamic raw);
 
-@protected MediaTrackConstraints dco_decode_media_track_constraints(dynamic raw);
-
-@protected String? dco_decode_opt_String(dynamic raw);
-
 @protected AudioBuffer? dco_decode_opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer(dynamic raw);
 
 @protected PeriodicWave? dco_decode_opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave(dynamic raw);
 
 @protected double? dco_decode_opt_box_autoadd_f_32(dynamic raw);
-
-@protected double? dco_decode_opt_box_autoadd_f_64(dynamic raw);
-
-@protected int? dco_decode_opt_box_autoadd_u_32(dynamic raw);
 
 @protected Float32List? dco_decode_opt_list_prim_f_32_strict(dynamic raw);
 
@@ -746,8 +734,6 @@ CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_WaveShaperNodePtr 
 @protected (AudioParam,AudioParamId) dco_decode_record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id(dynamic raw);
 
 @protected StereoPannerOptions dco_decode_stereo_panner_options(dynamic raw);
-
-@protected int dco_decode_u_32(dynamic raw);
 
 @protected int dco_decode_u_8(dynamic raw);
 
@@ -1221,11 +1207,7 @@ CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_WaveShaperNodePtr 
 
 @protected double sse_decode_box_autoadd_f_32(SseDeserializer deserializer);
 
-@protected double sse_decode_box_autoadd_f_64(SseDeserializer deserializer);
-
 @protected PeriodicWaveOptions sse_decode_box_autoadd_periodic_wave_options(SseDeserializer deserializer);
-
-@protected int sse_decode_box_autoadd_u_32(SseDeserializer deserializer);
 
 @protected ChannelCountMode sse_decode_channel_count_mode(SseDeserializer deserializer);
 
@@ -1277,19 +1259,11 @@ CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_WaveShaperNodePtr 
 
 @protected MediaStreamTrackState sse_decode_media_stream_track_state(SseDeserializer deserializer);
 
-@protected MediaTrackConstraints sse_decode_media_track_constraints(SseDeserializer deserializer);
-
-@protected String? sse_decode_opt_String(SseDeserializer deserializer);
-
 @protected AudioBuffer? sse_decode_opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer(SseDeserializer deserializer);
 
 @protected PeriodicWave? sse_decode_opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave(SseDeserializer deserializer);
 
 @protected double? sse_decode_opt_box_autoadd_f_32(SseDeserializer deserializer);
-
-@protected double? sse_decode_opt_box_autoadd_f_64(SseDeserializer deserializer);
-
-@protected int? sse_decode_opt_box_autoadd_u_32(SseDeserializer deserializer);
 
 @protected Float32List? sse_decode_opt_list_prim_f_32_strict(SseDeserializer deserializer);
 
@@ -1308,8 +1282,6 @@ CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_WaveShaperNodePtr 
 @protected (AudioParam,AudioParamId) sse_decode_record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id(SseDeserializer deserializer);
 
 @protected StereoPannerOptions sse_decode_stereo_panner_options(SseDeserializer deserializer);
-
-@protected int sse_decode_u_32(SseDeserializer deserializer);
 
 @protected int sse_decode_u_8(SseDeserializer deserializer);
 
@@ -1789,11 +1761,7 @@ CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_WaveShaperNodePtr 
 
 @protected void sse_encode_box_autoadd_f_32(double self, SseSerializer serializer);
 
-@protected void sse_encode_box_autoadd_f_64(double self, SseSerializer serializer);
-
 @protected void sse_encode_box_autoadd_periodic_wave_options(PeriodicWaveOptions self, SseSerializer serializer);
-
-@protected void sse_encode_box_autoadd_u_32(int self, SseSerializer serializer);
 
 @protected void sse_encode_channel_count_mode(ChannelCountMode self, SseSerializer serializer);
 
@@ -1845,19 +1813,11 @@ CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_WaveShaperNodePtr 
 
 @protected void sse_encode_media_stream_track_state(MediaStreamTrackState self, SseSerializer serializer);
 
-@protected void sse_encode_media_track_constraints(MediaTrackConstraints self, SseSerializer serializer);
-
-@protected void sse_encode_opt_String(String? self, SseSerializer serializer);
-
 @protected void sse_encode_opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer(AudioBuffer? self, SseSerializer serializer);
 
 @protected void sse_encode_opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave(PeriodicWave? self, SseSerializer serializer);
 
 @protected void sse_encode_opt_box_autoadd_f_32(double? self, SseSerializer serializer);
-
-@protected void sse_encode_opt_box_autoadd_f_64(double? self, SseSerializer serializer);
-
-@protected void sse_encode_opt_box_autoadd_u_32(int? self, SseSerializer serializer);
 
 @protected void sse_encode_opt_list_prim_f_32_strict(Float32List? self, SseSerializer serializer);
 
@@ -1876,8 +1836,6 @@ CrossPlatformFinalizerArg get rust_arc_decrement_strong_count_WaveShaperNodePtr 
 @protected void sse_encode_record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id((AudioParam,AudioParamId) self, SseSerializer serializer);
 
 @protected void sse_encode_stereo_panner_options(StereoPannerOptions self, SseSerializer serializer);
-
-@protected void sse_encode_u_32(int self, SseSerializer serializer);
 
 @protected void sse_encode_u_8(int self, SseSerializer serializer);
 
