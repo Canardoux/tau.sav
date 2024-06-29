@@ -22,7 +22,9 @@ import 'display_graph.dart';
 
 import 'RustEx/StereoPanner/StereoPanner.dart';
 import 'MozillaEx/AudioBasics/AudioBasics.dart';
-import 'MozillaEx/AudioAnalyser/AudioAnalyser.dart';
+import 'MozillaEx/AudioAnalyser/AudioAnalyserEx.dart';
+import 'MozillaEx/AudioBuffer/AudioBufferEx.dart';
+import 'MozillaEx/AudioBufferSource/AudioBufferSourceEx.dart';
 
 /*
     This APP is just a driver to call the various Tau examples.
@@ -56,8 +58,17 @@ final List<Example> mozillaExampleTable = [
       title: 'Audio Analyser',
       subTitle: 'Audio Analyser Example',
       flags: 0,
-      route: (_) => const AudioAnalyser(),
+      route: (_) => const AudioAnalyserEx(),
       graphImage: 'AudioAnalyser',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Audio Buffer Source',
+      subTitle: 'Audio Buffer Source Node Example',
+      flags: 0,
+      route: (_) => const AudioBufferSourceEx(),
+      graphImage: 'AudioBufferSource',
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),
