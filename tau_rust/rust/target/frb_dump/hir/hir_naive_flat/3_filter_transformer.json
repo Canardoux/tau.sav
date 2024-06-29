@@ -1372,7 +1372,7 @@
         ],
         "is_module_public": true
       },
-      "item": "# [frb (external)] # [frb (external)] impl AudioListener { # [frb (proxy , sync , getter)] pub fn position_x () { } # [frb (proxy , sync , getter)] pub fn position_y () { } # [frb (proxy , sync , getter)] pub fn position_z () { } # [frb (proxy , sync , getter)] pub fn forward_x () { } # [frb (proxy , sync , getter)] pub fn forward_y () { } # [frb (proxy , sync , getter)] pub fn forward_z () { } # [frb (proxy , sync , getter)] pub fn up_x () { } # [frb (proxy , sync , getter)] pub fn up_y () { } # [frb (proxy , sync , getter)] pub fn up_z () { } }"
+      "item": "# [frb (external)] # [frb (external)] impl AudioListener { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn position_x () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn position_y () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn position_z () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn forward_x () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn forward_y () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn forward_z () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn up_x () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn up_y () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn up_z () { } }"
     },
     {
       "meta": {
@@ -2219,7 +2219,7 @@
         ],
         "is_module_public": true
       },
-      "item": "# [macro_export] macro_rules ! handle_getter_audio_param { ($ struct_name : ident ; $ ($ func_name : ident) ,+) => { # [frb (external)] impl $ struct_name { $ (# [frb (proxy , sync , getter)] pub fn $ func_name () { }) + } } ; }"
+      "item": "# [macro_export] macro_rules ! handle_getter_audio_param { ($ struct_name : ident ; $ ($ func_name : ident) ,+) => { # [frb (external)] impl $ struct_name { $ (# [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn $ func_name () { }) + } } ; }"
     },
     {
       "meta": {
@@ -2230,29 +2230,7 @@
         ],
         "is_module_public": true
       },
-      "item": "# [frb (external)] # [frb (external)] impl AudioBufferSourceNode { # [frb (proxy , sync , getter)] pub fn playback_rate () { } # [frb (proxy , sync , getter)] pub fn detune () { } }"
-    },
-    {
-      "meta": {
-        "namespace": "web_audio_api::node",
-        "sources": [
-          "Normal",
-          "MoveFromCrateThirdPartyFolder"
-        ],
-        "is_module_public": true
-      },
-      "item": "const _ : () = () ;"
-    },
-    {
-      "meta": {
-        "namespace": "web_audio_api::node",
-        "sources": [
-          "Normal",
-          "MoveFromCrateThirdPartyFolder"
-        ],
-        "is_module_public": true
-      },
-      "item": "# [frb (external)] # [frb (external)] impl BiquadFilterNode { # [frb (proxy , sync , getter)] pub fn gain () { } # [frb (proxy , sync , getter)] pub fn frequency () { } # [frb (proxy , sync , getter)] pub fn detune () { } # [frb (proxy , sync , getter)] pub fn q () { } }"
+      "item": "# [frb (external)] # [frb (external)] impl AudioBufferSourceNode { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn playback_rate () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn detune () { } }"
     },
     {
       "meta": {
@@ -2274,7 +2252,7 @@
         ],
         "is_module_public": true
       },
-      "item": "# [frb (external)] # [frb (external)] impl ConstantSourceNode { # [frb (proxy , sync , getter)] pub fn offset () { } }"
+      "item": "# [frb (external)] # [frb (external)] impl BiquadFilterNode { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn gain () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn frequency () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn detune () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn q () { } }"
     },
     {
       "meta": {
@@ -2296,7 +2274,7 @@
         ],
         "is_module_public": true
       },
-      "item": "# [frb (external)] # [frb (external)] impl DelayNode { # [frb (proxy , sync , getter)] pub fn delay_time () { } }"
+      "item": "# [frb (external)] # [frb (external)] impl ConstantSourceNode { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn offset () { } }"
     },
     {
       "meta": {
@@ -2318,7 +2296,7 @@
         ],
         "is_module_public": true
       },
-      "item": "# [frb (external)] # [frb (external)] impl DynamicsCompressorNode { # [frb (proxy , sync , getter)] pub fn attack () { } # [frb (proxy , sync , getter)] pub fn knee () { } # [frb (proxy , sync , getter)] pub fn ratio () { } # [frb (proxy , sync , getter)] pub fn release () { } # [frb (proxy , sync , getter)] pub fn threshold () { } }"
+      "item": "# [frb (external)] # [frb (external)] impl DelayNode { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn delay_time () { } }"
     },
     {
       "meta": {
@@ -2340,7 +2318,7 @@
         ],
         "is_module_public": true
       },
-      "item": "# [frb (external)] # [frb (external)] impl GainNode { # [frb (proxy , sync , getter)] pub fn gain () { } }"
+      "item": "# [frb (external)] # [frb (external)] impl DynamicsCompressorNode { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn attack () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn knee () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn ratio () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn release () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn threshold () { } }"
     },
     {
       "meta": {
@@ -2362,7 +2340,7 @@
         ],
         "is_module_public": true
       },
-      "item": "# [frb (external)] # [frb (external)] impl OscillatorNode { # [frb (proxy , sync , getter)] pub fn frequency () { } # [frb (proxy , sync , getter)] pub fn detune () { } }"
+      "item": "# [frb (external)] # [frb (external)] impl GainNode { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn gain () { } }"
     },
     {
       "meta": {
@@ -2384,7 +2362,7 @@
         ],
         "is_module_public": true
       },
-      "item": "# [frb (external)] # [frb (external)] impl PannerNode { # [frb (proxy , sync , getter)] pub fn position_x () { } # [frb (proxy , sync , getter)] pub fn position_y () { } # [frb (proxy , sync , getter)] pub fn position_z () { } # [frb (proxy , sync , getter)] pub fn orientation_x () { } # [frb (proxy , sync , getter)] pub fn orientation_y () { } # [frb (proxy , sync , getter)] pub fn orientation_z () { } }"
+      "item": "# [frb (external)] # [frb (external)] impl OscillatorNode { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn frequency () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn detune () { } }"
     },
     {
       "meta": {
@@ -2406,7 +2384,29 @@
         ],
         "is_module_public": true
       },
-      "item": "# [frb (external)] # [frb (external)] impl StereoPannerNode { # [frb (proxy , sync , getter)] pub fn pan () { } }"
+      "item": "# [frb (external)] # [frb (external)] impl PannerNode { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn position_x () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn position_y () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn position_z () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn orientation_x () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn orientation_y () { } # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn orientation_z () { } }"
+    },
+    {
+      "meta": {
+        "namespace": "web_audio_api::node",
+        "sources": [
+          "Normal",
+          "MoveFromCrateThirdPartyFolder"
+        ],
+        "is_module_public": true
+      },
+      "item": "const _ : () = () ;"
+    },
+    {
+      "meta": {
+        "namespace": "web_audio_api::node",
+        "sources": [
+          "Normal",
+          "MoveFromCrateThirdPartyFolder"
+        ],
+        "is_module_public": true
+      },
+      "item": "# [frb (external)] # [frb (external)] impl StereoPannerNode { # [frb (proxy , sync , getter)] # [doc = \"[LARPOUX]$func_name\"] pub fn pan () { } }"
     },
     {
       "meta": {

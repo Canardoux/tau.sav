@@ -160,6 +160,7 @@ abstract class AudioBufferSourceNode
   /// expressed in cents
   ///
   /// see <https://en.wikipedia.org/wiki/Cent_(music)>
+  ///[LARPOUX]$func_name
   AudioParam get detune;
 
   /// Disconnects all outgoing connections from the AudioNode.
@@ -194,6 +195,7 @@ abstract class AudioBufferSourceNode
   /// - `-1` will play the file in reverse
   ///
   /// Note that playback rate will also alter the pitch of the [`AudioBuffer`]
+  ///[LARPOUX]$func_name
   AudioParam get playbackRate;
 
   /// Current playhead position in seconds within the [`AudioBuffer`].
@@ -321,6 +323,7 @@ abstract class BiquadFilterNode
   Future<void> clearOnprocessorerror();
 
   /// Returns the detune audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get detune;
 
   /// Disconnects all outgoing connections from the AudioNode.
@@ -337,9 +340,11 @@ abstract class BiquadFilterNode
   Future<void> connect({required AudioNode dest});
 
   /// Returns the frequency audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get frequency;
 
   /// Returns the gain audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get gain;
 
   Future<int> numberOfInputs();
@@ -347,6 +352,7 @@ abstract class BiquadFilterNode
   Future<int> numberOfOutputs();
 
   /// Returns the Q audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get q;
 
   Future<void> registration();
@@ -502,6 +508,7 @@ abstract class ConstantSourceNode
 
   Future<int> numberOfOutputs();
 
+  ///[LARPOUX]$func_name
   AudioParam get offset;
 
   Future<void> registration();
@@ -598,6 +605,7 @@ abstract class DelayNode
   Future<void> clearOnprocessorerror();
 
   /// A-rate [`AudioParam`] representing the amount of delay (in seconds) to apply.
+  ///[LARPOUX]$func_name
   AudioParam get delayTime;
 
   /// Disconnects all outgoing connections from the AudioNode.
@@ -626,6 +634,7 @@ abstract class DelayNode
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DynamicsCompressorNode>>
 abstract class DynamicsCompressorNode
     implements RustOpaqueInterface, AudioNode, DynamicsCompressorNodeExt {
+  ///[LARPOUX]$func_name
   AudioParam get attack;
 
   Future<void> channelConfig();
@@ -658,23 +667,27 @@ abstract class DynamicsCompressorNode
 
   Future<void> connect({required AudioNode dest});
 
+  ///[LARPOUX]$func_name
   AudioParam get knee;
 
   Future<int> numberOfInputs();
 
   Future<int> numberOfOutputs();
 
+  ///[LARPOUX]$func_name
   AudioParam get ratio;
 
   Future<double> reduction();
 
   Future<void> registration();
 
+  ///[LARPOUX]$func_name
   AudioParam get release;
 
   Future<void> setOnProcessorError(
       {required FutureOr<void> Function(String) callback});
 
+  ///[LARPOUX]$func_name
   AudioParam get threshold;
 }
 
@@ -710,6 +723,7 @@ abstract class GainNode implements RustOpaqueInterface, AudioNode, GainNodeExt {
 
   Future<void> connect({required AudioNode dest});
 
+  ///[LARPOUX]$func_name
   AudioParam get gain;
 
   Future<int> numberOfInputs();
@@ -981,6 +995,7 @@ abstract class OscillatorNode
   /// see <https://en.wikipedia.org/wiki/Cent_(music)>
   ///
   /// The final frequency is calculated as follow: frequency * 2^(detune/1200)
+  ///[LARPOUX]$func_name
   AudioParam get detune;
 
   /// Disconnects all outgoing connections from the AudioNode.
@@ -1000,6 +1015,7 @@ abstract class OscillatorNode
   /// oscillator, expressed in Hz
   ///
   /// The final frequency is calculated as follow: frequency * 2^(detune/1200)
+  ///[LARPOUX]$func_name
   AudioParam get frequency;
 
   /// `OscillatorNode` is a source node. A source node is by definition with no input
@@ -1091,18 +1107,24 @@ abstract class PannerNode
 
   Future<int> numberOfOutputs();
 
+  ///[LARPOUX]$func_name
   AudioParam get orientationX;
 
+  ///[LARPOUX]$func_name
   AudioParam get orientationY;
 
+  ///[LARPOUX]$func_name
   AudioParam get orientationZ;
 
   Future<PanningModelType> panningModel();
 
+  ///[LARPOUX]$func_name
   AudioParam get positionX;
 
+  ///[LARPOUX]$func_name
   AudioParam get positionY;
 
+  ///[LARPOUX]$func_name
   AudioParam get positionZ;
 
   Future<double> refDistance();
@@ -1243,6 +1265,7 @@ abstract class StereoPannerNode
   Future<int> numberOfOutputs();
 
   /// Returns the pan audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get pan;
 
   Future<void> registration();

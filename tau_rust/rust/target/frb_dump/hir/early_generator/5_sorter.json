@@ -1155,7 +1155,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=detune, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" K-rate [`AudioParam`] that defines a pitch transposition of the file,\"], # [doc = \" expressed in cents\"], # [doc = \"\"], # [doc = \" see <https://en.wikipedia.org/wiki/Cent_(music)>\"], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=detune, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" K-rate [`AudioParam`] that defines a pitch transposition of the file,\"], # [doc = \" expressed in cents\"], # [doc = \"\"], # [doc = \" see <https://en.wikipedia.org/wiki/Cent_(music)>\"], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node",
@@ -1316,7 +1316,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=playback_rate, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" K-rate [`AudioParam`] that defines the speed at which the [`AudioBuffer`]\"], # [doc = \" will be played, e.g.:\"], # [doc = \" - `0.5` will play the file at half speed\"], # [doc = \" - `-1` will play the file in reverse\"], # [doc = \"\"], # [doc = \" Note that playback rate will also alter the pitch of the [`AudioBuffer`]\"], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=playback_rate, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" K-rate [`AudioParam`] that defines the speed at which the [`AudioBuffer`]\"], # [doc = \" will be played, e.g.:\"], # [doc = \" - `0.5` will play the file at half speed\"], # [doc = \" - `-1` will play the file in reverse\"], # [doc = \"\"], # [doc = \" Note that playback rate will also alter the pitch of the [`AudioBuffer`]\"], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::audio_buffer_source",
@@ -2726,7 +2726,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=forward_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=forward_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::spatial",
@@ -2739,7 +2739,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=forward_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=forward_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::spatial",
@@ -2752,7 +2752,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=forward_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=forward_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::spatial",
@@ -2765,7 +2765,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=position_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=position_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::spatial",
@@ -2778,7 +2778,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=position_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=position_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::spatial",
@@ -2791,7 +2791,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=position_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=position_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::spatial",
@@ -2804,7 +2804,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=up_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=up_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::spatial",
@@ -2817,7 +2817,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=up_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=up_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::spatial",
@@ -2830,7 +2830,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=up_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=up_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::spatial",
@@ -4993,7 +4993,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=detune, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the detune audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=detune, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the detune audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node",
@@ -5076,7 +5076,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=frequency, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the frequency audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=frequency, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the frequency audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::biquad_filter",
@@ -5089,7 +5089,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=gain, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the gain audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=gain, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the gain audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::biquad_filter",
@@ -5154,7 +5154,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=q, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the Q audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=q, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the Q audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::biquad_filter",
@@ -6746,7 +6746,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=offset, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=offset, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::constant_source",
@@ -7474,7 +7474,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=delay_time, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" A-rate [`AudioParam`] representing the amount of delay (in seconds) to apply.\"], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=delay_time, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" A-rate [`AudioParam`] representing the amount of delay (in seconds) to apply.\"], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::delay",
@@ -7724,7 +7724,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=attack, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=attack, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::dynamics_compressor",
@@ -7919,7 +7919,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=knee, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=knee, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::dynamics_compressor",
@@ -7971,7 +7971,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=ratio, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=ratio, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::dynamics_compressor",
@@ -8010,7 +8010,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=release, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=release, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::dynamics_compressor",
@@ -8090,7 +8090,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=threshold, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=threshold, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "crate::api::override_web_audio_api",
@@ -8530,7 +8530,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=gain, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=gain, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::gain",
@@ -11991,7 +11991,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=detune, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" A-rate [`AudioParam`] that defines a transposition according to the\"], # [doc = \" frequency, expressed in cents.\"], # [doc = \"\"], # [doc = \" see <https://en.wikipedia.org/wiki/Cent_(music)>\"], # [doc = \"\"], # [doc = \" The final frequency is calculated as follow: frequency * 2^(detune/1200)\"], # [must_use], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=detune, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" A-rate [`AudioParam`] that defines a transposition according to the\"], # [doc = \" frequency, expressed in cents.\"], # [doc = \"\"], # [doc = \" see <https://en.wikipedia.org/wiki/Cent_(music)>\"], # [doc = \"\"], # [doc = \" The final frequency is calculated as follow: frequency * 2^(detune/1200)\"], # [must_use], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node",
@@ -12074,7 +12074,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=frequency, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" A-rate [`AudioParam`] that defines the fundamental frequency of the\"], # [doc = \" oscillator, expressed in Hz\"], # [doc = \"\"], # [doc = \" The final frequency is calculated as follow: frequency * 2^(detune/1200)\"], # [must_use], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=frequency, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" A-rate [`AudioParam`] that defines the fundamental frequency of the\"], # [doc = \" oscillator, expressed in Hz\"], # [doc = \"\"], # [doc = \" The final frequency is calculated as follow: frequency * 2^(detune/1200)\"], # [must_use], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::oscillator",
@@ -12688,7 +12688,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=orientation_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=orientation_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::panner",
@@ -12701,7 +12701,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=orientation_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=orientation_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::panner",
@@ -12714,7 +12714,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=orientation_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=orientation_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::panner",
@@ -12740,7 +12740,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=position_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=position_x, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::panner",
@@ -12753,7 +12753,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=position_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=position_y, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::panner",
@@ -12766,7 +12766,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=position_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=position_z, vis=Some(Visibility::Public(Pub)), attrs=[# [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::panner",
@@ -13769,7 +13769,7 @@
         "sources": [
           "Normal"
         ],
-        "item_fn": "GeneralizedItemFn(name=pan, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the pan audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [frb (external)], # [frb (external)]])"
+        "item_fn": "GeneralizedItemFn(name=pan, vis=Some(Visibility::Public(Pub)), attrs=[# [doc = \" Returns the pan audio parameter\"], # [must_use], # [frb (proxy , sync , getter)], # [doc = \"[LARPOUX]$func_name\"], # [frb (external)], # [frb (external)]])"
       },
       {
         "namespace": "web_audio_api::node::stereo_panner",

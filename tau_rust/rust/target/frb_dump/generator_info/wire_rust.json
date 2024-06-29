@@ -7,8 +7,8 @@
         "Web": "String"
       },
       "rust_wire_modifier": {
-        "Io": "*mut ",
-        "Web": ""
+        "Web": "",
+        "Io": "*mut "
       },
       "wrapper_struct_name": null
     },
@@ -27,8 +27,8 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -63,20 +63,20 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioWorkletNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -91,8 +91,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -111,8 +111,8 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelSplitterNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -127,8 +127,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -147,6 +147,18 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode",
       "rust_wire_type": {
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode",
+      "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
@@ -157,7 +169,19 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode",
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
+      "rust_wire_type": {
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
       "rust_wire_type": {
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
         "Io": "usize"
@@ -169,38 +193,14 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
-      "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
-      "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -223,16 +223,16 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrackAudioSourceNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -255,12 +255,12 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -271,8 +271,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -283,25 +283,13 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
-      "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
-      },
-      "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAnalyserNode",
       "rust_wire_type": {
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
         "Io": "usize"
@@ -313,14 +301,26 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAnalyserNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
         "Web": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
+      "rust_wire_type": {
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -355,8 +355,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -367,28 +367,28 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamId",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -411,8 +411,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacity",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -439,8 +439,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -451,8 +451,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -475,8 +475,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -487,8 +487,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -499,8 +499,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -511,16 +511,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -567,8 +567,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerEvent",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -579,8 +579,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -603,12 +603,12 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -627,12 +627,12 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStream",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -655,20 +655,20 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamConstraints",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -687,8 +687,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrackAudioSourceNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -703,28 +703,28 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
-      "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
-      },
-      "rust_wire_modifier": {
         "Io": "",
         "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
       "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
+      "rust_wire_type": {
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -735,20 +735,20 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -787,16 +787,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -819,8 +819,8 @@
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -831,20 +831,20 @@
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioProcessingEvent",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -867,8 +867,8 @@
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -943,28 +943,28 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
-      "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
-      },
-      "rust_wire_modifier": {
         "Io": "",
         "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
       "rust_wire_type": {
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
         "Io": "usize"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
+      "rust_wire_type": {
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -999,8 +999,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1010,18 +1010,6 @@
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
-      "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
-      },
-      "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContext",
       "rust_wire_type": {
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
         "Io": "usize"
@@ -1033,7 +1021,7 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContextRegistration",
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContext",
       "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
@@ -1045,14 +1033,26 @@
       "wrapper_struct_name": null
     },
     {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContextRegistration",
+      "rust_wire_type": {
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioDestinationNode",
       "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -1071,8 +1071,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1083,8 +1083,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioProcessingEvent",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1095,20 +1095,20 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacity",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacityEvent",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1123,8 +1123,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -1135,16 +1135,16 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBlobEvent",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -1171,20 +1171,20 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConcreteBaseAudioContext",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -1195,16 +1195,16 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConvolverNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -1219,8 +1219,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -1239,12 +1239,12 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerEvent",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -1263,8 +1263,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1275,42 +1275,6 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaRecorder",
-      "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStream",
-      "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode",
-      "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
@@ -1321,10 +1285,46 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioSourceNode",
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaRecorder",
+      "rust_wire_type": {
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStream",
       "rust_wire_type": {
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
         "Io": "usize"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode",
+      "rust_wire_type": {
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioSourceNode",
+      "rust_wire_type": {
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1339,8 +1339,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -1351,16 +1351,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyMediaElement",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1371,8 +1371,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1383,8 +1383,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1395,41 +1395,29 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerScriptProcessorNode",
-      "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
-      },
-      "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
       "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
@@ -1437,6 +1425,18 @@
       "rust_wire_modifier": {
         "Web": "",
         "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
+      "rust_wire_type": {
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
+      },
+      "rust_wire_modifier": {
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -1447,16 +1447,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "CastedPrimitive_i_64",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "i64"
+        "Io": "i64",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1467,12 +1467,12 @@
     {
       "safe_ident": "CastedPrimitive_usize",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -1483,8 +1483,8 @@
         "Io": "*const std::ffi::c_void"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -1503,60 +1503,60 @@
     {
       "safe_ident": "DartFn_Inputs_String_Output_unit_AnyhowException",
       "rust_wire_type": {
-        "Io": "*const std::ffi::c_void",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "*const std::ffi::c_void"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "DartOpaque",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "*const std::ffi::c_void"
+        "Io": "*const std::ffi::c_void",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "DynTrait_AudioNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "wire_cst_audio_node_implementor"
+        "Io": "wire_cst_audio_node_implementor",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "ProxyEnum_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum"
+        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "ProxyEnum_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum",
       "rust_wire_type": {
-        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -1567,8 +1567,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -1587,8 +1587,8 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_forward_x",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -1603,8 +1603,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -1623,8 +1623,8 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_position_x",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1635,8 +1635,8 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_position_y",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1659,6 +1659,18 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_x",
       "rust_wire_type": {
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+      },
+      "rust_wire_modifier": {
+        "Io": "",
+        "Web": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_y",
+      "rust_wire_type": {
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
         "Io": "usize"
       },
@@ -1669,7 +1681,7 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_y",
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_z",
       "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
@@ -1681,22 +1693,10 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_z",
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode_detune",
       "rust_wire_type": {
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
         "Io": "usize"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode_detune",
-      "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1711,16 +1711,16 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode_gain",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1735,8 +1735,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -1747,8 +1747,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -1759,8 +1759,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -1779,12 +1779,12 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_knee",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -1795,8 +1795,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -1807,16 +1807,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_threshold",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -1827,18 +1827,6 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode_gain",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode_stream",
-      "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
@@ -1849,10 +1837,22 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode_detune",
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode_stream",
       "rust_wire_type": {
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
         "Io": "usize"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode_detune",
+      "rust_wire_type": {
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1867,20 +1867,20 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_orientation_x",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -1891,16 +1891,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_orientation_z",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -1911,41 +1911,29 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_position_x",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_position_y",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_position_z",
-      "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode_pan",
       "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
@@ -1957,10 +1945,22 @@
       "wrapper_struct_name": null
     },
     {
+      "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode_pan",
+      "rust_wire_type": {
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAnalyserNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -1995,12 +1995,12 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContext",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2019,12 +2019,12 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioDestinationNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2035,8 +2035,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2055,12 +2055,12 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamId",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2079,12 +2079,12 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacity",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2095,8 +2095,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2119,8 +2119,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2131,16 +2131,16 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelConfig",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -2155,16 +2155,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelSplitterNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -2191,20 +2191,20 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConvolverNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2227,8 +2227,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2239,8 +2239,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2259,8 +2259,8 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -2271,12 +2271,12 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2299,8 +2299,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2311,20 +2311,20 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioSourceNode",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "usize"
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2371,8 +2371,8 @@
         "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2391,8 +2391,8 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -2415,6 +2415,18 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
       "rust_wire_type": {
+        "Io": "usize",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+      },
+      "rust_wire_modifier": {
+        "Web": "",
+        "Io": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
+      "rust_wire_type": {
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
         "Io": "usize"
       },
@@ -2425,34 +2437,22 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
-      "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerScriptProcessorNode",
       "rust_wire_type": {
         "Io": "usize",
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -2475,8 +2475,8 @@
     {
       "safe_ident": "StreamSink_log_entry_Sse",
       "rust_wire_type": {
-        "Web": "String",
-        "Io": "wire_cst_list_prim_u_8_strict"
+        "Io": "wire_cst_list_prim_u_8_strict",
+        "Web": "String"
       },
       "rust_wire_modifier": {
         "Io": "*mut ",
@@ -2503,8 +2503,8 @@
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2515,8 +2515,8 @@
         "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2539,16 +2539,16 @@
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "TraitDef_AudioDestinationNodeExt",
       "rust_wire_type": {
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -2563,28 +2563,28 @@
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "TraitDef_AudioParamExt",
       "rust_wire_type": {
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "TraitDef_AudioScheduledSourceNode",
       "rust_wire_type": {
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -2595,12 +2595,12 @@
     {
       "safe_ident": "TraitDef_AudioWorkletProcessor",
       "rust_wire_type": {
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2611,16 +2611,16 @@
         "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "TraitDef_BiquadFilterNodeExt",
       "rust_wire_type": {
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -2630,30 +2630,6 @@
     },
     {
       "safe_ident": "TraitDef_ChannelMergerNodeExt",
-      "rust_wire_type": {
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
-      },
-      "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "TraitDef_ChannelSplitterNodeExt",
-      "rust_wire_type": {
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
-      },
-      "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "TraitDef_ConstantSourceNodeExt",
       "rust_wire_type": {
         "Web": "UNREACHABLE_RUST_WIRE_TYPE",
         "Io": "UNREACHABLE_RUST_WIRE_TYPE"
@@ -2665,10 +2641,10 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "TraitDef_ConstantSourceNodeScheduledSourceNodeMiscExt",
+      "safe_ident": "TraitDef_ChannelSplitterNodeExt",
       "rust_wire_type": {
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -2677,10 +2653,34 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "TraitDef_ConvolverNodeExt",
+      "safe_ident": "TraitDef_ConstantSourceNodeExt",
       "rust_wire_type": {
         "Io": "UNREACHABLE_RUST_WIRE_TYPE",
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
+      },
+      "rust_wire_modifier": {
+        "Io": "",
+        "Web": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "TraitDef_ConstantSourceNodeScheduledSourceNodeMiscExt",
+      "rust_wire_type": {
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
+      },
+      "rust_wire_modifier": {
+        "Io": "",
+        "Web": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "TraitDef_ConvolverNodeExt",
+      "rust_wire_type": {
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -2695,16 +2695,16 @@
         "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "TraitDef_DynamicsCompressorNodeExt",
       "rust_wire_type": {
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -2727,12 +2727,12 @@
     {
       "safe_ident": "TraitDef_GainNodeExt",
       "rust_wire_type": {
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2743,8 +2743,8 @@
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2755,37 +2755,13 @@
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "TraitDef_MediaStreamAudioDestinationNodeExt",
-      "rust_wire_type": {
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
-      },
-      "rust_wire_modifier": {
         "Web": "",
         "Io": ""
       },
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "TraitDef_MediaStreamAudioSourceNodeExt",
-      "rust_wire_type": {
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
-      },
-      "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
-      },
-      "wrapper_struct_name": null
-    },
-    {
-      "safe_ident": "TraitDef_MediaStreamExt",
+      "safe_ident": "TraitDef_MediaStreamAudioDestinationNodeExt",
       "rust_wire_type": {
         "Io": "UNREACHABLE_RUST_WIRE_TYPE",
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
@@ -2797,10 +2773,34 @@
       "wrapper_struct_name": null
     },
     {
-      "safe_ident": "TraitDef_MediaStreamTrackAudioSourceNodeExt",
+      "safe_ident": "TraitDef_MediaStreamAudioSourceNodeExt",
+      "rust_wire_type": {
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
+      },
+      "rust_wire_modifier": {
+        "Io": "",
+        "Web": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "TraitDef_MediaStreamExt",
       "rust_wire_type": {
         "Web": "UNREACHABLE_RUST_WIRE_TYPE",
         "Io": "UNREACHABLE_RUST_WIRE_TYPE"
+      },
+      "rust_wire_modifier": {
+        "Io": "",
+        "Web": ""
+      },
+      "wrapper_struct_name": null
+    },
+    {
+      "safe_ident": "TraitDef_MediaStreamTrackAudioSourceNodeExt",
+      "rust_wire_type": {
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -2815,8 +2815,8 @@
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -2835,20 +2835,20 @@
     {
       "safe_ident": "TraitDef_OscillatorNodeScheduledSourceNodeMiscExt",
       "rust_wire_type": {
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "TraitDef_PannerNodeExt",
       "rust_wire_type": {
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -2859,8 +2859,8 @@
     {
       "safe_ident": "TraitDef_ScriptProcessorNodeExt",
       "rust_wire_type": {
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -2871,12 +2871,12 @@
     {
       "safe_ident": "TraitDef_StereoPannerNodeExt",
       "rust_wire_type": {
-        "Web": "UNREACHABLE_RUST_WIRE_TYPE",
-        "Io": "UNREACHABLE_RUST_WIRE_TYPE"
+        "Io": "UNREACHABLE_RUST_WIRE_TYPE",
+        "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2887,8 +2887,8 @@
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2899,8 +2899,8 @@
         "Web": "UNREACHABLE_RUST_WIRE_TYPE"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -2923,8 +2923,8 @@
         "Io": "wire_cst_audio_buffer_options"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::AudioBufferOptions>"
     },
@@ -2947,8 +2947,8 @@
         "Io": "wire_cst_audio_context_latency_category"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::context::AudioContextLatencyCategory>"
     },
@@ -2959,8 +2959,8 @@
         "Io": "wire_cst_audio_context_options"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::context::AudioContextOptions>"
     },
@@ -2971,8 +2971,8 @@
         "Io": "i32"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::context::AudioContextRenderSizeCategory>"
     },
@@ -2983,8 +2983,8 @@
         "Web": "i32"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::context::AudioContextState>"
     },
@@ -3003,12 +3003,12 @@
     {
       "safe_ident": "audio_node_options",
       "rust_wire_type": {
-        "Io": "wire_cst_audio_node_options",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "wire_cst_audio_node_options"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::AudioNodeOptions>"
     },
@@ -3019,32 +3019,32 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::AudioParamDescriptor>"
     },
     {
       "safe_ident": "audio_render_capacity_options",
       "rust_wire_type": {
-        "Io": "wire_cst_audio_render_capacity_options",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "wire_cst_audio_render_capacity_options"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::AudioRenderCapacityOptions>"
     },
     {
       "safe_ident": "auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum",
       "rust_wire_type": {
-        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -3055,16 +3055,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "automation_rate",
       "rust_wire_type": {
-        "Web": "i32",
-        "Io": "i32"
+        "Io": "i32",
+        "Web": "i32"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -3079,16 +3079,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::BiquadFilterOptions>"
     },
     {
       "safe_ident": "biquad_filter_type",
       "rust_wire_type": {
-        "Io": "i32",
-        "Web": "i32"
+        "Web": "i32",
+        "Io": "i32"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -3103,8 +3103,8 @@
         "Web": "bool"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": null
     },
@@ -3115,8 +3115,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": "*mut "
+        "Io": "*mut ",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -3127,16 +3127,16 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": "*mut "
+        "Io": "*mut ",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "box_autoadd_audio_buffer_options",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "wire_cst_audio_buffer_options"
+        "Io": "wire_cst_audio_buffer_options",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "*mut ",
@@ -3151,8 +3151,8 @@
         "Io": "wire_cst_audio_context_options"
       },
       "rust_wire_modifier": {
-        "Io": "*mut ",
-        "Web": ""
+        "Web": "",
+        "Io": "*mut "
       },
       "wrapper_struct_name": null
     },
@@ -3183,8 +3183,8 @@
     {
       "safe_ident": "box_autoadd_audio_render_capacity_options",
       "rust_wire_type": {
-        "Io": "wire_cst_audio_render_capacity_options",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "wire_cst_audio_render_capacity_options"
       },
       "rust_wire_modifier": {
         "Io": "*mut ",
@@ -3207,20 +3207,20 @@
     {
       "safe_ident": "box_autoadd_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum",
       "rust_wire_type": {
-        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum"
       },
       "rust_wire_modifier": {
-        "Io": "*mut ",
-        "Web": ""
+        "Web": "",
+        "Io": "*mut "
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "box_autoadd_f_32",
       "rust_wire_type": {
-        "Io": "f32",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "f32"
       },
       "rust_wire_modifier": {
         "Io": "*mut ",
@@ -3243,12 +3243,12 @@
     {
       "safe_ident": "channel_count_mode",
       "rust_wire_type": {
-        "Io": "i32",
-        "Web": "i32"
+        "Web": "i32",
+        "Io": "i32"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::ChannelCountMode>"
     },
@@ -3291,12 +3291,12 @@
     {
       "safe_ident": "constant_source_options",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "wire_cst_constant_source_options"
+        "Io": "wire_cst_constant_source_options",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::ConstantSourceOptions>"
     },
@@ -3307,8 +3307,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::ConvolverOptions>"
     },
@@ -3319,8 +3319,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::DelayOptions>"
     },
@@ -3351,12 +3351,12 @@
     {
       "safe_ident": "f_32",
       "rust_wire_type": {
-        "Io": "f32",
-        "Web": "f32"
+        "Web": "f32",
+        "Io": "f32"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
@@ -3391,16 +3391,16 @@
         "Web": "i32"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "i_64",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "i64"
+        "Io": "i64",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -3411,8 +3411,8 @@
     {
       "safe_ident": "level",
       "rust_wire_type": {
-        "Web": "i32",
-        "Io": "i32"
+        "Io": "i32",
+        "Web": "i32"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -3435,20 +3435,20 @@
     {
       "safe_ident": "list_audio_param_descriptor",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "wire_cst_list_audio_param_descriptor"
+        "Io": "wire_cst_list_audio_param_descriptor",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "*mut ",
-        "Web": ""
+        "Web": "",
+        "Io": "*mut "
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "list_list_prim_f_32_strict",
       "rust_wire_type": {
-        "Io": "wire_cst_list_list_prim_f_32_strict",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "wire_cst_list_list_prim_f_32_strict"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -3459,20 +3459,20 @@
     {
       "safe_ident": "list_prim_f_32_loose",
       "rust_wire_type": {
-        "Io": "wire_cst_list_prim_f_32_loose",
-        "Web": "Box<[f32]>"
+        "Web": "Box<[f32]>",
+        "Io": "wire_cst_list_prim_f_32_loose"
       },
       "rust_wire_modifier": {
-        "Io": "*mut ",
-        "Web": ""
+        "Web": "",
+        "Io": "*mut "
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "list_prim_f_32_strict",
       "rust_wire_type": {
-        "Io": "wire_cst_list_prim_f_32_strict",
-        "Web": "Box<[f32]>"
+        "Web": "Box<[f32]>",
+        "Io": "wire_cst_list_prim_f_32_strict"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -3487,8 +3487,8 @@
         "Web": "Box<[f64]>"
       },
       "rust_wire_modifier": {
-        "Io": "*mut ",
-        "Web": ""
+        "Web": "",
+        "Io": "*mut "
       },
       "wrapper_struct_name": null
     },
@@ -3499,16 +3499,16 @@
         "Io": "wire_cst_list_prim_f_64_strict"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": "*mut "
+        "Io": "*mut ",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "list_prim_u_8_strict",
       "rust_wire_type": {
-        "Web": "Box<[u8]>",
-        "Io": "wire_cst_list_prim_u_8_strict"
+        "Io": "wire_cst_list_prim_u_8_strict",
+        "Web": "Box<[u8]>"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -3555,12 +3555,12 @@
     {
       "safe_ident": "opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Io": "*mut ",
-        "Web": ""
+        "Web": "",
+        "Io": "*mut "
       },
       "wrapper_struct_name": null
     },
@@ -3595,8 +3595,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::OscillatorOptions>"
     },
@@ -3619,8 +3619,8 @@
         "Io": "i32"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::OverSampleType>"
     },
@@ -3631,8 +3631,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::PannerOptions>"
     },
@@ -3651,8 +3651,8 @@
     {
       "safe_ident": "periodic_wave_options",
       "rust_wire_type": {
-        "Io": "wire_cst_periodic_wave_options",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "wire_cst_periodic_wave_options"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -3663,8 +3663,8 @@
     {
       "safe_ident": "record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id",
       "rust_wire_type": {
-        "Io": "wire_cst_record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "wire_cst_record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id"
       },
       "rust_wire_modifier": {
         "Io": "",
@@ -3679,8 +3679,8 @@
         "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
-        "Io": "",
-        "Web": ""
+        "Web": "",
+        "Io": ""
       },
       "wrapper_struct_name": "FrbWrapper<web_audio_api::node::StereoPannerOptions>"
     },
@@ -3699,8 +3699,8 @@
     {
       "safe_ident": "unit",
       "rust_wire_type": {
-        "Io": "()",
-        "Web": "()"
+        "Web": "()",
+        "Io": "()"
       },
       "rust_wire_modifier": {
         "Web": "",
@@ -3711,20 +3711,20 @@
     {
       "safe_ident": "usize",
       "rust_wire_type": {
-        "Io": "usize",
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
+        "Io": "usize"
       },
       "rust_wire_modifier": {
-        "Web": "",
-        "Io": ""
+        "Io": "",
+        "Web": ""
       },
       "wrapper_struct_name": null
     },
     {
       "safe_ident": "wave_shaper_options",
       "rust_wire_type": {
-        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue",
-        "Io": "wire_cst_wave_shaper_options"
+        "Io": "wire_cst_wave_shaper_options",
+        "Web": "flutter_rust_bridge::for_generated::wasm_bindgen::JsValue"
       },
       "rust_wire_modifier": {
         "Web": "",

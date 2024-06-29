@@ -189,6 +189,7 @@ import 'worklet.dart';
 /// expressed in cents
 ///
 /// see <https://en.wikipedia.org/wiki/Cent_(music)>
+///[LARPOUX]$func_name
  AudioParam get detune;
 
 
@@ -232,6 +233,7 @@ import 'worklet.dart';
 /// - `-1` will play the file in reverse
 ///
 /// Note that playback rate will also alter the pitch of the [`AudioBuffer`]
+///[LARPOUX]$func_name
  AudioParam get playbackRate;
 
 
@@ -394,6 +396,7 @@ import 'worklet.dart';
 
 
 /// Returns the detune audio parameter
+///[LARPOUX]$func_name
  AudioParam get detune;
 
 
@@ -414,10 +417,12 @@ import 'worklet.dart';
 
 
 /// Returns the frequency audio parameter
+///[LARPOUX]$func_name
  AudioParam get frequency;
 
 
 /// Returns the gain audio parameter
+///[LARPOUX]$func_name
  AudioParam get gain;
 
 
@@ -428,6 +433,7 @@ import 'worklet.dart';
 
 
 /// Returns the Q audio parameter
+///[LARPOUX]$func_name
  AudioParam get q;
 
 
@@ -632,6 +638,7 @@ import 'worklet.dart';
  Future<int>  numberOfOutputs();
 
 
+///[LARPOUX]$func_name
  AudioParam get offset;
 
 
@@ -762,6 +769,7 @@ import 'worklet.dart';
 
 
 /// A-rate [`AudioParam`] representing the amount of delay (in seconds) to apply.
+///[LARPOUX]$func_name
  AudioParam get delayTime;
 
 
@@ -801,7 +809,8 @@ import 'worklet.dart';
 
                 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<DynamicsCompressorNode>>
                 abstract class DynamicsCompressorNode implements RustOpaqueInterface, AudioNode, DynamicsCompressorNodeExt {
-                     AudioParam get attack;
+                    ///[LARPOUX]$func_name
+ AudioParam get attack;
 
 
  Future<void>  channelConfig();
@@ -842,6 +851,7 @@ import 'worklet.dart';
  Future<void>  connect({required AudioNode dest });
 
 
+///[LARPOUX]$func_name
  AudioParam get knee;
 
 
@@ -851,6 +861,7 @@ import 'worklet.dart';
  Future<int>  numberOfOutputs();
 
 
+///[LARPOUX]$func_name
  AudioParam get ratio;
 
 
@@ -860,12 +871,14 @@ import 'worklet.dart';
  Future<void>  registration();
 
 
+///[LARPOUX]$func_name
  AudioParam get release;
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback });
 
 
+///[LARPOUX]$func_name
  AudioParam get threshold;
 
 
@@ -915,6 +928,7 @@ import 'worklet.dart';
  Future<void>  connect({required AudioNode dest });
 
 
+///[LARPOUX]$func_name
  AudioParam get gain;
 
 
@@ -1265,6 +1279,7 @@ import 'worklet.dart';
 /// see <https://en.wikipedia.org/wiki/Cent_(music)>
 ///
 /// The final frequency is calculated as follow: frequency * 2^(detune/1200)
+///[LARPOUX]$func_name
  AudioParam get detune;
 
 
@@ -1288,6 +1303,7 @@ import 'worklet.dart';
 /// oscillator, expressed in Hz
 ///
 /// The final frequency is calculated as follow: frequency * 2^(detune/1200)
+///[LARPOUX]$func_name
  AudioParam get frequency;
 
 
@@ -1410,24 +1426,30 @@ import 'worklet.dart';
  Future<int>  numberOfOutputs();
 
 
+///[LARPOUX]$func_name
  AudioParam get orientationX;
 
 
+///[LARPOUX]$func_name
  AudioParam get orientationY;
 
 
+///[LARPOUX]$func_name
  AudioParam get orientationZ;
 
 
  Future<PanningModelType>  panningModel();
 
 
+///[LARPOUX]$func_name
  AudioParam get positionX;
 
 
+///[LARPOUX]$func_name
  AudioParam get positionY;
 
 
+///[LARPOUX]$func_name
  AudioParam get positionZ;
 
 
@@ -1611,6 +1633,7 @@ import 'worklet.dart';
 
 
 /// Returns the pan audio parameter
+///[LARPOUX]$func_name
  AudioParam get pan;
 
 

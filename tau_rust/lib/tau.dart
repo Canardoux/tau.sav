@@ -41,7 +41,7 @@ import 'dart:io';
 import 'dart:isolate';
 
 import 'package:logger/logger.dart' as lg;
-import 'package:tau/src/rust/frb_generated.dart' show RustLib;
+import 'package:tau/src/rust/frb_generated.dart';
 import 'package:tau/src/rust/api/simple.dart';
 //import 'tau_bindings_generated.dart';
 

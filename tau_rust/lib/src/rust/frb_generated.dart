@@ -27862,6 +27862,7 @@ class AudioBufferSourceNodeImpl extends RustOpaque
   /// expressed in cents
   ///
   /// see <https://en.wikipedia.org/wiki/Cent_(music)>
+  ///[LARPOUX]$func_name
   AudioParam get detune =>
       AudioParamProxyVariantAudioBufferSourceNodeDetune(this);
 
@@ -27919,6 +27920,7 @@ class AudioBufferSourceNodeImpl extends RustOpaque
   /// - `-1` will play the file in reverse
   ///
   /// Note that playback rate will also alter the pitch of the [`AudioBuffer`]
+  ///[LARPOUX]$func_name
   AudioParam get playbackRate =>
       AudioParamProxyVariantAudioBufferSourceNodePlaybackRate(this);
 
@@ -28520,25 +28522,34 @@ class AudioListenerImpl extends RustOpaque implements AudioListener {
         RustLib.instance.api.rust_arc_decrement_strong_count_AudioListenerPtr,
   );
 
+  ///[LARPOUX]$func_name
   AudioParam get forwardX => AudioParamProxyVariantAudioListenerForwardX(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get forwardY => AudioParamProxyVariantAudioListenerForwardY(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get forwardZ => AudioParamProxyVariantAudioListenerForwardZ(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get positionX =>
       AudioParamProxyVariantAudioListenerPositionX(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get positionY =>
       AudioParamProxyVariantAudioListenerPositionY(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get positionZ =>
       AudioParamProxyVariantAudioListenerPositionZ(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get upX => AudioParamProxyVariantAudioListenerUpX(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get upY => AudioParamProxyVariantAudioListenerUpY(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get upZ => AudioParamProxyVariantAudioListenerUpZ(this);
 }
 
@@ -29084,6 +29095,7 @@ class BiquadFilterNodeImpl extends RustOpaque implements BiquadFilterNode {
       );
 
   /// Returns the detune audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get detune => AudioParamProxyVariantBiquadFilterNodeDetune(this);
 
   /// Disconnects all outgoing connections from the AudioNode.
@@ -29107,10 +29119,12 @@ class BiquadFilterNodeImpl extends RustOpaque implements BiquadFilterNode {
           that: this, dest: dest);
 
   /// Returns the frequency audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get frequency =>
       AudioParamProxyVariantBiquadFilterNodeFrequency(this);
 
   /// Returns the gain audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get gain => AudioParamProxyVariantBiquadFilterNodeGain(this);
 
   Future<int> numberOfInputs() =>
@@ -29124,6 +29138,7 @@ class BiquadFilterNodeImpl extends RustOpaque implements BiquadFilterNode {
       );
 
   /// Returns the Q audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get q => AudioParamProxyVariantBiquadFilterNodeQ(this);
 
   Future<void> registration() =>
@@ -29717,6 +29732,7 @@ class ConstantSourceNodeImpl extends RustOpaque implements ConstantSourceNode {
         that: this,
       );
 
+  ///[LARPOUX]$func_name
   AudioParam get offset => AudioParamProxyVariantConstantSourceNodeOffset(this);
 
   Future<void> registration() =>
@@ -29911,6 +29927,7 @@ class DelayNodeImpl extends RustOpaque implements DelayNode {
       );
 
   /// A-rate [`AudioParam`] representing the amount of delay (in seconds) to apply.
+  ///[LARPOUX]$func_name
   AudioParam get delayTime => AudioParamProxyVariantDelayNodeDelayTime(this);
 
   /// Disconnects all outgoing connections from the AudioNode.
@@ -29973,6 +29990,7 @@ class DynamicsCompressorNodeImpl extends RustOpaque
         .instance.api.rust_arc_decrement_strong_count_DynamicsCompressorNodePtr,
   );
 
+  ///[LARPOUX]$func_name
   AudioParam get attack =>
       AudioParamProxyVariantDynamicsCompressorNodeAttack(this);
 
@@ -30028,6 +30046,7 @@ class DynamicsCompressorNodeImpl extends RustOpaque
       .webAudioApiNodeDynamicsCompressorNodeFrbOverrideConnect(
           that: this, dest: dest);
 
+  ///[LARPOUX]$func_name
   AudioParam get knee => AudioParamProxyVariantDynamicsCompressorNodeKnee(this);
 
   Future<int> numberOfInputs() =>
@@ -30040,6 +30059,7 @@ class DynamicsCompressorNodeImpl extends RustOpaque
         that: this,
       );
 
+  ///[LARPOUX]$func_name
   AudioParam get ratio =>
       AudioParamProxyVariantDynamicsCompressorNodeRatio(this);
 
@@ -30053,6 +30073,7 @@ class DynamicsCompressorNodeImpl extends RustOpaque
         that: this,
       );
 
+  ///[LARPOUX]$func_name
   AudioParam get release =>
       AudioParamProxyVariantDynamicsCompressorNodeRelease(this);
 
@@ -30062,6 +30083,7 @@ class DynamicsCompressorNodeImpl extends RustOpaque
           .webAudioApiNodeDynamicsCompressorNodeSetOnProcessorError(
               that: this, callback: callback);
 
+  ///[LARPOUX]$func_name
   AudioParam get threshold =>
       AudioParamProxyVariantDynamicsCompressorNodeThreshold(this);
 }
@@ -30159,6 +30181,7 @@ class GainNodeImpl extends RustOpaque implements GainNode {
   Future<void> connect({required AudioNode dest}) => RustLib.instance.api
       .webAudioApiNodeGainNodeFrbOverrideConnect(that: this, dest: dest);
 
+  ///[LARPOUX]$func_name
   AudioParam get gain => AudioParamProxyVariantGainNodeGain(this);
 
   Future<int> numberOfInputs() =>
@@ -31268,6 +31291,7 @@ class OscillatorNodeImpl extends RustOpaque implements OscillatorNode {
   /// see <https://en.wikipedia.org/wiki/Cent_(music)>
   ///
   /// The final frequency is calculated as follow: frequency * 2^(detune/1200)
+  ///[LARPOUX]$func_name
   AudioParam get detune => AudioParamProxyVariantOscillatorNodeDetune(this);
 
   /// Disconnects all outgoing connections from the AudioNode.
@@ -31293,6 +31317,7 @@ class OscillatorNodeImpl extends RustOpaque implements OscillatorNode {
   /// oscillator, expressed in Hz
   ///
   /// The final frequency is calculated as follow: frequency * 2^(detune/1200)
+  ///[LARPOUX]$func_name
   AudioParam get frequency =>
       AudioParamProxyVariantOscillatorNodeFrequency(this);
 
@@ -31468,12 +31493,15 @@ class PannerNodeImpl extends RustOpaque implements PannerNode {
         that: this,
       );
 
+  ///[LARPOUX]$func_name
   AudioParam get orientationX =>
       AudioParamProxyVariantPannerNodeOrientationX(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get orientationY =>
       AudioParamProxyVariantPannerNodeOrientationY(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get orientationZ =>
       AudioParamProxyVariantPannerNodeOrientationZ(this);
 
@@ -31482,10 +31510,13 @@ class PannerNodeImpl extends RustOpaque implements PannerNode {
         that: this,
       );
 
+  ///[LARPOUX]$func_name
   AudioParam get positionX => AudioParamProxyVariantPannerNodePositionX(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get positionY => AudioParamProxyVariantPannerNodePositionY(this);
 
+  ///[LARPOUX]$func_name
   AudioParam get positionZ => AudioParamProxyVariantPannerNodePositionZ(this);
 
   Future<double> refDistance() =>
@@ -31776,6 +31807,7 @@ class StereoPannerNodeImpl extends RustOpaque implements StereoPannerNode {
       );
 
   /// Returns the pan audio parameter
+  ///[LARPOUX]$func_name
   AudioParam get pan => AudioParamProxyVariantStereoPannerNodePan(this);
 
   Future<void> registration() =>

@@ -241,6 +241,7 @@
 /// expressed in cents
 ///
 /// see <https://en.wikipedia.org/wiki/Cent_(music)>
+///[LARPOUX]$func_name
  AudioParam get detune=>AudioParamProxyVariantAudioBufferSourceNodeDetune(this);
 
 
@@ -284,6 +285,7 @@
 /// - `-1` will play the file in reverse
 ///
 /// Note that playback rate will also alter the pitch of the [`AudioBuffer`]
+///[LARPOUX]$func_name
  AudioParam get playbackRate=>AudioParamProxyVariantAudioBufferSourceNodePlaybackRate(this);
 
 
@@ -721,30 +723,39 @@
                     rustArcDecrementStrongCountPtr: RustLib.instance.api.rust_arc_decrement_strong_count_AudioListenerPtr,
                 );
 
-                 AudioParam get forwardX=>AudioParamProxyVariantAudioListenerForwardX(this);
+                ///[LARPOUX]$func_name
+ AudioParam get forwardX=>AudioParamProxyVariantAudioListenerForwardX(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get forwardY=>AudioParamProxyVariantAudioListenerForwardY(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get forwardZ=>AudioParamProxyVariantAudioListenerForwardZ(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get positionX=>AudioParamProxyVariantAudioListenerPositionX(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get positionY=>AudioParamProxyVariantAudioListenerPositionY(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get positionZ=>AudioParamProxyVariantAudioListenerPositionZ(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get upX=>AudioParamProxyVariantAudioListenerUpX(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get upY=>AudioParamProxyVariantAudioListenerUpY(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get upZ=>AudioParamProxyVariantAudioListenerUpZ(this);
 
 
@@ -1147,6 +1158,7 @@
 
 
 /// Returns the detune audio parameter
+///[LARPOUX]$func_name
  AudioParam get detune=>AudioParamProxyVariantBiquadFilterNodeDetune(this);
 
 
@@ -1167,10 +1179,12 @@
 
 
 /// Returns the frequency audio parameter
+///[LARPOUX]$func_name
  AudioParam get frequency=>AudioParamProxyVariantBiquadFilterNodeFrequency(this);
 
 
 /// Returns the gain audio parameter
+///[LARPOUX]$func_name
  AudioParam get gain=>AudioParamProxyVariantBiquadFilterNodeGain(this);
 
 
@@ -1181,6 +1195,7 @@
 
 
 /// Returns the Q audio parameter
+///[LARPOUX]$func_name
  AudioParam get q=>AudioParamProxyVariantBiquadFilterNodeQ(this);
 
 
@@ -1594,6 +1609,7 @@
  Future<int>  numberOfOutputs()=>RustLib.instance.api.webAudioApiNodeConstantSourceNodeNumberOfOutputs(that: this, );
 
 
+///[LARPOUX]$func_name
  AudioParam get offset=>AudioParamProxyVariantConstantSourceNodeOffset(this);
 
 
@@ -1740,6 +1756,7 @@
 
 
 /// A-rate [`AudioParam`] representing the amount of delay (in seconds) to apply.
+///[LARPOUX]$func_name
  AudioParam get delayTime=>AudioParamProxyVariantDelayNodeDelayTime(this);
 
 
@@ -1787,7 +1804,8 @@
                     rustArcDecrementStrongCountPtr: RustLib.instance.api.rust_arc_decrement_strong_count_DynamicsCompressorNodePtr,
                 );
 
-                 AudioParam get attack=>AudioParamProxyVariantDynamicsCompressorNodeAttack(this);
+                ///[LARPOUX]$func_name
+ AudioParam get attack=>AudioParamProxyVariantDynamicsCompressorNodeAttack(this);
 
 
  Future<void>  channelConfig()=>RustLib.instance.api.webAudioApiNodeDynamicsCompressorNodeChannelConfig(that: this, );
@@ -1828,6 +1846,7 @@
  Future<void>  connect({required AudioNode dest })=>RustLib.instance.api.webAudioApiNodeDynamicsCompressorNodeFrbOverrideConnect(that: this, dest: dest);
 
 
+///[LARPOUX]$func_name
  AudioParam get knee=>AudioParamProxyVariantDynamicsCompressorNodeKnee(this);
 
 
@@ -1837,6 +1856,7 @@
  Future<int>  numberOfOutputs()=>RustLib.instance.api.webAudioApiNodeDynamicsCompressorNodeNumberOfOutputs(that: this, );
 
 
+///[LARPOUX]$func_name
  AudioParam get ratio=>AudioParamProxyVariantDynamicsCompressorNodeRatio(this);
 
 
@@ -1846,12 +1866,14 @@
  Future<void>  registration()=>RustLib.instance.api.webAudioApiNodeDynamicsCompressorNodeRegistration(that: this, );
 
 
+///[LARPOUX]$func_name
  AudioParam get release=>AudioParamProxyVariantDynamicsCompressorNodeRelease(this);
 
 
  Future<void>  setOnProcessorError({required FutureOr<void> Function(String) callback })=>RustLib.instance.api.webAudioApiNodeDynamicsCompressorNodeSetOnProcessorError(that: this, callback: callback);
 
 
+///[LARPOUX]$func_name
  AudioParam get threshold=>AudioParamProxyVariantDynamicsCompressorNodeThreshold(this);
 
 
@@ -1928,6 +1950,7 @@
  Future<void>  connect({required AudioNode dest })=>RustLib.instance.api.webAudioApiNodeGainNodeFrbOverrideConnect(that: this, dest: dest);
 
 
+///[LARPOUX]$func_name
  AudioParam get gain=>AudioParamProxyVariantGainNodeGain(this);
 
 
@@ -2723,6 +2746,7 @@
 /// see <https://en.wikipedia.org/wiki/Cent_(music)>
 ///
 /// The final frequency is calculated as follow: frequency * 2^(detune/1200)
+///[LARPOUX]$func_name
  AudioParam get detune=>AudioParamProxyVariantOscillatorNodeDetune(this);
 
 
@@ -2746,6 +2770,7 @@
 /// oscillator, expressed in Hz
 ///
 /// The final frequency is calculated as follow: frequency * 2^(detune/1200)
+///[LARPOUX]$func_name
  AudioParam get frequency=>AudioParamProxyVariantOscillatorNodeFrequency(this);
 
 
@@ -2876,24 +2901,30 @@
  Future<int>  numberOfOutputs()=>RustLib.instance.api.webAudioApiNodePannerNodeNumberOfOutputs(that: this, );
 
 
+///[LARPOUX]$func_name
  AudioParam get orientationX=>AudioParamProxyVariantPannerNodeOrientationX(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get orientationY=>AudioParamProxyVariantPannerNodeOrientationY(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get orientationZ=>AudioParamProxyVariantPannerNodeOrientationZ(this);
 
 
  Future<PanningModelType>  panningModel()=>RustLib.instance.api.webAudioApiNodePannerNodePanningModel(that: this, );
 
 
+///[LARPOUX]$func_name
  AudioParam get positionX=>AudioParamProxyVariantPannerNodePositionX(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get positionY=>AudioParamProxyVariantPannerNodePositionY(this);
 
 
+///[LARPOUX]$func_name
  AudioParam get positionZ=>AudioParamProxyVariantPannerNodePositionZ(this);
 
 
@@ -3110,6 +3141,7 @@
 
 
 /// Returns the pan audio parameter
+///[LARPOUX]$func_name
  AudioParam get pan=>AudioParamProxyVariantStereoPannerNodePan(this);
 
 

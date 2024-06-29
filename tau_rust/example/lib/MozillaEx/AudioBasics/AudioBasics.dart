@@ -40,7 +40,7 @@ class _AudioBasics extends State<AudioBasics> {
   late AudioContext audioCtx;
   late AudioDestinationNode dest;
   late GainNode gainNode;
-  late PannerNode panner;
+  late StereoPannerNode panner;
   late AudioBufferSourceNode src;
 
   Future<Float32List> getAssetData(String path) async {
@@ -103,7 +103,7 @@ class _AudioBasics extends State<AudioBasics> {
     src.setBuffer(audioBuffer: audioBuffer);
     dest = await audioCtx.destination();
     gainNode = await audioCtx.createGain();
-    panner = await audioCtx.createPanner();
+    panner = await audioCtx.createStereoPanner();
 
     await src.connect(dest: gainNode);
     await gainNode.connect(dest: panner);
@@ -225,7 +225,8 @@ class _AudioBasics extends State<AudioBasics> {
               callback: (args) async {
                 // print arguments coming from the JavaScript side!
                 Tau.tau.logger.d(args);
-                panner.setPosition(x: double.parse(args[0]), y: 0.0, z: 0.0);
+                panner.pan.value = double.parse(args[0]);
+                //panner.setPosition(x: double.parse(args[0]), y: 0.0, z: 0.0);
 
                 // return data to the JavaScript side!
                 return {'bar': 'bar_value', 'baz': 'baz_value'};

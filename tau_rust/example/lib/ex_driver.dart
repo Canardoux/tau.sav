@@ -54,7 +54,7 @@ final List<Example> mozillaExampleTable = [
 '''),
   Example(
       title: 'Audio Analyser',
-      subTitle: 'Stereo Panner Example',
+      subTitle: 'Audio Analyser Example',
       flags: 0,
       route: (_) => const AudioAnalyser(),
       graphImage: 'AudioAnalyser',

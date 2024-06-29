@@ -39,8 +39,6 @@ class AudioAnalyser extends StatefulWidget {
 class _AudioAnalyser extends State<AudioAnalyser> {
    AudioContext? audioCtx;
    AudioDestinationNode? dest;
-   GainNode? gainNode;
-   PannerNode? panner;
    AudioBufferSourceNode? sourceNode;
    AnalyserNode? analyserNode;
    ScriptProcessorNode? javascriptNode;
@@ -87,7 +85,7 @@ class _AudioAnalyser extends State<AudioAnalyser> {
 
   // And here is our dart code
   void initPlatformState() async {
-  
+
     if (mounted) {
       setState(() {});
     }
@@ -195,27 +193,27 @@ class _AudioAnalyser extends State<AudioAnalyser> {
             console.error(`Error: ${e}`);
           });  */
   // And here is our dart code
-  Future<void> start() async {
+  Future<void> start(InAppWebViewController controller) async {
 
-    audioCtx = AudioContext(
-      options: const AudioContextOptions(
-      latencyHint: AudioContextLatencyCategory.playback(),
-      sinkId: '',
-      renderSizeHint: AudioContextRenderSizeCategory.default_,
-      sampleRate: 48000,
-      )
-    );
+        audioCtx = AudioContext(
+          options: const AudioContextOptions(
+          latencyHint: AudioContextLatencyCategory.playback(),
+          sinkId: '',
+          renderSizeHint: AudioContextRenderSizeCategory.default_,
+          sampleRate: 48000,
+          )
+        );
 
-    Tau.tau.logger.d('Une bonne journée');
-    Float32List pcmData = await getAssetData(pcmAsset);
+        Tau.tau.logger.d('Une bonne journée');
+        Float32List pcmData = await getAssetData(pcmAsset);
 
-    AudioBuffer audioBuffer = await AudioBuffer.from(
-        samples: List<Float32List>.filled(2, pcmData), sampleRate: 48000);
+        AudioBuffer audioBuffer = await AudioBuffer.from(
+            samples: List<Float32List>.filled(2, pcmData), sampleRate: 48000);
 
-    sourceNode = await audioCtx!.createBufferSource();
-    sourceNode!.setBuffer(audioBuffer: audioBuffer);
-    sourceNode!.setLoop(value: true);
-    dest = await audioCtx!.destination();
+        sourceNode = await audioCtx!.createBufferSource();
+        sourceNode!.setBuffer(audioBuffer: audioBuffer);
+        sourceNode!.setLoop(value: true);
+        dest = await audioCtx!.destination();
 
         // Load the audio the first time through, otherwise play it from the buffer
         //msg.textContent = "Loading audio…";
@@ -241,61 +239,54 @@ class _AudioAnalyser extends State<AudioAnalyser> {
                   //msg.textContent = "Audio playing…";
         sourceNode!.start(); // Play the sound now
 
-                  // Set up the event handler that is triggered every time enough samples have been collected
-                  // then trigger the audio analysis and draw the results
-                  javascriptNode.onaudioprocess = () => {
-                    // Read the frequency values
-                    const amplitudeArray = new Uint8Array(
-                      analyserNode.frequencyBinCount
-                    );
+        // Set up the event handler that is triggered every time enough samples have been collected
+        // then trigger the audio analysis and draw the results
+        javascriptNode!.setOnaudioprocess = () async {
+                // Read the frequency values
+                int frequencyBinCount = await analyserNode!.frequencyBinCount();
+                var amplitudeArray =  Uint8List(
+                    frequencyBinCount
+                );
 
-                    // Get the time domain data for this sample
-                    analyserNode.getByteTimeDomainData(amplitudeArray);
+                // Get the time domain data for this sample
+                analyserNode!.getByteTimeDomainData(amplitudeArray);
+                var state = await audioCtx!.state();
+                // Draw the display when the audio is playing
+                if (state == AudioContextState.running) {
+                  // Draw the time domain in the canvas
+                  // Send to Javascript
+                  await controller.callAsyncJavaScript(    functionBody: 'drawAmplitude(amplitudeArray)',
+                      arguments: {'amplitudeArray': amplitudeArray});
+                }
+        };
 
-                    // Draw the display when the audio is playing
-                    if (audioContext.state === "running") {
-                      // Draw the time domain in the canvas
-                      requestAnimationFrame(() => {
-                        // Get the canvas 2d context
-                        const canvasContext = canvasElt.getContext("2d");
-
-                        // Clear the canvas
-                        canvasContext.clearRect(
-                          0,
-                          0,
-                          canvasElt.width,
-                          canvasElt.height
-                        );
-
-                        // Draw the amplitude inside the canvas
-                        for (let i = 0; i < amplitudeArray.length; i++) {
-                          const value = amplitudeArray[i] / 256;
-                          const y = canvasElt.height - canvasElt.height * value;
-                          canvasContext.fillStyle = "white";
-                          canvasContext.fillRect(i, y, 1, 1);
-                        }
-                      });
-                    }
-                  };
-          });
+          }
 
 
-  }
 
   // Good citizens must dispose nodes and Auddio Context
-  @override
-  void dispose() {
+  void disposeEverything()  {
     Tau.tau.logger.d("dispose");
-    audioCtx.dispose();
-    dest.dispose();
-    gainNode.dispose();
-    panner.dispose();
-    src.dispose();
-
-    super.dispose();
+    if (audioCtx != null)audioCtx!.dispose();
+    if (dest != null)dest!.dispose();
+    if (sourceNode != null)sourceNode!.dispose();
+    if (analyserNode != null)analyserNode!.dispose();
+    if (javascriptNode != null)javascriptNode!.dispose();
+    audioCtx = null;
+    dest = null;
+    sourceNode = null;
+    analyserNode = null;
+    javascriptNode = null;
   }
+   @override
+   void dispose() async {
+     disposeEverything;
+     super.dispose();
 
-  @override
+   }
+
+
+     @override
   void initState() {
     super.initState();
     initPlatformState();
@@ -307,14 +298,13 @@ class _AudioAnalyser extends State<AudioAnalyser> {
       return InAppWebView(
         initialData: InAppWebViewInitialData(data: _htmlData),
         onWebViewCreated: (controller) {
-          // register a JavaScript handler with name "myHandlerName"
- 
+          // register a JavaScript handler with name "startHandler"
               controller.addJavaScriptHandler(
                   handlerName: 'startHandler',
                   callback: (args) async {
                     // print arguments coming from the JavaScript side!
                     Tau.tau.logger.d(args[0]);
-                    await start();
+                    await start(controller);
 
                     // return data to the JavaScript side!
                     return {'bar': 'bar_value', 'baz': 'baz_value'};
@@ -326,7 +316,7 @@ class _AudioAnalyser extends State<AudioAnalyser> {
                 callback: (args) async {
                   // print arguments coming from the JavaScript side!
                   Tau.tau.logger.d(args[0]);
-                  await sourceNode.stop(0);
+                  await sourceNode!.stop();
 
                   // return data to the JavaScript side!
                   return {'bar': 'bar_value', 'baz': 'baz_value'};
@@ -340,7 +330,7 @@ class _AudioAnalyser extends State<AudioAnalyser> {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: const Text('Mozilla Audio Basics'),
+        title: const Text('Mozilla Audio Analyser'),
         actions: const <Widget>[],
       ),
       body: makeBody(),
@@ -365,43 +355,70 @@ class _AudioAnalyser extends State<AudioAnalyser> {
 
   <body>
     <h1>Web Audio API examples: audio analyser</h1>
-    <canvas id="canvas" width="512" height="256"></canvas>
+    <canvas id="canvas" width="700" height="200"></canvas>
 
     <div id="controls">
-      <input type="button" id="start_button" value="Start" />
+      <input type="button" id="start_button" value="Start" onClick="start()" />
       &nbsp; &nbsp;
-      <input type="button" id="stop_button" value="Stop" disabled />
+      <input type="button" id="stop_button" value="Stop" onClick="stop()" disabled />
       <br /><br />
       <output id="msg"></output>
     </div>
 
     <script>
-      // Useful UI elements
-      const msg = document.querySelector("output");
-      const startBtn = document.querySelector("#start_button");
-      const stopBtn = document.querySelector("#stop_button");
-      const canvasElt = document.querySelector("#canvas");
+    function start() {
+        // Useful UI elements
+        console.log("start()");
+ 
+        const msg = document.querySelector("output");
+        const startBtn = document.querySelector("#start_button");
+        const stopBtn = document.querySelector("#stop_button");
+        const canvasElt = document.querySelector("#canvas");
 
       // When the _Start_ button is clicked, set up the audio nodes, play the sound,
       // gather samples for the analysis, update the canvas.
-      startBtn.addEventListener("click", (e) => {
-        e.preventDefault();
+      
+        console.log("click start btn");
+        //e.preventDefault();
         startBtn.disabled = true;
-        window.flutter_inappwebview.callHandler('starthandler', 'la plume de toto');
-        stopBtn.addEventListener("click", (e) => {
-            startBtn.disabled = false;
-            stopBtn.disabled = true;
-            window.flutter_inappwebview.callHandler('stopHandler', 'la plume de toto');
-            msg.textContent = "Audio stopped.";
-        });
+        window.flutter_inappwebview.callHandler('startHandler', 'la plume de toto');
         stopBtn.disabled = false;
+      }
+      function stop() {
+              const startBtn = document.querySelector("#start_button");
+              const stopBtn = document.querySelector("#stop_button");
+              startBtn.disabled = false;
+              stopBtn.disabled = true;
+              window.flutter_inappwebview.callHandler('stopHandler', 'la plume de toto');
+              msg.textContent = "Audio stopped.";
+      }
 
-  
+      function drawAmplitude(amplitudeArray) {
+                       requestAnimationFrame(() => {
+                    // Get the canvas 2d context
+                    const canvasContext = canvasElt.getContext("2d");
+
+                    // Clear the canvas
+                    canvasContext.clearRect(
+                      0,
+                      0,
+                      canvasElt.width,
+                      canvasElt.height
+                    );
+
+                    // Draw the amplitude inside the canvas
+                    for (let i = 0; i < amplitudeArray.length; i++) {
+                      const value = amplitudeArray[i] / 256;
+                      const y = canvasElt.height - canvasElt.height * value;
+                      canvasContext.fillStyle = "white";
+                      canvasContext.fillRect(i, y, 1, 1);
+                    }
+                  });
+        
+
     </script>
-   
   </body>
 </html>
-
 
 ''';
 }

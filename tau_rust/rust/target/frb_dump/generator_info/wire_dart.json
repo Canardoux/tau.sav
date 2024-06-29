@@ -17,8 +17,8 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -38,15 +38,15 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioWorkletNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -59,15 +59,15 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelMergerNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelSplitterNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -87,8 +87,8 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -101,8 +101,8 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -115,15 +115,15 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -136,8 +136,8 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrackAudioSourceNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -157,8 +157,8 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerScriptProcessorNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -171,8 +171,8 @@
     {
       "safe_ident": "AutoExplicit_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -185,8 +185,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -206,8 +206,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioDestinationNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -220,15 +220,15 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParamId",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -241,8 +241,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacity",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -276,8 +276,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelConfig",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -297,8 +297,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConcreteBaseAudioContext",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -332,29 +332,29 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerEvent",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
-      "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
-      }
-    },
-    {
-      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
       "dart_wire_type": {
         "Io": "int",
         "Web": "int"
       }
     },
     {
-      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
       "dart_wire_type": {
         "Web": "int",
         "Io": "int"
+      }
+    },
+    {
+      "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
+      "dart_wire_type": {
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -367,8 +367,8 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStream",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -395,15 +395,15 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrack",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrackAudioSourceNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -416,57 +416,57 @@
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerScriptProcessorNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -486,8 +486,8 @@
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -500,8 +500,8 @@
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacityEvent",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -521,8 +521,8 @@
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -549,22 +549,22 @@
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioContext",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_RefMut_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -584,8 +584,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -598,8 +598,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContext",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -612,8 +612,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioDestinationNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -647,8 +647,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacityEvent",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -682,36 +682,36 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelSplitterNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConcreteBaseAudioContext",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConvolverNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDelayNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -724,8 +724,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerEvent",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -745,8 +745,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaElementAudioSourceNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -766,8 +766,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -794,15 +794,15 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyMediaElement",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -822,8 +822,8 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -836,15 +836,15 @@
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "Auto_Ref_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -857,8 +857,8 @@
     {
       "safe_ident": "CastedPrimitive_usize",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "int"
+        "Io": "int",
+        "Web": "JSAny"
       }
     },
     {
@@ -871,22 +871,22 @@
     {
       "safe_ident": "DartFn_Inputs_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent_Output_unit_AnyhowException",
       "dart_wire_type": {
-        "Web": "PlatformPointer",
-        "Io": "PlatformPointer"
+        "Io": "PlatformPointer",
+        "Web": "PlatformPointer"
       }
     },
     {
       "safe_ident": "DartFn_Inputs_String_Output_unit_AnyhowException",
       "dart_wire_type": {
-        "Web": "PlatformPointer",
-        "Io": "PlatformPointer"
+        "Io": "PlatformPointer",
+        "Web": "PlatformPointer"
       }
     },
     {
       "safe_ident": "DartOpaque",
       "dart_wire_type": {
-        "Web": "PlatformPointer",
-        "Io": "PlatformPointer"
+        "Io": "PlatformPointer",
+        "Web": "PlatformPointer"
       }
     },
     {
@@ -920,15 +920,15 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode_playback_rate",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_forward_x",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -948,8 +948,8 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_position_x",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -962,22 +962,22 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_position_z",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_x",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener_up_y",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -990,8 +990,8 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode_detune",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -1004,8 +1004,8 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBiquadFilterNode_gain",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -1032,8 +1032,8 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_attack",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -1053,15 +1053,15 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_release",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode_threshold",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -1088,8 +1088,8 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOscillatorNode_frequency",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -1102,15 +1102,15 @@
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_orientation_y",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "ProxyVariant_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPannerNode_orientation_z",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -1151,22 +1151,22 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBufferSourceNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioContext",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -1179,22 +1179,22 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioDestinationNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
-      }
-    },
-    {
-      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener",
-      "dart_wire_type": {
         "Web": "int",
         "Io": "int"
       }
     },
     {
-      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioListener",
       "dart_wire_type": {
         "Io": "int",
         "Web": "int"
+      }
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioParam",
+      "dart_wire_type": {
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -1221,15 +1221,15 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioRenderCapacityEvent",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioWorkletNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -1242,8 +1242,8 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerBlobEvent",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -1263,22 +1263,22 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerChannelSplitterNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConcreteBaseAudioContext",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerConstantSourceNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -1298,29 +1298,29 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerDynamicsCompressorNode",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerEvent",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
-      }
-    },
-    {
-      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
-      "dart_wire_type": {
         "Io": "int",
         "Web": "int"
       }
     },
     {
-      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerGainNode",
       "dart_wire_type": {
         "Web": "int",
         "Io": "int"
+      }
+    },
+    {
+      "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerIIRFilterNode",
+      "dart_wire_type": {
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -1347,8 +1347,8 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamAudioDestinationNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -1375,22 +1375,22 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMediaStreamTrackAudioSourceNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerMyMediaElement",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerOfflineAudioCompletionEvent",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -1417,8 +1417,8 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -1431,15 +1431,15 @@
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerStereoPannerNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerWaveShaperNode",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
@@ -1452,8 +1452,8 @@
     {
       "safe_ident": "String",
       "dart_wire_type": {
-        "Io": "ffi.Pointer<wire_cst_list_prim_u_8_strict>",
-        "Web": "String"
+        "Web": "String",
+        "Io": "ffi.Pointer<wire_cst_list_prim_u_8_strict>"
       }
     },
     {
@@ -1466,15 +1466,15 @@
     {
       "safe_ident": "TraitDef_AudioBufferSourceNodeExt",
       "dart_wire_type": {
-        "Web": "UNREACHABLE_DART_WIRE_TYPE",
-        "Io": "UNREACHABLE_DART_WIRE_TYPE"
+        "Io": "UNREACHABLE_DART_WIRE_TYPE",
+        "Web": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "TraitDef_AudioBufferSourceNodeScheduledSourceNodeMiscExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
@@ -1494,8 +1494,8 @@
     {
       "safe_ident": "TraitDef_AudioNode",
       "dart_wire_type": {
-        "Web": "UNREACHABLE_DART_WIRE_TYPE",
-        "Io": "UNREACHABLE_DART_WIRE_TYPE"
+        "Io": "UNREACHABLE_DART_WIRE_TYPE",
+        "Web": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
@@ -1508,15 +1508,15 @@
     {
       "safe_ident": "TraitDef_AudioScheduledSourceNode",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "TraitDef_AudioWorkletProcessor",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
@@ -1529,29 +1529,29 @@
     {
       "safe_ident": "TraitDef_BiquadFilterNodeExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "TraitDef_ChannelMergerNodeExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "TraitDef_ChannelSplitterNodeExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "TraitDef_ConstantSourceNodeExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
@@ -1564,22 +1564,22 @@
     {
       "safe_ident": "TraitDef_ConvolverNodeExt",
       "dart_wire_type": {
-        "Web": "UNREACHABLE_DART_WIRE_TYPE",
-        "Io": "UNREACHABLE_DART_WIRE_TYPE"
+        "Io": "UNREACHABLE_DART_WIRE_TYPE",
+        "Web": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "TraitDef_DelayNodeExt",
       "dart_wire_type": {
-        "Web": "UNREACHABLE_DART_WIRE_TYPE",
-        "Io": "UNREACHABLE_DART_WIRE_TYPE"
+        "Io": "UNREACHABLE_DART_WIRE_TYPE",
+        "Web": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "TraitDef_DynamicsCompressorNodeExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
@@ -1599,15 +1599,15 @@
     {
       "safe_ident": "TraitDef_IIRFilterNodeExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "TraitDef_MediaElementAudioSourceNodeExt",
       "dart_wire_type": {
-        "Web": "UNREACHABLE_DART_WIRE_TYPE",
-        "Io": "UNREACHABLE_DART_WIRE_TYPE"
+        "Io": "UNREACHABLE_DART_WIRE_TYPE",
+        "Web": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
@@ -1634,15 +1634,15 @@
     {
       "safe_ident": "TraitDef_MediaStreamTrackAudioSourceNodeExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "TraitDef_OfflineAudioContextExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
@@ -1690,22 +1690,22 @@
     {
       "safe_ident": "TraitDef_WaveShaperNodeMiscExt",
       "dart_wire_type": {
-        "Io": "UNREACHABLE_DART_WIRE_TYPE",
-        "Web": "UNREACHABLE_DART_WIRE_TYPE"
+        "Web": "UNREACHABLE_DART_WIRE_TYPE",
+        "Io": "UNREACHABLE_DART_WIRE_TYPE"
       }
     },
     {
       "safe_ident": "analyser_options",
       "dart_wire_type": {
-        "Io": "wire_cst_analyser_options",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "wire_cst_analyser_options"
       }
     },
     {
       "safe_ident": "audio_buffer_options",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "wire_cst_audio_buffer_options"
+        "Io": "wire_cst_audio_buffer_options",
+        "Web": "JSAny"
       }
     },
     {
@@ -1725,8 +1725,8 @@
     {
       "safe_ident": "audio_context_options",
       "dart_wire_type": {
-        "Io": "wire_cst_audio_context_options",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "wire_cst_audio_context_options"
       }
     },
     {
@@ -1739,8 +1739,8 @@
     {
       "safe_ident": "audio_context_state",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -1753,15 +1753,15 @@
     {
       "safe_ident": "audio_node_options",
       "dart_wire_type": {
-        "Io": "wire_cst_audio_node_options",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "wire_cst_audio_node_options"
       }
     },
     {
       "safe_ident": "audio_param_descriptor",
       "dart_wire_type": {
-        "Io": "wire_cst_audio_param_descriptor",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "wire_cst_audio_param_descriptor"
       }
     },
     {
@@ -1774,8 +1774,8 @@
     {
       "safe_ident": "auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum"
+        "Io": "wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_proxy_enum",
+        "Web": "JSAny"
       }
     },
     {
@@ -1788,15 +1788,15 @@
     {
       "safe_ident": "automation_rate",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
       "safe_ident": "biquad_filter_options",
       "dart_wire_type": {
-        "Io": "wire_cst_biquad_filter_options",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "wire_cst_biquad_filter_options"
       }
     },
     {
@@ -1816,22 +1816,22 @@
     {
       "safe_ident": "box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "ffi.Pointer<ffi.UintPtr>"
+        "Io": "ffi.Pointer<ffi.UintPtr>",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "ffi.Pointer<ffi.UintPtr>"
+        "Io": "ffi.Pointer<ffi.UintPtr>",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "box_autoadd_audio_buffer_options",
       "dart_wire_type": {
-        "Io": "ffi.Pointer<wire_cst_audio_buffer_options>",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "ffi.Pointer<wire_cst_audio_buffer_options>"
       }
     },
     {
@@ -1844,8 +1844,8 @@
     {
       "safe_ident": "box_autoadd_audio_node_implementor",
       "dart_wire_type": {
-        "Io": "ffi.Pointer<wire_cst_audio_node_implementor>",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "ffi.Pointer<wire_cst_audio_node_implementor>"
       }
     },
     {
@@ -1858,8 +1858,8 @@
     {
       "safe_ident": "box_autoadd_audio_render_capacity_options",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "ffi.Pointer<wire_cst_audio_render_capacity_options>"
+        "Io": "ffi.Pointer<wire_cst_audio_render_capacity_options>",
+        "Web": "JSAny"
       }
     },
     {
@@ -1872,8 +1872,8 @@
     {
       "safe_ident": "box_autoadd_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "ffi.Pointer<wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum>"
+        "Io": "ffi.Pointer<wire_cst_auto_ref_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_media_stream_proxy_enum>",
+        "Web": "JSAny"
       }
     },
     {
@@ -1886,8 +1886,8 @@
     {
       "safe_ident": "box_autoadd_periodic_wave_options",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "ffi.Pointer<wire_cst_periodic_wave_options>"
+        "Io": "ffi.Pointer<wire_cst_periodic_wave_options>",
+        "Web": "JSAny"
       }
     },
     {
@@ -1907,8 +1907,8 @@
     {
       "safe_ident": "channel_merger_options",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "wire_cst_channel_merger_options"
+        "Io": "wire_cst_channel_merger_options",
+        "Web": "JSAny"
       }
     },
     {
@@ -1949,8 +1949,8 @@
     {
       "safe_ident": "dynamics_compressor_options",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "wire_cst_dynamics_compressor_options"
+        "Io": "wire_cst_dynamics_compressor_options",
+        "Web": "JSAny"
       }
     },
     {
@@ -1984,8 +1984,8 @@
     {
       "safe_ident": "i_64",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "int"
       }
     },
     {
@@ -2005,22 +2005,22 @@
     {
       "safe_ident": "list_audio_param_descriptor",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "ffi.Pointer<wire_cst_list_audio_param_descriptor>"
+        "Io": "ffi.Pointer<wire_cst_list_audio_param_descriptor>",
+        "Web": "JSAny"
       }
     },
     {
       "safe_ident": "list_list_prim_f_32_strict",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "ffi.Pointer<wire_cst_list_list_prim_f_32_strict>"
+        "Io": "ffi.Pointer<wire_cst_list_list_prim_f_32_strict>",
+        "Web": "JSAny"
       }
     },
     {
       "safe_ident": "list_prim_f_32_loose",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "ffi.Pointer<wire_cst_list_prim_f_32_loose>"
+        "Io": "ffi.Pointer<wire_cst_list_prim_f_32_loose>",
+        "Web": "JSAny"
       }
     },
     {
@@ -2033,8 +2033,8 @@
     {
       "safe_ident": "list_prim_f_64_loose",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "ffi.Pointer<wire_cst_list_prim_f_64_loose>"
+        "Io": "ffi.Pointer<wire_cst_list_prim_f_64_loose>",
+        "Web": "JSAny"
       }
     },
     {
@@ -2054,8 +2054,8 @@
     {
       "safe_ident": "log_entry",
       "dart_wire_type": {
-        "Io": "wire_cst_log_entry",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "wire_cst_log_entry"
       }
     },
     {
@@ -2068,15 +2068,15 @@
     {
       "safe_ident": "opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerAudioBuffer",
       "dart_wire_type": {
-        "Web": "int?",
-        "Io": "ffi.Pointer<ffi.UintPtr>"
+        "Io": "ffi.Pointer<ffi.UintPtr>",
+        "Web": "int?"
       }
     },
     {
       "safe_ident": "opt_box_autoadd_Auto_Owned_RustOpaque_flutter_rust_bridgefor_generatedRustAutoOpaqueInnerPeriodicWave",
       "dart_wire_type": {
-        "Io": "ffi.Pointer<ffi.UintPtr>",
-        "Web": "int?"
+        "Web": "int?",
+        "Io": "ffi.Pointer<ffi.UintPtr>"
       }
     },
     {
@@ -2089,43 +2089,43 @@
     {
       "safe_ident": "opt_list_prim_f_32_strict",
       "dart_wire_type": {
-        "Web": "JSAny?",
-        "Io": "ffi.Pointer<wire_cst_list_prim_f_32_strict>"
+        "Io": "ffi.Pointer<wire_cst_list_prim_f_32_strict>",
+        "Web": "JSAny?"
       }
     },
     {
       "safe_ident": "oscillator_options",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "wire_cst_oscillator_options"
+        "Io": "wire_cst_oscillator_options",
+        "Web": "JSAny"
       }
     },
     {
       "safe_ident": "oscillator_type",
+      "dart_wire_type": {
+        "Io": "int",
+        "Web": "int"
+      }
+    },
+    {
+      "safe_ident": "over_sample_type",
       "dart_wire_type": {
         "Web": "int",
         "Io": "int"
       }
     },
     {
-      "safe_ident": "over_sample_type",
-      "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
-      }
-    },
-    {
       "safe_ident": "panner_options",
       "dart_wire_type": {
-        "Io": "wire_cst_panner_options",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "wire_cst_panner_options"
       }
     },
     {
       "safe_ident": "panning_model_type",
       "dart_wire_type": {
-        "Io": "int",
-        "Web": "int"
+        "Web": "int",
+        "Io": "int"
       }
     },
     {
@@ -2138,8 +2138,8 @@
     {
       "safe_ident": "record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id",
       "dart_wire_type": {
-        "Io": "wire_cst_record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id",
-        "Web": "JSAny"
+        "Web": "JSAny",
+        "Io": "wire_cst_record_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_auto_owned_rust_opaque_flutter_rust_bridgefor_generated_rust_auto_opaque_inner_audio_param_id"
       }
     },
     {
@@ -2152,15 +2152,15 @@
     {
       "safe_ident": "u_8",
       "dart_wire_type": {
-        "Web": "int",
-        "Io": "int"
+        "Io": "int",
+        "Web": "int"
       }
     },
     {
       "safe_ident": "unit",
       "dart_wire_type": {
-        "Io": "void",
-        "Web": "void"
+        "Web": "void",
+        "Io": "void"
       }
     },
     {
@@ -2173,8 +2173,8 @@
     {
       "safe_ident": "wave_shaper_options",
       "dart_wire_type": {
-        "Web": "JSAny",
-        "Io": "wire_cst_wave_shaper_options"
+        "Io": "wire_cst_wave_shaper_options",
+        "Web": "JSAny"
       }
     }
   ]

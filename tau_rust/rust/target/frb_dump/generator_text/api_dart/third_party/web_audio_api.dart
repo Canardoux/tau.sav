@@ -88,30 +88,39 @@ static Future<AudioBuffer>  newInstance({required AudioBufferOptions options })=
 
                 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<AudioListener>>
                 abstract class AudioListener implements RustOpaqueInterface {
-                     AudioParam get forwardX;
+                    ///[LARPOUX]$func_name
+ AudioParam get forwardX;
 
 
+///[LARPOUX]$func_name
  AudioParam get forwardY;
 
 
+///[LARPOUX]$func_name
  AudioParam get forwardZ;
 
 
+///[LARPOUX]$func_name
  AudioParam get positionX;
 
 
+///[LARPOUX]$func_name
  AudioParam get positionY;
 
 
+///[LARPOUX]$func_name
  AudioParam get positionZ;
 
 
+///[LARPOUX]$func_name
  AudioParam get upX;
 
 
+///[LARPOUX]$func_name
  AudioParam get upY;
 
 
+///[LARPOUX]$func_name
  AudioParam get upZ;
 
 
