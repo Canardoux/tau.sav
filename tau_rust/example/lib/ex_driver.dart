@@ -20,11 +20,12 @@
 import 'package:flutter/material.dart';
 import 'display_graph.dart';
 
-import 'RustEx/StereoPanner/StereoPanner.dart';
-import 'MozillaEx/AudioBasics/AudioBasics.dart';
-import 'MozillaEx/AudioAnalyser/AudioAnalyserEx.dart';
-import 'MozillaEx/AudioBuffer/AudioBufferEx.dart';
-import 'MozillaEx/AudioBufferSource/AudioBufferSourceEx.dart';
+import 'RustEx/stereo_panner/stereo_panner_ex.dart';
+import 'MozillaEx/audio_basics/audio_basics_ex.dart';
+import 'MozillaEx/audio_analyser/audio_analyser_ex.dart';
+import 'MozillaEx/audio_buffer_source/audio_buffer_source_ex.dart';
+import 'MozillaEx/audio_buffer/audio_buffer_ex.dart';
+import 'MozillaEx/loop/loop_ex.dart';
 
 /*
     This APP is just a driver to call the various Tau examples.
@@ -38,6 +39,7 @@ final List<Example> rustExampleTable = [
       subTitle: 'Stereo Panner Example',
       flags: 0,
       route: (_) => const StereoPanner(),
+      graphDir: 'stereo_panner',
       graphImage: 'StereoPanner',
       mod: 'Rust',
       description: '''This is an example from Web Audio Api Rust.
@@ -51,27 +53,55 @@ final List<Example> mozillaExampleTable = [
       flags: 0,
       route: (_) => const AudioBasics(),
       mod: 'Mozilla',
+      graphDir: 'audio_basics',
       graphImage: 'AudioBasics',
       description: '''This is an example from mozilla.
 '''),
+
   Example(
       title: 'Audio Analyser',
       subTitle: 'Audio Analyser Example',
       flags: 0,
       route: (_) => const AudioAnalyserEx(),
+      graphDir: 'audio_analyser',
       graphImage: 'AudioAnalyser',
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),
+
   Example(
       title: 'Audio Buffer Source',
       subTitle: 'Audio Buffer Source Node Example',
       flags: 0,
       route: (_) => const AudioBufferSourceEx(),
+      graphDir: 'audio_buffer_source',
       graphImage: 'AudioBufferSource',
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),
+
+  Example(
+      title: 'Audio Buffer',
+      subTitle: 'Play from an Audio Buffer',
+      flags: 0,
+      route: (_) => const AudioBufferEx(),
+      graphDir: 'audio_buffer',
+      graphImage: 'AudioBuffer',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+
+  Example(
+      title: 'Loop Playback',
+      subTitle: 'looping a track',
+      flags: 0,
+      route: (_) => const LoopEx(),
+      graphDir: 'loop',
+      graphImage: 'Loop',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+
 ];
 
 ///
@@ -92,6 +122,9 @@ class Example {
   final int? flags;
 
   ///
+  final String? graphDir;
+
+  ///
   final String? graphImage;
 
   final String? mod;
@@ -103,6 +136,7 @@ class Example {
       this.description,
       this.flags,
       this.route,
+      this.graphDir,
       this.graphImage,
       this.mod});
 
@@ -117,6 +151,7 @@ class Example {
       MaterialPageRoute<void>(
         builder: (context) => DisplayGraph(
           mod,
+          graphDir,
           graphImage,
         ),
       ));

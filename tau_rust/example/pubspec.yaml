@@ -1,5 +1,5 @@
-name: tau_plugin_example
-description: "Demonstrates how to use the tau_plugin plugin."
+name: tau_example
+description: "Demonstrates how to use the tau plugin."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -34,7 +34,9 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_inappwebview: 6.0.0
+  fl_chart: ^0.68.0
   logger: ^2.0.2
+  path_provider: ^2.0.2
 
   tau: # ^0.0.5
     path: ../ # tau_plugin Dir
@@ -86,15 +88,16 @@ flutter:
   #- assets/extract/
   - assets/samples-f32/
   - assets/samples-f32/sample-f32-48000-32kb_s.pcm
- 
-
-  # To add assets to your application, add an assets section, like this:
-  - lib/RustEx/StereoPanner/RustEx_StereoPanner_graph.png
-  - lib/MozillaEx/AudioBasics/MozillaEx_AudioBasics_graph.png
-  - lib/MozillaEx/AudioAnalyser/MozillaEx_AudioAnalyser_graph.png
-  - lib/MozillaEx/AudioBuffer/MozillaEx_AudioBuffer_graph.png
-  - lib/MozillaEx/AudioBufferSource/MozillaEx_AudioBufferSource_graph.png
-  - lib/MozillaEx/AudioBasics/outfoxing.mp3
+  - assets/samples-f32/loop-f32-41000-s16le.pcm
+  - assets/wav/
+  - assets/wav/rnb-lofi-melody-loop.wav
+  - assets/wav/sample2.aac
+  - lib/RustEx/stereo_panner/RustEx_StereoPanner_graph.png
+  - lib/MozillaEx/audio_basics/MozillaEx_AudioBasics_graph.png
+  - lib/MozillaEx/audio_analyser/MozillaEx_AudioAnalyser_graph.png
+  - lib/MozillaEx/audio_buffer_source/MozillaEx_AudioBufferSource_graph.png
+  - lib/MozillaEx/audio_buffer/MozillaEx_AudioBuffer_graph.png
+  - lib/MozillaEx/loop/MozillaEx_loop_graph.png
  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

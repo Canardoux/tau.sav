@@ -7,6 +7,7 @@
 
 cargo install 'flutter_rust_bridge_codegen@^2.0.0-dev.0'
 cp flutter_rust_bridge/frb_example/integrate_third_party/rust/src/api/override_web_audio_api.rs tau_rust/rust/src/api
+cp -a flutter_rust_bridge/frb_example/integrate_third_party/rust/src/third_party/* tau_rust/rust/src/third_party
 
 cd tau_rust
 rm -r lib/src/rust/api/*
@@ -28,6 +29,19 @@ fi
 
 
 cd rust
+
+cargo clippy --fix --allow-dirty --allow-staged -- -D warnings
+if [ $? -ne 0 ]; then
+    echo "Error: ~/bin/generate.sh"
+    exit -1
+fi
+
+cargo  fmt
+if [ $? -ne 0 ]; then
+    echo "Error: ~/bin/generate.sh"
+    exit -1
+fi
+
 
 cargo clean
 if [ $? -ne 0 ]; then

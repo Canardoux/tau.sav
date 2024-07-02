@@ -1,1 +1,4 @@
 
+[submodule "flutter_rust_bridge"]
+	path = flutter_rust_bridge
+	url = git@github.com:Canardoux/flutter_rust_bridge.git

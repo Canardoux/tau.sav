@@ -41,31 +41,31 @@ import 'dart:io';
 import 'dart:isolate';
 
 import 'package:logger/logger.dart' as lg;
-import 'package:tau/src/rust/frb_generated.dart';
-import 'package:tau/src/rust/api/simple.dart';
+import 'package:tau/public/rust/frb_generated.dart';
+import 'package:tau/public/rust/api/simple.dart';
 //import 'tau_bindings_generated.dart';
 
-//export 'package:tau/src/rust/frb_generated.dart';
+//export 'package:tau/public/rust/frb_generated.dart';
 //export 'logger.dart' ;
 
 import 'tau_bindings_generated.dart';
 //import 'package:tau_plugin/tau_plugin.dart';
 
 //export 'public/webaudio.dart';
-export 'package:tau/src/rust/api/simple.dart';
+export 'package:tau/public/rust/api/simple.dart';
 //export 'package:logger/logger.dart'; // For call to setLogLevel()
-export 'package:tau/src/rust/api/toto.dart';
-export 'package:tau/src/rust/third_party/web_audio_api.dart';
+export 'package:tau/public/rust/api/toto.dart';
+export 'package:tau/public/rust/third_party/web_audio_api.dart';
 
-export 'package:tau/src/rust/frb_generated.dart';
-export 'package:tau/src/rust/third_party/web_audio_api/context.dart';
-export 'package:tau/src/rust/third_party/web_audio_api/media_devices.dart';
-export 'package:tau/src/rust/third_party/web_audio_api/media_recorder.dart';
-export 'package:tau/src/rust/third_party/web_audio_api/media_streams.dart';
-export 'package:tau/src/rust/third_party/web_audio_api/node.dart';
-export 'package:tau/src/rust/third_party/web_audio_api/worklet.dart';
-export 'package:tau/src/rust/api/override_web_audio_api.dart';
-export 'package:tau/src/rust/api/media_element.dart';
+export 'package:tau/public/rust/frb_generated.dart';
+export 'package:tau/public/rust/third_party/web_audio_api/context.dart';
+export 'package:tau/public/rust/third_party/web_audio_api/media_devices.dart';
+export 'package:tau/public/rust/third_party/web_audio_api/media_recorder.dart';
+export 'package:tau/public/rust/third_party/web_audio_api/media_streams.dart';
+export 'package:tau/public/rust/third_party/web_audio_api/node.dart';
+export 'package:tau/public/rust/third_party/web_audio_api/worklet.dart';
+export 'package:tau/public/rust/api/override_web_audio_api.dart';
+export 'package:tau/public/rust/api/media_element.dart';
 //export 'package:tau/public/media_element.dart';
 
 //==================================  Tau  ======================================

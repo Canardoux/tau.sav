@@ -1,0 +1,10 @@
+/Volumes/mac-J/larpoux/projmac/tau/tau_rust/rust/target/release/deps/libcreek_encode_wav-e82dd530a8bd3fae.rmeta: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/error.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/header.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/wav_bit_depth.rs
+
+/Volumes/mac-J/larpoux/projmac/tau/tau_rust/rust/target/release/deps/libcreek_encode_wav-e82dd530a8bd3fae.rlib: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/error.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/header.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/wav_bit_depth.rs
+
+/Volumes/mac-J/larpoux/projmac/tau/tau_rust/rust/target/release/deps/creek_encode_wav-e82dd530a8bd3fae.d: /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/lib.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/error.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/header.rs /Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/wav_bit_depth.rs
+
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/lib.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/error.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/header.rs:
+/Volumes/mac-J/larpoux/.cargo/registry/src/index.crates.io-6f17d22bba15001f/creek-encode-wav-0.2.0/src/wav_bit_depth.rs:

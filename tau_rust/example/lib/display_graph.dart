@@ -29,11 +29,12 @@
 import 'package:flutter/material.dart';
 
 class DisplayGraph extends StatelessWidget {
+  final String? graphDir;
   final String? graphImage;
   final String? mod;
   //const DisplayGraph({super.key});
 
-  /* ctor */ const DisplayGraph(this.mod, this.graphImage, {super.key});
+  /* ctor */ const DisplayGraph(this.mod, this.graphDir, this.graphImage, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +47,7 @@ class DisplayGraph extends StatelessWidget {
         child: Container(
           color: Colors.blue,
           child: Image.asset(
-            "lib/${mod}Ex/${graphImage!}/${mod}Ex_${graphImage!}_graph.png",
+            "lib/${mod}Ex/${graphDir!}/${mod}Ex_${graphImage!}_graph.png",
           ),
         ),
       ),
