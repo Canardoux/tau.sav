@@ -127,10 +127,10 @@ class _StereoPanner extends State<StereoPanner> {
 
   void dartStereoPanner() async {
     initPlatformState();
-    String s = await greet(name: "Tom" /*, hint: 'la plume'*/);
-    String s2 = await toto();
+    String s = greet(name: "Tom" /*, hint: 'la plume'*/);
+    String s2 = toto();
     Tau.tau.logger.d(s2);
-    String s3 = await zozo();
+    String s3 = zozo();
     Tau.tau.logger.d(s3);
     int sumResult = sum(1, 2);
     Tau.tau.logger.i("Add 1 to 2 gives $sumResult");

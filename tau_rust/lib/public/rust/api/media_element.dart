@@ -8,24 +8,24 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<MyMediaElement>>
 abstract class MyMediaElement implements RustOpaqueInterface {
-  Future<double> currentTime();
+  double currentTime();
 
-  Future<bool> loop();
+  bool loop();
 
   factory MyMediaElement({required String file}) =>
       RustLib.instance.api.crateApiMediaElementMyMediaElementNew(file: file);
 
-  Future<void> pause();
+  void pause();
 
-  Future<bool> paused();
+  bool paused();
 
-  Future<void> play();
+  void play();
 
-  Future<double> playbackRate();
+  double playbackRate();
 
-  Future<void> setCurrentTime({required double value});
+  void setCurrentTime({required double value});
 
-  Future<void> setLoop({required bool value});
+  void setLoop({required bool value});
 
-  Future<void> setPlaybackRate({required double value});
+  void setPlaybackRate({required double value});
 }

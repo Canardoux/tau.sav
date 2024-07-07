@@ -30,26 +30,24 @@ abstract class BlobEvent implements RustOpaqueInterface {
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<MediaRecorder>>
 abstract class MediaRecorder implements RustOpaqueInterface {
-  Future<void> clearOndataavailable();
+  void clearOndataavailable();
 
-  Future<void> clearOnerror();
+  void clearOnerror();
 
-  Future<void> clearOnstop();
+  void clearOnstop();
 
-  // HINT: Make it `#[frb(sync)]` to let it become the default constructor of Dart class.
   /// Creates a new `MediaRecorder` object, given a [`MediaStream`] to record.
   ///
   /// Only supports WAV file format currently.
-  static Future<MediaRecorder> newInstance({required MediaStream stream}) =>
-      RustLib.instance.api
-          .webAudioApiMediaRecorderMediaRecorderNew(stream: stream);
+  factory MediaRecorder({required MediaStream stream}) => RustLib.instance.api
+      .webAudioApiMediaRecorderMediaRecorderNew(stream: stream);
 
   /// Begin recording media
   ///
   /// # Panics
   ///
   /// Will panic when the recorder has already started
-  Future<void> start();
+  void start();
 
-  Future<void> stop();
+  void stop();
 }

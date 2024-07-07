@@ -111,15 +111,15 @@ class _AudioBufferSourceEx extends State<AudioBufferSourceEx> {
       buf[channel] = nowBuffering;
     }
     AudioBuffer audioBuffer =
-        await AudioBuffer.from(samples: buf, sampleRate: 48000);
+      AudioBuffer.from(samples: buf, sampleRate: 48000);
 
-    src = await audioCtx!.createBufferSource();
+    src = audioCtx!.createBufferSource();
     src!.setBuffer(audioBuffer: audioBuffer);
     audioBuffer.dispose();
 
-    dest = await audioCtx!.destination();
+    dest = audioCtx!.destination();
     src!.connect(dest: dest!);
-    await src!.setOnEnded(callback: finished);
+    src!.setOnEnded(callback: finished);
     src!.start();
     if (mounted) {
       setState(() {});
@@ -128,7 +128,7 @@ class _AudioBufferSourceEx extends State<AudioBufferSourceEx> {
 
   Future<void> finished(Event event) async {
     Tau.tau.logger.d('lolo');
-    await src!.stop();
+    src!.stop();
     setState(() {});
 
     Tau.tau.logger.d('C\'est parti mon kiki');

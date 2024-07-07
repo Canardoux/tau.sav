@@ -97,7 +97,8 @@ flutter:
   - lib/MozillaEx/audio_analyser/MozillaEx_AudioAnalyser_graph.png
   - lib/MozillaEx/audio_buffer_source/MozillaEx_AudioBufferSource_graph.png
   - lib/MozillaEx/audio_buffer/MozillaEx_AudioBuffer_graph.png
-  - lib/MozillaEx/loop/MozillaEx_loop_graph.png
+  - lib/MozillaEx/loop/MozillaEx_Loop_graph.png
+  - lib/MozillaEx/audio_worklet/MozillaEx_AudioWorklet_graph.png
  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

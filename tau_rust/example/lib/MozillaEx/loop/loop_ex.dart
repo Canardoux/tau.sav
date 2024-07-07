@@ -17,12 +17,8 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:tau/tau.dart';
-import 'dart:math';
-import 'dart:typed_data';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:io';
@@ -37,8 +33,7 @@ class LoopEx extends StatefulWidget {
 }
 
 class _LoopEx extends State<LoopEx> {
-  String pcmAsset =
-    'assets/wav/sample2.aac'; // The Wav asset to be played
+  String pcmAsset = 'assets/wav/sample2.aac'; // The Wav asset to be played
 
   AudioContext? audioCtx;
   AudioDestinationNode? dest;
@@ -52,32 +47,28 @@ class _LoopEx extends State<LoopEx> {
   double loopEndValue = 0;
   double max = 0;
 
-  Future<void> loadAudio() async
-  {
-        var asset = await rootBundle.load(pcmAsset);
+  Future<void> loadAudio() async {
+    var asset = await rootBundle.load(pcmAsset);
 
-        var tempDir = await getTemporaryDirectory();
-        path = '${tempDir.path}/tau.wav';
-        var file = File(path);
-        file.writeAsBytesSync(
-            asset.buffer.asInt8List());
-
+    var tempDir = await getTemporaryDirectory();
+    path = '${tempDir.path}/tau.wav';
+    var file = File(path);
+    file.writeAsBytesSync(asset.buffer.asInt8List());
   }
 
   void initPlatformState() async {
     audioCtx = AudioContext(
-      options: const AudioContextOptions(
+        options: const AudioContextOptions(
       latencyHint: AudioContextLatencyCategory.playback(),
       sinkId: '',
       renderSizeHint: AudioContextRenderSizeCategory.default_,
       //sampleRate: 44100,
     ));
     await loadAudio();
-    audioBuffer = await audioCtx!.decodeAudioDataSync(inputPath: path);
-    double duration = await audioBuffer!.duration();
+    audioBuffer = audioCtx!.decodeAudioDataSync(inputPath: path);
+    double duration = audioBuffer!.duration();
     max = duration; // The value is incorrect !
-    setState(() {
-    });
+    setState(() {});
 
     Tau.tau.logger.d('Une bonne journée');
   }
@@ -123,36 +114,34 @@ class _LoopEx extends State<LoopEx> {
  */
   // And here is our dart code
   Future<void> hitPlayButton() async {
-      disposeEverything();
+    disposeEverything();
 
-      source = await audioCtx!.createBufferSource();
+    source = audioCtx!.createBufferSource();
 
-      if ( audioBuffer!.isDisposed )
-      {
-          Tau.tau.logger.d('Is disposed');
-      }
-      int n = await audioBuffer!.numberOfChannels();
-      //var audioBufferCloned = audioBuffer!.clone();
-      await source!.setBuffer(audioBuffer: audioBuffer!);
-      if ( audioBuffer!.isDisposed )
-      {
-        Tau.tau.logger.d('Is disposed');
-      }
+    if (audioBuffer!.isDisposed) {
+      Tau.tau.logger.d('Is disposed');
+    }
+    int n = audioBuffer!.numberOfChannels();
+    //var audioBufferCloned = audioBuffer!.clone();
+    source!.setBuffer(audioBuffer: audioBuffer!);
+    if (audioBuffer!.isDisposed) {
+      Tau.tau.logger.d('Is disposed');
+    }
 
-      dest = await audioCtx!.destination();
-      await source!.connect(dest: dest!);
-      await source!.setLoopStart(value: loopStartValue);
-      await source!.setLoopEnd(value: loopEndValue);
-      await source!.setLoop(value: true) ;
+    dest = audioCtx!.destination();
+    source!.connect(dest: dest!);
+    source!.setLoopStart(value: loopStartValue);
+    source!.setLoopEnd(value: loopEndValue);
+    source!.setLoop(value: true);
 
-      //source.loopStart = loopstartControl.value;
-      //source.loopEnd = loopendControl.value;
-      await source!.startAtWithOffsetAndDuration(start: 0, offset: loopStartValue, duration: loopEndValue);
-      playDisabled = true;
-      stopDisabled = false;
+    //source.loopStart = loopstartControl.value;
+    //source.loopEnd = loopendControl.value;
+    source!.startAtWithOffsetAndDuration(
+        start: 0, offset: loopStartValue, duration: loopEndValue);
+    playDisabled = true;
+    stopDisabled = false;
 
-
-      /*
+    /*
     var sampleRate = await audioCtx!.sampleRate();
     var frameCount = (sampleRate * 2.0).ceil();
     List<Float32List> buf = List<Float32List>.filled(
@@ -187,8 +176,7 @@ class _LoopEx extends State<LoopEx> {
     }
   }
 
-  Future<void> hitStopButton() async
-  {
+  Future<void> hitStopButton() async {
     source!.stop();
     disposeEverything();
     playDisabled = false;
@@ -196,34 +184,29 @@ class _LoopEx extends State<LoopEx> {
     if (mounted) {
       setState(() {});
     }
-
   }
-
 
   Future<void> loopStart(double v) async // v is between 0.0 and max
   {
     loopStartValue = v;
-    if (source != null)
-      {
-      await source!.setLoopStart(value: v);
-      }
+    if (source != null) {
+      source!.setLoopStart(value: v);
+    }
     setState(() {});
   }
 
   Future<void> loopEnd(double v) async // v is between 0.0 and max
   {
     loopEndValue = v;
-    if (source != null)
-      {
-      await source!.setLoopEnd(value: v);
-      }
+    if (source != null) {
+      source!.setLoopEnd(value: v);
+    }
     setState(() {});
   }
 
-
   Future<void> finished(Event event) async {
     Tau.tau.logger.d('lolo');
-    await source!.stop();
+    source!.stop();
     setState(() {});
 
     Tau.tau.logger.d('C\'est parti mon kiki');
@@ -239,9 +222,9 @@ class _LoopEx extends State<LoopEx> {
       dest = null;
     }
     //if (source != null) {
-      //src!.stop();
-      //source!.dispose();
-      //source = null;
+    //src!.stop();
+    //source!.dispose();
+    //source = null;
     //}
   }
 
@@ -252,17 +235,15 @@ class _LoopEx extends State<LoopEx> {
       audioCtx!.close();
       audioCtx!.dispose();
       audioCtx = null;
-    if (source != null) {
-      //source!.stop();
-      source!.dispose();
-      source = null;
-    }
-    if (audioBuffer != null)
-    {
-      audioBuffer!.dispose();
-      audioBuffer = null;
-    }
-
+      if (source != null) {
+        //source!.stop();
+        source!.dispose();
+        source = null;
+      }
+      if (audioBuffer != null) {
+        audioBuffer!.dispose();
+        audioBuffer = null;
+      }
     }
 
     super.dispose();
@@ -277,65 +258,55 @@ class _LoopEx extends State<LoopEx> {
   @override
   Widget build(BuildContext context) {
     Widget makeBody() {
-      return Center( child:
-        Column( mainAxisAlignment: MainAxisAlignment.center, children: [
-           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-        ElevatedButton(
-          onPressed: playDisabled ? null : hitPlayButton,
-          //color: Colors.indigo,
-          child: const Text(
-            'Play',
-            style: TextStyle(color: Colors.black),
-          ),
-        ),
-
-        const SizedBox(
-          width: 5,
-        ),
-
-        ElevatedButton(
-          onPressed: stopDisabled ? null : hitStopButton,
-          //color: Colors.indigo,
-          child: const Text(
-            'Stop',
-            style: TextStyle(color: Colors.black),
-          ),
-        ),
-
-        const SizedBox(
-          width: 5,
-        ),
-
-      ]),
+      return Center(
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            ElevatedButton(
+              onPressed: playDisabled ? null : hitPlayButton,
+              //color: Colors.indigo,
+              child: const Text(
+                'Play',
+                style: TextStyle(color: Colors.black),
+              ),
+            ),
+            const SizedBox(
+              width: 5,
+            ),
+            ElevatedButton(
+              onPressed: stopDisabled ? null : hitStopButton,
+              //color: Colors.indigo,
+              child: const Text(
+                'Stop',
+                style: TextStyle(color: Colors.black),
+              ),
+            ),
+            const SizedBox(
+              width: 5,
+            ),
+          ]),
           const SizedBox(
             height: 20,
           ),
-
-
           const Text('Start:'),
           Slider(
             value: loopStartValue,
             min: 0.0,
-            max: max ,
-            onChanged:  loopStart,
+            max: max,
+            onChanged: loopStart,
             //divisions: 1
           ),
-
           const SizedBox(
             height: 20,
           ),
-
-
           const Text('End:'),
           Slider(
             value: loopEndValue,
             min: 0.0,
-            max: max ,
-            onChanged:  loopEnd,
+            max: max,
+            onChanged: loopEnd,
 
             //divisions: 1
           ),
-
         ]),
       );
     }

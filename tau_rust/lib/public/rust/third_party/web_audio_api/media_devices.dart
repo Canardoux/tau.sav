@@ -45,8 +45,7 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 /// // enjoy listening
 /// std::thread::sleep(std::time::Duration::from_secs(4));
 /// ```
-Future<MediaStream> getUserMediaSync(
-        {required MediaStreamConstraints constraints}) =>
+MediaStream getUserMediaSync({required MediaStreamConstraints constraints}) =>
     RustLib.instance.api
         .webAudioApiMediaDevicesGetUserMediaSync(constraints: constraints);
 

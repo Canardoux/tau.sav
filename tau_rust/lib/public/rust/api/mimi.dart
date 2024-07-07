@@ -6,4 +6,4 @@
 import '../frb_generated.dart';
 import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 
-Future<String> mimi() => RustLib.instance.api.crateApiMimiMimi();
+String mimi() => RustLib.instance.api.crateApiMimiMimi();

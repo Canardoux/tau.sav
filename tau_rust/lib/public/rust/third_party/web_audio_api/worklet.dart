@@ -15,25 +15,25 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<AudioWorkletNode>>
 abstract class AudioWorkletNode implements RustOpaqueInterface, AudioNode {
-  Future<void> channelConfig();
+  void channelConfig();
 
   /// Represents an integer used to determine how many channels are used when up-mixing and
   /// down-mixing connections to any inputs to the node.
-  Future<int> channelCount();
+  int channelCount();
 
   /// Represents an enumerated value describing the way channels must be matched between the
   /// node's inputs and outputs.
-  Future<ChannelCountMode> channelCountMode();
+  ChannelCountMode channelCountMode();
 
   /// Represents an enumerated value describing the meaning of the channels. This interpretation
   /// will define how audio up-mixing and down-mixing will happen.
-  Future<ChannelInterpretation> channelInterpretation();
+  ChannelInterpretation channelInterpretation();
 
   /// Unset the callback to run when an unhandled exception occurs in the audio processor.
-  Future<void> clearOnprocessorerror();
+  void clearOnprocessorerror();
 
   /// Disconnects all outgoing connections from the AudioNode.
-  Future<void> disconnect();
+  void disconnect();
 
   /// Disconnects all outgoing connections at the given output port from the AudioNode.
   ///
@@ -41,19 +41,19 @@ abstract class AudioWorkletNode implements RustOpaqueInterface, AudioNode {
   ///
   /// This function will panic when
   /// - if the output port is out of bounds for this node
-  Future<void> disconnectOutput({required int output});
+  void disconnectOutput({required int output});
 
-  Future<int> numberOfInputs();
+  int numberOfInputs();
 
-  Future<int> numberOfOutputs();
+  int numberOfOutputs();
 
   /// Collection of AudioParam objects with associated names of this node
   ///
   /// This map is populated from a list of [`AudioParamDescriptor`]s in the
   /// [`AudioWorkletProcessor`] class constructor at the instantiation.
-  Future<void> parameters();
+  void parameters();
 
-  Future<void> registration();
+  void registration();
 }
 
 abstract class AudioWorkletProcessor {}

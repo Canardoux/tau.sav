@@ -12,14 +12,14 @@ Stream<LogEntry> traceLogger() =>
     RustLib.instance.api.crateApiSimpleTraceLogger();
 
 /// Initialisation of the tau_core rust library
-Future<bool> initTauCore() => RustLib.instance.api.crateApiSimpleInitTauCore();
+bool initTauCore() => RustLib.instance.api.crateApiSimpleInitTauCore();
 
-Future<void> rustSetLogLevel({required int level}) =>
+void rustSetLogLevel({required int level}) =>
     RustLib.instance.api.crateApiSimpleRustSetLogLevel(level: level);
 
 /// Greeting the user.
 /// Calls several trace functions and call a rust program to play sinusoid sounds.
-Future<String> greet({required String name}) =>
+String greet({required String name}) =>
     RustLib.instance.api.crateApiSimpleGreet(name: name);
 
 enum Level {

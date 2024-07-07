@@ -103,7 +103,7 @@ class _AudioAnalyserEx extends State<AudioAnalyserEx>
   bool isStarted = false;
   Future<void> finished(Event event) async {
     Tau.tau.logger.d('lolo');
-    await sourceNode!.stop();
+    sourceNode!.stop();
     isPlaying = false;
     isStarted = false;
     setState(() {});
@@ -216,11 +216,11 @@ class _AudioAnalyserEx extends State<AudioAnalyserEx>
     AudioBuffer audioBuffer = await AudioBuffer.from(
         samples: List<Float32List>.filled(2, pcmData), sampleRate: 48000);
 
-    sourceNode = await audioCtx!.createBufferSource();
+    sourceNode = audioCtx!.createBufferSource();
     sourceNode!.setBuffer(audioBuffer: audioBuffer);
     audioBuffer!.dispose();
     sourceNode!.setLoop(value: true);
-    dest = await audioCtx!.destination();
+    dest = audioCtx!.destination();
 
     // Load the audio the first time through, otherwise play it from the buffer
     //msg.textContent = "Loading audio…";
@@ -228,15 +228,15 @@ class _AudioAnalyserEx extends State<AudioAnalyserEx>
     //msg.textContent = "Configuring audio stack…";
 
     // Set up the audio analyser and the javascript node
-    analyserNode = await audioCtx!.createAnalyser();
-    javascriptNode = await audioCtx!.createScriptProcessor(
+    analyserNode = audioCtx!.createAnalyser();
+    javascriptNode = audioCtx!.createScriptProcessor(
         bufferSize: 1024, numberOfInputChannels: 1, numberOfOutputChannels: 1);
 
     // Connect the nodes together
-    await sourceNode!.connect(dest: dest!);
-    await sourceNode!.connect(dest: analyserNode!);
-    await analyserNode!.connect(dest: javascriptNode!);
-    await javascriptNode!.connect(dest: dest!);
+    sourceNode!.connect(dest: dest!);
+    sourceNode!.connect(dest: analyserNode!);
+    analyserNode!.connect(dest: javascriptNode!);
+    javascriptNode!.connect(dest: dest!);
 
     // Play the audio
     //msg.textContent = "Audio playing…";
@@ -247,7 +247,7 @@ class _AudioAnalyserEx extends State<AudioAnalyserEx>
     javascriptNode!.setOnaudioprocess(callback: (AudioProcessingEvent event) async
     {
       // Read the frequency values
-      int frequencyBinCount = await analyserNode!.frequencyBinCount();
+      int frequencyBinCount = analyserNode!.frequencyBinCount();
 
       // Get the time domain data for this sample
       var amplitudeArray =

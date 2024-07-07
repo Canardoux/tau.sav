@@ -26,6 +26,8 @@ import 'MozillaEx/audio_analyser/audio_analyser_ex.dart';
 import 'MozillaEx/audio_buffer_source/audio_buffer_source_ex.dart';
 import 'MozillaEx/audio_buffer/audio_buffer_ex.dart';
 import 'MozillaEx/loop/loop_ex.dart';
+import 'MozillaEx/audio_worklet/audio_worklet_ex.dart';
+import 'MozillaEx/iir_filter_node/iir_filter_node_ex.dart';
 
 /*
     This APP is just a driver to call the various Tau examples.
@@ -57,7 +59,6 @@ final List<Example> mozillaExampleTable = [
       graphImage: 'AudioBasics',
       description: '''This is an example from mozilla.
 '''),
-
   Example(
       title: 'Audio Analyser',
       subTitle: 'Audio Analyser Example',
@@ -68,7 +69,6 @@ final List<Example> mozillaExampleTable = [
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),
-
   Example(
       title: 'Audio Buffer Source',
       subTitle: 'Audio Buffer Source Node Example',
@@ -79,7 +79,6 @@ final List<Example> mozillaExampleTable = [
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),
-
   Example(
       title: 'Audio Buffer',
       subTitle: 'Play from an Audio Buffer',
@@ -90,7 +89,6 @@ final List<Example> mozillaExampleTable = [
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),
-
   Example(
       title: 'Loop Playback',
       subTitle: 'looping a track',
@@ -101,7 +99,26 @@ final List<Example> mozillaExampleTable = [
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),
-
+  Example(
+      title: 'Audio Worklet',
+      subTitle: 'Worklet Example',
+      flags: 0,
+      route: (_) => const AudioWorkletEx(),
+      graphDir: 'audio_worklet',
+      graphImage: 'AudioWorklet',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'IIR Filter Node',
+      subTitle: 'IIR Filter Node Example',
+      flags: 0,
+      route: (_) => const IirFilterNodeEx(),
+      graphDir: 'iir_filter_node',
+      graphImage: 'IirFilterNode',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
 ];
 
 ///

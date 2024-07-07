@@ -96,20 +96,20 @@ class _AudioBasics extends State<AudioBasics> {
     Tau.tau.logger.d('Une bonne journée');
     Float32List pcmData = await getAssetData(pcmAsset);
 
-    AudioBuffer audioBuffer = await AudioBuffer.from(
+    AudioBuffer audioBuffer = AudioBuffer.from(
         samples: List<Float32List>.filled(2, pcmData), sampleRate: 48000);
 
-    src = await audioCtx.createBufferSource();
+    src = audioCtx.createBufferSource();
     src.setBuffer(audioBuffer: audioBuffer);
     audioBuffer.dispose();
-    dest = await audioCtx.destination();
-    gainNode = await audioCtx.createGain();
-    panner = await audioCtx.createStereoPanner();
+    dest = audioCtx.destination();
+    gainNode = audioCtx.createGain();
+    panner = audioCtx.createStereoPanner();
 
-    await src.connect(dest: gainNode);
-    await gainNode.connect(dest: panner);
-    await panner.connect(dest: dest);
-    await src.setOnEnded(callback: finished);
+    src.connect(dest: gainNode);
+    gainNode.connect(dest: panner);
+    panner.connect(dest: dest);
+    src.setOnEnded(callback: finished);
 
     if (mounted) {
       setState(() {});
@@ -119,8 +119,8 @@ class _AudioBasics extends State<AudioBasics> {
   bool isStarted = false;
   Future<void> finished(Event event) async {
     Tau.tau.logger.d('lolo');
-    await src.stop();
-    await audioCtx.close();
+    src.stop();
+    audioCtx.close();
     isPlaying = false;
     isStarted = false;
     setState(() {});
@@ -150,22 +150,22 @@ class _AudioBasics extends State<AudioBasics> {
   // And here is our dart code
   Future<void> hitPlayButton() async {
         if (!isStarted) {
-          await src.start();
+          src.start();
           isStarted = true;
           isPlaying = true;
           return;
         }
 
-        AudioContextState state = await audioCtx.state();
+        AudioContextState state = audioCtx.state();
         if (state == AudioContextState.suspended) {
-          await audioCtx.resumeSync();
+          audioCtx.resumeSync();
         }
         if (!isPlaying) {
-          await audioCtx.resumeSync();
+          audioCtx.resumeSync();
           isPlaying = true;
         } else
         if (isPlaying) {
-          await audioCtx.suspend();
+          audioCtx.suspend();
           isPlaying = false;
         }
 

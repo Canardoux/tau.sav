@@ -10,8 +10,8 @@ cp flutter_rust_bridge/frb_example/integrate_third_party/rust/src/api/override_w
 cp -a flutter_rust_bridge/frb_example/integrate_third_party/rust/src/third_party/* tau_rust/rust/src/third_party
 
 cd tau_rust
-rm -r lib/src/rust/api/*
-rm -r lib/src/rust/frb_*
+rm -r lib/public/rust/api/*
+rm -r lib/public/rust/frb_*
 rm rust/src/frb_*
 
 flutter clean
@@ -36,7 +36,7 @@ if [ $? -ne 0 ]; then
     exit -1
 fi
 
-cargo  fmt
+cargo +nightly fmt --check
 if [ $? -ne 0 ]; then
     echo "Error: ~/bin/generate.sh"
     exit -1

@@ -15,19 +15,18 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<MediaStream>>
 abstract class MediaStream implements RustOpaqueInterface, MediaStreamExt {
-  Future<List<MediaStreamTrack>> getTracks();
+  List<MediaStreamTrack> getTracks();
 
-  static Future<MediaStream> fromTracks(
-          {required List<MediaStreamTrack> tracks}) =>
+  static MediaStream fromTracks({required List<MediaStreamTrack> tracks}) =>
       RustLib.instance.api
           .webAudioApiMediaStreamsMediaStreamFromTracks(tracks: tracks);
 }
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<MediaStreamTrack>>
 abstract class MediaStreamTrack implements RustOpaqueInterface {
-  Future<void> close();
+  void close();
 
-  Future<MediaStreamTrackState> readyState();
+  MediaStreamTrackState readyState();
 }
 
 /// Ready-state of a [`MediaStreamTrack`]

@@ -6,8 +6,8 @@
 import '../frb_generated.dart';
 import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 
-Future<int> sum({required int a, required int b}) =>
+int sum({required int a, required int b}) =>
     RustLib.instance.api.crateApiZozoSum(a: a, b: b);
 
-Future<int> sumLongRunning({required int a, required int b}) =>
+int sumLongRunning({required int a, required int b}) =>
     RustLib.instance.api.crateApiZozoSumLongRunning(a: a, b: b);

@@ -70,7 +70,7 @@ class _AudioBufferEx extends State<AudioBufferEx> {
       //sampleRate: 44100,
     ));
     await loadAudio();
-    audioBuffer = await audioCtx!.decodeAudioDataSync(inputPath: path);
+    audioBuffer = audioCtx!.decodeAudioDataSync(inputPath: path);
     setState(() {
     });
 
@@ -120,22 +120,22 @@ class _AudioBufferEx extends State<AudioBufferEx> {
   Future<void> hitPlayButton() async {
       disposeEverything();
 
-      source = await audioCtx!.createBufferSource();
+      source = audioCtx!.createBufferSource();
 
       if ( audioBuffer!.isDisposed )
       {
           Tau.tau.logger.d('Is disposed');
       }
-      await source!.setBuffer(audioBuffer: audioBuffer!);
+      source!.setBuffer(audioBuffer: audioBuffer!);
       if ( audioBuffer!.isDisposed )
       {
         Tau.tau.logger.d('Is disposed');
       }
 
-      dest = await audioCtx!.destination();
-      await source!.connect(dest: dest!);
-      await source!.setLoop(value: true) ;
-      await source!.start();
+      dest = audioCtx!.destination();
+      source!.connect(dest: dest!);
+      source!.setLoop(value: true) ;
+      source!.start();
 
       //source.loopStart = loopstartControl.value;
       //source.loopEnd = loopendControl.value;

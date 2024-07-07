@@ -6,6 +6,6 @@
 import '../frb_generated.dart';
 import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
 
-Future<String> toto() => RustLib.instance.api.crateApiTotoToto();
+String toto() => RustLib.instance.api.crateApiTotoToto();
 
-Future<String> zozo() => RustLib.instance.api.crateApiTotoZozo();
+String zozo() => RustLib.instance.api.crateApiTotoZozo();

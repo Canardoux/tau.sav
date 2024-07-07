@@ -16,7 +16,7 @@ import 'web_audio_api/worklet.dart';
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<AudioBuffer>>
 abstract class AudioBuffer implements RustOpaqueInterface {
   /// Duration in seconds of the `AudioBuffer`
-  Future<double> duration();
+  double duration();
 
   /// Convert raw samples to an AudioBuffer
   ///
@@ -29,7 +29,7 @@ abstract class AudioBuffer implements RustOpaqueInterface {
   /// - the given number of channels defined by `samples.len()`is outside the
   ///   [1, 32] range, 32 being defined by the MAX_CHANNELS constant.
   /// - any of its items have different lengths
-  static Future<AudioBuffer> from(
+  static AudioBuffer from(
           {required List<Float32List> samples, required double sampleRate}) =>
       RustLib.instance.api
           .webAudioApiAudioBufferFrom(samples: samples, sampleRate: sampleRate);
@@ -40,7 +40,7 @@ abstract class AudioBuffer implements RustOpaqueInterface {
   ///
   /// This function will panic if:
   /// - the given channel number is greater than or equal to the given number of channels.
-  Future<void> getChannelData({required int channelNumber});
+  void getChannelData({required int channelNumber});
 
   /// Return a mutable slice of the underlying data of the channel
   ///
@@ -48,12 +48,11 @@ abstract class AudioBuffer implements RustOpaqueInterface {
   ///
   /// This function will panic if:
   /// - the given channel number is greater than or equal to the given number of channels.
-  Future<void> getChannelDataMut({required int channelNumber});
+  void getChannelDataMut({required int channelNumber});
 
   /// Number of samples per channel in this `AudioBuffer`
-  Future<int> length();
+  int length();
 
-  // HINT: Make it `#[frb(sync)]` to let it become the default constructor of Dart class.
   /// Allocate a silent audiobuffer with [`AudioBufferOptions`]
   ///
   /// # Panics
@@ -62,15 +61,14 @@ abstract class AudioBuffer implements RustOpaqueInterface {
   /// - the given sample rate is zero
   /// - the given number of channels is outside the [1, 32] range,
   /// 32 being defined by the MAX_CHANNELS constant.
-  static Future<AudioBuffer> newInstance(
-          {required AudioBufferOptions options}) =>
+  factory AudioBuffer({required AudioBufferOptions options}) =>
       RustLib.instance.api.webAudioApiAudioBufferNew(options: options);
 
   /// Number of channels in this `AudioBuffer`
-  Future<int> numberOfChannels();
+  int numberOfChannels();
 
   /// Sample rate of this `AudioBuffer` in Hertz
-  Future<double> sampleRate();
+  double sampleRate();
 }
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<AudioListener>>
@@ -98,7 +96,7 @@ abstract class AudioListener implements RustOpaqueInterface {
 abstract class AudioParam
     implements RustOpaqueInterface, AudioNode, AudioParamExt {
   /// Current value of the automation rate of the AudioParam
-  Future<AutomationRate> automationRate();
+  AutomationRate automationRate();
 
   /// Cancels all scheduled parameter changes with times greater than or equal
   /// to `cancel_time` and the automation value that would have happened at
@@ -107,7 +105,7 @@ abstract class AudioParam
   /// # Panics
   ///
   /// Will panic if `cancel_time` is negative
-  Future<void> cancelAndHoldAtTime({required double cancelTime});
+  void cancelAndHoldAtTime({required double cancelTime});
 
   /// Cancels all scheduled parameter changes with times greater than or equal
   /// to `cancel_time`.
@@ -115,29 +113,29 @@ abstract class AudioParam
   /// # Panics
   ///
   /// Will panic if `cancel_time` is negative
-  Future<void> cancelScheduledValues({required double cancelTime});
+  void cancelScheduledValues({required double cancelTime});
 
-  Future<void> channelConfig();
+  void channelConfig();
 
   /// Represents an integer used to determine how many channels are used when up-mixing and
   /// down-mixing connections to any inputs to the node.
-  Future<int> channelCount();
+  int channelCount();
 
   /// Represents an enumerated value describing the way channels must be matched between the
   /// node's inputs and outputs.
-  Future<ChannelCountMode> channelCountMode();
+  ChannelCountMode channelCountMode();
 
   /// Represents an enumerated value describing the meaning of the channels. This interpretation
   /// will define how audio up-mixing and down-mixing will happen.
-  Future<ChannelInterpretation> channelInterpretation();
+  ChannelInterpretation channelInterpretation();
 
   /// Unset the callback to run when an unhandled exception occurs in the audio processor.
-  Future<void> clearOnprocessorerror();
+  void clearOnprocessorerror();
 
-  Future<double> defaultValue();
+  double defaultValue();
 
   /// Disconnects all outgoing connections from the AudioNode.
-  Future<void> disconnect();
+  void disconnect();
 
   /// Disconnects all outgoing connections at the given output port from the AudioNode.
   ///
@@ -145,7 +143,7 @@ abstract class AudioParam
   ///
   /// This function will panic when
   /// - if the output port is out of bounds for this node
-  Future<void> disconnectOutput({required int output});
+  void disconnectOutput({required int output});
 
   /// Schedules an exponential continuous change in parameter value from the
   /// previous scheduled parameter value to the given value.
@@ -155,10 +153,10 @@ abstract class AudioParam
   /// Will panic if:
   /// - `value` is zero
   /// - `end_time` is negative
-  Future<void> exponentialRampToValueAtTime(
+  void exponentialRampToValueAtTime(
       {required double value, required double endTime});
 
-  Future<void> connect({required AudioNode dest});
+  void connect({required AudioNode dest});
 
   /// Schedules a linear continuous change in parameter value from the
   /// previous scheduled parameter value to the given value.
@@ -166,28 +164,27 @@ abstract class AudioParam
   /// # Panics
   ///
   /// Will panic if `end_time` is negative
-  Future<void> linearRampToValueAtTime(
+  void linearRampToValueAtTime(
       {required double value, required double endTime});
 
-  Future<double> maxValue();
+  double maxValue();
 
-  Future<double> minValue();
+  double minValue();
 
-  Future<int> numberOfInputs();
+  int numberOfInputs();
 
-  Future<int> numberOfOutputs();
+  int numberOfOutputs();
 
-  Future<void> registration();
+  void registration();
 
   /// Update the current value of the automation rate of the AudioParam
   ///
   /// # Panics
   ///
   /// Some nodes have automation rate constraints and may panic when updating the value.
-  Future<void> setAutomationRate({required AutomationRate value});
+  void setAutomationRate({required AutomationRate value});
 
-  Future<void> setOnProcessorError(
-      {required FutureOr<void> Function(String) callback});
+  void setOnProcessorError({required FutureOr<void> Function(String) callback});
 
   /// Start exponentially approaching the target value at the given time with
   /// a rate having the given time constant.
@@ -197,7 +194,7 @@ abstract class AudioParam
   /// Will panic if:
   /// - `start_time` is negative
   /// - `time_constant` is negative
-  Future<void> setTargetAtTime(
+  void setTargetAtTime(
       {required double value,
       required double startTime,
       required double timeConstant});
@@ -213,8 +210,7 @@ abstract class AudioParam
   /// # Panics
   ///
   /// Will panic if `start_time` is negative
-  Future<void> setValueAtTime(
-      {required double value, required double startTime});
+  void setValueAtTime({required double value, required double startTime});
 
   /// Sets an array of arbitrary parameter values starting at the given time
   /// for the given duration.
@@ -225,7 +221,7 @@ abstract class AudioParam
   /// - `value` length is less than 2
   /// - `start_time` is negative
   /// - `duration` is negative or equal to zero
-  Future<void> setValueCurveAtTime(
+  void setValueCurveAtTime(
       {required List<double> values,
       required double startTime,
       required double duration});
@@ -252,13 +248,13 @@ abstract class AudioProcessingEvent implements RustOpaqueInterface {
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<AudioRenderCapacity>>
 abstract class AudioRenderCapacity implements RustOpaqueInterface {
   /// Unset the EventHandler for [`AudioRenderCapacityEvent`].
-  Future<void> clearOnupdate();
+  void clearOnupdate();
 
   /// Start metric collection and analysis
-  Future<void> start({required AudioRenderCapacityOptions options});
+  void start({required AudioRenderCapacityOptions options});
 
   /// Stop metric collection and analysis
-  Future<void> stop();
+  void stop();
 }
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<AudioRenderCapacityEvent>>
@@ -302,7 +298,7 @@ abstract class OfflineAudioCompletionEvent implements RustOpaqueInterface {
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<PeriodicWave>>
 abstract class PeriodicWave implements RustOpaqueInterface {
-  static Future<PeriodicWave> default_() =>
+  static PeriodicWave default_() =>
       RustLib.instance.api.webAudioApiPeriodicWaveDefault();
 }
 
@@ -382,7 +378,7 @@ class AudioRenderCapacityOptions {
     required this.updateInterval,
   });
 
-  static Future<AudioRenderCapacityOptions> default_() =>
+  static AudioRenderCapacityOptions default_() =>
       RustLib.instance.api.webAudioApiAudioRenderCapacityOptionsDefault();
 
   @override
@@ -441,7 +437,7 @@ class PeriodicWaveOptions {
     required this.disableNormalization,
   });
 
-  static Future<PeriodicWaveOptions> default_() =>
+  static PeriodicWaveOptions default_() =>
       RustLib.instance.api.webAudioApiPeriodicWaveOptionsDefault();
 
   @override

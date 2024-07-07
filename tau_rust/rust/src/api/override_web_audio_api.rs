@@ -157,6 +157,7 @@ pub impl Event {
 
 #[ext(name = ScriptProcessorNodeMiscExt)]
 pub impl ScriptProcessorNode {
+    // NOTE: The original name was `set_onaudioprocess` and here the new name has `_`
     fn frb_override_set_onaudioprocess(
         &self,
         callback: impl Fn(AudioProcessingEvent) -> DartFnFuture<()> + Send + 'static + std::marker::Sync,
