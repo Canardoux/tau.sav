@@ -92,6 +92,8 @@ flutter:
   - assets/wav/
   - assets/wav/rnb-lofi-melody-loop.wav
   - assets/wav/sample2.aac
+  - assets/wav/outfoxing.mp3
+  - assets/wav/viper.ogg
   - lib/RustEx/stereo_panner/RustEx_StereoPanner_graph.png
   - lib/MozillaEx/audio_basics/MozillaEx_AudioBasics_graph.png
   - lib/MozillaEx/audio_analyser/MozillaEx_AudioAnalyser_graph.png
@@ -99,7 +101,11 @@ flutter:
   - lib/MozillaEx/audio_buffer/MozillaEx_AudioBuffer_graph.png
   - lib/MozillaEx/loop/MozillaEx_Loop_graph.png
   - lib/MozillaEx/audio_worklet/MozillaEx_AudioWorklet_graph.png
- 
+  - lib/MozillaEx/iir_filter_node/MozillaEx_IirFilterNode_graph.png
+  - lib/MozillaEx/playback_rate/MozillaEx_PlaybackRate_graph.png
+  - lib/MozillaEx/offline_audio_context/MozillaEx_OfflineAudioContext_graph.png
+  - lib/MozillaEx/audio_context_states/MozillaEx_AudioContextStates_graph.png
+   
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

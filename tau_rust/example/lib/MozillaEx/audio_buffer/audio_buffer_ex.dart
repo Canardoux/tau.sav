@@ -17,12 +17,8 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:tau/tau.dart';
-import 'dart:math';
-import 'dart:typed_data';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:io';
@@ -37,8 +33,7 @@ class AudioBufferEx extends StatefulWidget {
 }
 
 class _AudioBufferEx extends State<AudioBufferEx> {
-  String pcmAsset =
-    'assets/wav/sample2.aac'; // The Wav asset to be played
+  String pcmAsset = 'assets/wav/sample2.aac'; // The Wav asset to be played
 
   AudioContext? audioCtx;
   AudioDestinationNode? dest;
@@ -49,21 +44,18 @@ class _AudioBufferEx extends State<AudioBufferEx> {
   bool stopDisabled = true;
   var path = '';
 
-  Future<void> loadAudio() async
-  {
-        var asset = await rootBundle.load(pcmAsset);
+  Future<void> loadAudio() async {
+    var asset = await rootBundle.load(pcmAsset);
 
-        var tempDir = await getTemporaryDirectory();
-        path = '${tempDir.path}/tau.wav';
-        var file = File(path);
-        file.writeAsBytesSync(
-            asset.buffer.asInt8List());
-
+    var tempDir = await getTemporaryDirectory();
+    path = '${tempDir.path}/tau.wav';
+    var file = File(path);
+    file.writeAsBytesSync(asset.buffer.asInt8List());
   }
 
   void initPlatformState() async {
     audioCtx = AudioContext(
-      options: const AudioContextOptions(
+        options: const AudioContextOptions(
       latencyHint: AudioContextLatencyCategory.playback(),
       sinkId: '',
       renderSizeHint: AudioContextRenderSizeCategory.default_,
@@ -71,8 +63,7 @@ class _AudioBufferEx extends State<AudioBufferEx> {
     ));
     await loadAudio();
     audioBuffer = audioCtx!.decodeAudioDataSync(inputPath: path);
-    setState(() {
-    });
+    setState(() {});
 
     Tau.tau.logger.d('Une bonne journée');
   }
@@ -118,32 +109,29 @@ class _AudioBufferEx extends State<AudioBufferEx> {
  */
   // And here is our dart code
   Future<void> hitPlayButton() async {
-      disposeEverything();
+    disposeEverything();
 
-      source = audioCtx!.createBufferSource();
+    source = audioCtx!.createBufferSource();
 
-      if ( audioBuffer!.isDisposed )
-      {
-          Tau.tau.logger.d('Is disposed');
-      }
-      source!.setBuffer(audioBuffer: audioBuffer!);
-      if ( audioBuffer!.isDisposed )
-      {
-        Tau.tau.logger.d('Is disposed');
-      }
+    if (audioBuffer!.isDisposed) {
+      Tau.tau.logger.d('Is disposed');
+    }
+    source!.setBuffer(audioBuffer: audioBuffer!);
+    if (audioBuffer!.isDisposed) {
+      Tau.tau.logger.d('Is disposed');
+    }
 
-      dest = audioCtx!.destination();
-      source!.connect(dest: dest!);
-      source!.setLoop(value: true) ;
-      source!.start();
+    dest = audioCtx!.destination();
+    source!.connect(dest: dest!);
+    source!.setLoop(value: true);
+    source!.start();
 
-      //source.loopStart = loopstartControl.value;
-      //source.loopEnd = loopendControl.value;
-      playDisabled = true;
-      stopDisabled = false;
+    //source.loopStart = loopstartControl.value;
+    //source.loopEnd = loopendControl.value;
+    playDisabled = true;
+    stopDisabled = false;
 
-
-      /*
+    /*
     var sampleRate = await audioCtx!.sampleRate();
     var frameCount = (sampleRate * 2.0).ceil();
     List<Float32List> buf = List<Float32List>.filled(
@@ -178,8 +166,7 @@ class _AudioBufferEx extends State<AudioBufferEx> {
     }
   }
 
-  Future<void> hitStopButton() async
-  {
+  Future<void> hitStopButton() async {
     source!.stop();
     disposeEverything();
     playDisabled = false;
@@ -187,9 +174,7 @@ class _AudioBufferEx extends State<AudioBufferEx> {
     if (mounted) {
       setState(() {});
     }
-
   }
-
 
   // Good citizens must dispose nodes and Audio Context
   void disposeEverything() {
@@ -200,9 +185,9 @@ class _AudioBufferEx extends State<AudioBufferEx> {
       dest = null;
     }
     //if (source != null) {
-      //src!.stop();
-      //source!.dispose();
-      //source = null;
+    //src!.stop();
+    //source!.dispose();
+    //source = null;
     //}
   }
 
@@ -218,12 +203,10 @@ class _AudioBufferEx extends State<AudioBufferEx> {
         source!.dispose();
         source = null;
       }
-      if (audioBuffer != null)
-      {
+      if (audioBuffer != null) {
         audioBuffer!.dispose();
         audioBuffer = null;
       }
-
     }
 
     super.dispose();
@@ -238,37 +221,32 @@ class _AudioBufferEx extends State<AudioBufferEx> {
   @override
   Widget build(BuildContext context) {
     Widget makeBody() {
-      return Center( child:
-        Column( mainAxisAlignment: MainAxisAlignment.center, children: [
-           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-        ElevatedButton(
-          onPressed: playDisabled ? null : hitPlayButton,
-          //color: Colors.indigo,
-          child: const Text(
-            'Play',
-            style: TextStyle(color: Colors.black),
-          ),
-        ),
-
-        const SizedBox(
-          width: 5,
-        ),
-
-        ElevatedButton(
-          onPressed: stopDisabled ? null : hitStopButton,
-          //color: Colors.indigo,
-          child: const Text(
-            'Stop',
-            style: TextStyle(color: Colors.black),
-          ),
-        ),
-
-        const SizedBox(
-          width: 5,
-        ),
-
-      ]),
-
+      return Center(
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            ElevatedButton(
+              onPressed: playDisabled ? null : hitPlayButton,
+              //color: Colors.indigo,
+              child: const Text(
+                'Play',
+                style: TextStyle(color: Colors.black),
+              ),
+            ),
+            const SizedBox(
+              width: 5,
+            ),
+            ElevatedButton(
+              onPressed: stopDisabled ? null : hitStopButton,
+              //color: Colors.indigo,
+              child: const Text(
+                'Stop',
+                style: TextStyle(color: Colors.black),
+              ),
+            ),
+            const SizedBox(
+              width: 5,
+            ),
+          ]),
         ]),
       );
     }

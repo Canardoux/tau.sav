@@ -17,6 +17,10 @@ rm rust/src/frb_*
 flutter clean
 flutter pub get
 
+cd example
+flutter pub get
+cd ..
+
 #flutter_rust_bridge_codegen generate
 cargo run --manifest-path ../flutter_rust_bridge/frb_codegen/Cargo.toml -- generate
 #~/bin/generate.sh

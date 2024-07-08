@@ -25,9 +25,12 @@ import 'MozillaEx/audio_basics/audio_basics_ex.dart';
 import 'MozillaEx/audio_analyser/audio_analyser_ex.dart';
 import 'MozillaEx/audio_buffer_source/audio_buffer_source_ex.dart';
 import 'MozillaEx/audio_buffer/audio_buffer_ex.dart';
+import 'MozillaEx/offline_audio_context/offline_audio_context_ex.dart';
 import 'MozillaEx/loop/loop_ex.dart';
 import 'MozillaEx/audio_worklet/audio_worklet_ex.dart';
 import 'MozillaEx/iir_filter_node/iir_filter_node_ex.dart';
+import 'MozillaEx/playback_rate/playback_rate_ex.dart';
+import 'MozillaEx/audio_context_states/audio_context_states_ex.dart';
 
 /*
     This APP is just a driver to call the various Tau examples.
@@ -116,6 +119,36 @@ final List<Example> mozillaExampleTable = [
       route: (_) => const IirFilterNodeEx(),
       graphDir: 'iir_filter_node',
       graphImage: 'IirFilterNode',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Playback Rate',
+      subTitle: 'Playback Rate Example',
+      flags: 0,
+      route: (_) => const PlaybackRateEx(),
+      graphDir: 'playback_rate',
+      graphImage: 'PlaybackRate',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Offline Audio Context',
+      subTitle: 'Offline Audio Context Example',
+      flags: 0,
+      route: (_) => const OfflineAudioContextEx(),
+      graphDir: 'offline_audio_context',
+      graphImage: 'OfflineAudioContext',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Audio Context States',
+      subTitle: 'Audio Context States Example',
+      flags: 0,
+      route: (_) => const AudioContextStatesEx(),
+      graphDir: 'audio_context_states',
+      graphImage: 'AudioContextStates',
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),

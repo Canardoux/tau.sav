@@ -66,6 +66,7 @@ export 'package:tau/public/rust/third_party/web_audio_api/node.dart';
 export 'package:tau/public/rust/third_party/web_audio_api/worklet.dart';
 export 'package:tau/public/rust/api/override_web_audio_api.dart';
 export 'package:tau/public/rust/api/media_element.dart';
+//export 'package:tau/public/rust/third_party/iir'
 //export 'package:tau/public/media_element.dart';
 
 //==================================  Tau  ======================================
