@@ -31,7 +31,9 @@ import 'MozillaEx/audio_worklet/audio_worklet_ex.dart';
 import 'MozillaEx/iir_filter_node/iir_filter_node_ex.dart';
 import 'MozillaEx/playback_rate/playback_rate_ex.dart';
 import 'MozillaEx/audio_context_states/audio_context_states_ex.dart';
-
+import 'MozillaEx/multi_track/multi_track_ex.dart';
+import 'MozillaEx/output_timestamp/output_timestamp_ex.dart';
+import 'MozillaEx/media_stream_destination/media_stream_destination_ex.dart';
 /*
     This APP is just a driver to call the various Tau examples.
     Please refer to the examples/README.md and all the examples located under the examples/lib directory.
@@ -152,6 +154,37 @@ final List<Example> mozillaExampleTable = [
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),
+  Example(
+      title: 'Multi Track',
+      subTitle: 'Multi track Example',
+      flags: 0,
+      route: (_) => const MultiTrackEx(),
+      graphDir: 'multi_track',
+      graphImage: 'MultiTrack',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Output Timestamp',
+      subTitle: 'Output Timestamp Example',
+      flags: 0,
+      route: (_) => const OutputTimestampEx(),
+      graphDir: 'output_timestamp',
+      graphImage: 'OutputTimestamp',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Media Stream Destination',
+      subTitle: 'Create Media Stream Destination Example',
+      flags: 0,
+      route: (_) => const MediaStreamDestinationEx(),
+      graphDir: 'media_stream_destination',
+      graphImage: 'MediaStreamDestination',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+
 ];
 
 ///

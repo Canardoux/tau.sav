@@ -48,41 +48,6 @@ class _AudioBasics extends State<AudioBasics> {
     return asset.buffer.asFloat32List();
   }
 
-  // Here is the JS code for initializing the graph
-  /*
-        audioCtx = new AudioContext();
-        track = new MediaElementAudioSourceNode(audioCtx, {
-          mediaElement: audioElement,
-        });
-
-        // Create the node that controls the volume.
-        const gainNode = new GainNode(audioCtx);
-
-        const volumeControl = document.querySelector('[data-action="volume"]');
-        volumeControl.addEventListener(
-          "input",
-          () => {
-            gainNode.gain.value = volumeControl.value;
-          },
-          false
-        );
-
-        // Create the node that controls the panning
-        const panner = new StereoPannerNode(audioCtx, { pan: 0 });
-
-        const pannerControl = document.querySelector('[data-action="panner"]');
-        pannerControl.addEventListener(
-          "input",
-          () => {
-            panner.pan.value = pannerControl.value;
-          },
-          false
-        );
-
-        // connect our graph
-        track.connect(gainNode).connect(panner).connect(audioCtx.destination);
-  */
-
   // And here is our dart code
   void initPlatformState() async {
     audioCtx = AudioContext(
@@ -115,6 +80,7 @@ class _AudioBasics extends State<AudioBasics> {
       setState(() {});
     }
   }
+
   bool isPlaying = false;
   bool isStarted = false;
   Future<void> finished(Event event) async {
@@ -126,51 +92,28 @@ class _AudioBasics extends State<AudioBasics> {
     setState(() {});
   }
 
-  // Here is the JS code executed when click on the button
-  /*
-           if (audioCtx.state === "suspended") {
-            audioCtx.resume();
-          }
-
-          if (playButton.dataset.playing === "false") {
-            audioElement.play();
-            playButton.dataset.playing = "true";
-            // if track is playing pause it
-          } else if (playButton.dataset.playing === "true") {
-            audioElement.pause();
-            playButton.dataset.playing = "false";
-          }
-
-          // Toggle the state between play and not playing
-          let state =
-            playButton.getAttribute("aria-checked") === "true" ? true : false;
-          playButton.setAttribute("aria-checked", state ? "false" : "true");
-        }
-  */
-  // And here is our dart code
   Future<void> hitPlayButton() async {
-        if (!isStarted) {
-          src.start();
-          isStarted = true;
-          isPlaying = true;
-          return;
-        }
+    if (!isStarted) {
+      src.start();
+      isStarted = true;
+      isPlaying = true;
+      return;
+    }
 
-        AudioContextState state = audioCtx.state();
-        if (state == AudioContextState.suspended) {
-          audioCtx.resumeSync();
-        }
-        if (!isPlaying) {
-          audioCtx.resumeSync();
-          isPlaying = true;
-        } else
-        if (isPlaying) {
-          audioCtx.suspend();
-          isPlaying = false;
-        }
+    AudioContextState state = audioCtx.state();
+    if (state == AudioContextState.suspended) {
+      audioCtx.resumeSync();
+    }
+    if (!isPlaying) {
+      audioCtx.resumeSync();
+      isPlaying = true;
+    } else if (isPlaying) {
+      audioCtx.suspend();
+      isPlaying = false;
+    }
 
-        Tau.tau.logger.d('C\'est parti mon kiki');
-        setState(() {});
+    Tau.tau.logger.d('C\'est parti mon kiki');
+    setState(() {});
   }
 
   // Good citizens must dispose nodes and Auddio Context
