@@ -34,6 +34,12 @@ import 'MozillaEx/audio_context_states/audio_context_states_ex.dart';
 import 'MozillaEx/multi_track/multi_track_ex.dart';
 import 'MozillaEx/output_timestamp/output_timestamp_ex.dart';
 import 'MozillaEx/media_stream_destination/media_stream_destination_ex.dart';
+import 'MozillaEx/stereo_panner_node/stereo_panner_node_ex.dart';
+import 'MozillaEx/media_source_buffer/media_source_buffer_ex.dart';
+import 'MozillaEx/audio_param/audio_param_ex.dart';
+import 'MozillaEx/compressor/compressor_ex.dart';
+import 'MozillaEx/script_processor/script_processor_ex.dart';
+import 'MozillaEx/panner_node/panner_node_ex.dart';
 /*
     This APP is just a driver to call the various Tau examples.
     Please refer to the examples/README.md and all the examples located under the examples/lib directory.
@@ -181,6 +187,66 @@ final List<Example> mozillaExampleTable = [
       route: (_) => const MediaStreamDestinationEx(),
       graphDir: 'media_stream_destination',
       graphImage: 'MediaStreamDestination',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Stereo Panner Node',
+      subTitle: 'Stereo Panner Node Example',
+      flags: 0,
+      route: (_) => const StereoPannerNodeEx(),
+      graphDir: 'stereo_panner_node',
+      graphImage: 'StereoPannerNode',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Media Source Buffer',
+      subTitle: 'Media Source Buffer Example',
+      flags: 0,
+      route: (_) => const MediaSourceBufferEx(),
+      graphDir: 'media_source_buffer',
+      graphImage: 'MediaSourceBuffer',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Audio Param',
+      subTitle: 'Audio Param Example',
+      flags: 0,
+      route: (_) => const AudioParamEx(),
+      graphDir: 'audio_param',
+      graphImage: 'AudioParam',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Compressor',
+      subTitle: 'Compressor Example',
+      flags: 0,
+      route: (_) => const CompressorEx(),
+      graphDir: 'compressor',
+      graphImage: 'Compressor',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Script Processor',
+      subTitle: 'Script processor Example',
+      flags: 0,
+      route: (_) => const ScriptProcessorEx(),
+      graphDir: 'script_processor',
+      graphImage: 'ScriptProcessor',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Panner Node',
+      subTitle: 'paanner Node Example',
+      flags: 0,
+      route: (_) => const PannerNodeEx(),
+      graphDir: 'panner_node',
+      graphImage: 'PannerNode',
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),
