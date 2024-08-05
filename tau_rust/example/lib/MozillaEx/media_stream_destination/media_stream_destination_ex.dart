@@ -21,9 +21,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:tau/tau.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:flutter/services.dart' show rootBundle;
-import 'dart:io';
 
 /// This is a very simple example for τ beginners, that show how to playback a file.
 /// Its a translation to Dart from [Mozilla example](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
@@ -53,13 +50,22 @@ class _MediaStreamDestinationEx extends State<MediaStreamDestinationEx> {
       //sampleRate: 44100,
     ));
     osc = audioCtx!.createOscillator();
-    osc!.frequency.value = 100;
-    osc!.setType(type: OscillatorType.sine);
+    osc.frequency.value = 100;
+    osc.setType(type: OscillatorType.sine);
 
     dest = audioCtx!.createMediaStreamDestination();
     mediaRecorder = MediaRecorder(stream: dest.stream());
     osc.connect(dest: dest);
-    //mediaRecorder.setOnDataAvailable( (evt) {chunks.push(evt.data);} );
+    mediaRecorder.setOnDataAvailable( callback: (evt)
+    {
+      chunks.addAll(evt.blob );
+    } );
+    mediaRecorder.setOnStop(callback:
+      (event)
+      {
+        Tau.tau.logger.i('OnStopped');
+      }
+    );
     setState(() {});
 
     Tau.tau.logger.d('Une bonne journée');
@@ -116,7 +122,7 @@ class _MediaStreamDestinationEx extends State<MediaStreamDestinationEx> {
               //color: Colors.indigo,
               child:  Text( clicked ? 'Stop Recording' :
                 'Make sine wave',
-                style: TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black),
               ),
             ),
            ]),

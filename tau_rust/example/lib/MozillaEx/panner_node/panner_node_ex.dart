@@ -18,7 +18,6 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:tau/public/rust/third_party/web_audio_api.dart';
 import 'package:tau/tau.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -349,7 +348,7 @@ double  rightBound =200 - 50;
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: const Text('Mozilla Audio Source Buffer Loop'),
+        title: const Text('Mozilla Audio Panner'),
         actions: const <Widget>[],
       ),
       body: makeBody(),

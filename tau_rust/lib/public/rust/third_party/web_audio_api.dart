@@ -14,9 +14,21 @@ import 'web_audio_api/worklet.dart';
 // These functions are ignored (category: IgnoreBecauseOwnerTyShouldIgnore): `load`, `load`, `new`, `new`, `store`, `store`
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<AudioBuffer>>
-abstract class AudioBuffer implements RustOpaqueInterface {
+abstract class AudioBuffer implements RustOpaqueInterface, AudioBufferExt {
   /// Duration in seconds of the `AudioBuffer`
   double duration();
+
+  Float32List copyFromChannel({required int channelNumber});
+
+  void copyToChannel(
+      {required List<double> source, required int channelNumber});
+
+  void copyToChannelWithOffset(
+      {required List<double> source,
+      required int channelNumber,
+      required int offset});
+
+  Float32List getChannelData({required int channelNumber});
 
   /// Convert raw samples to an AudioBuffer
   ///
@@ -34,13 +46,7 @@ abstract class AudioBuffer implements RustOpaqueInterface {
       RustLib.instance.api
           .webAudioApiAudioBufferFrom(samples: samples, sampleRate: sampleRate);
 
-  /// Return a read-only copy of the underlying data of the channel
-  ///
-  /// # Panics
-  ///
-  /// This function will panic if:
-  /// - the given channel number is greater than or equal to the given number of channels.
-  void getChannelData({required int channelNumber});
+  double getAt({required int channelNumber, required int index});
 
   /// Return a mutable slice of the underlying data of the channel
   ///
@@ -69,6 +75,12 @@ abstract class AudioBuffer implements RustOpaqueInterface {
 
   /// Sample rate of this `AudioBuffer` in Hertz
   double sampleRate();
+
+  void setAt(
+      {required int channelNumber, required int index, required double value});
+
+  void setChannelData(
+      {required List<double> source, required int channelNumber});
 }
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<AudioListener>>

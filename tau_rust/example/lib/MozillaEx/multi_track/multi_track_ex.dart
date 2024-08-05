@@ -21,7 +21,6 @@ import 'package:flutter/material.dart';
 // For call to setLogLevel()
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:tau/tau.dart';
-import 'dart:typed_data';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
@@ -59,7 +58,7 @@ class _MultiTrackEx extends State<MultiTrackEx> {
   // And here is our dart code
  double offset = 0;
   Future<void> playTrack(int index) async {
-    AudioBufferSourceNode source = audioCtx!.createBufferSource();
+    AudioBufferSourceNode source = audioCtx.createBufferSource();
     audioBufferSourceNodes.add(source);
 
     source.setBuffer(audioBuffer: audioBuffers[index]);

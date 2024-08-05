@@ -169,7 +169,7 @@ abstract class AudioContext
   AudioDestinationNode destination();
 
   MediaElementAudioSourceNode createMediaElementSource(
-      {required MyMediaElement mediaElement});
+      {required MediaElement mediaElement});
 
   AudioBuffer decodeAudioDataSync({required String inputPath});
 

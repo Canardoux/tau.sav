@@ -157,7 +157,7 @@ class _OfflineAudioContextEx extends State<OfflineAudioContextEx> {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: const Text('Mozilla Playback Rate'),
+        title: const Text('Mozilla Offline Audio Context'),
         actions: const <Widget>[],
       ),
       body: makeBody(),

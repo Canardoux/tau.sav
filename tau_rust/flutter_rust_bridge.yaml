@@ -5,3 +5,5 @@ dump_all: true
 local: true
 type_64bit_int: true
 default_dart_async: false
+dart_type_rename:
+  MyMediaElement: MediaElement

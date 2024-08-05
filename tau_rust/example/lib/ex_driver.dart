@@ -40,6 +40,9 @@ import 'MozillaEx/audio_param/audio_param_ex.dart';
 import 'MozillaEx/compressor/compressor_ex.dart';
 import 'MozillaEx/script_processor/script_processor_ex.dart';
 import 'MozillaEx/panner_node/panner_node_ex.dart';
+import 'MozillaEx/offline_audio_context_promise/offline_audio_context_promise_ex.dart';
+import 'MozillaEx/step_sequencer/step_sequencer_ex.dart';
+
 /*
     This APP is just a driver to call the various Tau examples.
     Please refer to the examples/README.md and all the examples located under the examples/lib directory.
@@ -242,11 +245,31 @@ final List<Example> mozillaExampleTable = [
 '''),
   Example(
       title: 'Panner Node',
-      subTitle: 'paanner Node Example',
+      subTitle: 'panner Node Example',
       flags: 0,
       route: (_) => const PannerNodeEx(),
       graphDir: 'panner_node',
       graphImage: 'PannerNode',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Offline Audio Context Promise',
+      subTitle: 'Offline Audio Context Promise',
+      flags: 0,
+      route: (_) => const OfflineAudioContextPromiseEx(),
+      graphDir: 'offline_audio_context_promise',
+      graphImage: 'OfflineAudioContextPromise',
+      mod: 'Mozilla',
+      description: '''This is an other example from Mozilla.
+'''),
+  Example(
+      title: 'Step Sequencer',
+      subTitle: 'Step Sequencer Example',
+      flags: 0,
+      route: (_) => const StepSequencerEx(),
+      graphDir: 'step_sequencer',
+      graphImage: 'StepSequencer',
       mod: 'Mozilla',
       description: '''This is an other example from Mozilla.
 '''),

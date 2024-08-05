@@ -15,3 +15,10 @@ set_target_properties(tau PROPERTIES
 )
 
 target_compile_definitions(tau PUBLIC DART_SHARED_LIB)
+configure_shared_stl("llvm-libc++" "c++_shared")
+
+add_library( imported-lib
+             SHARED
+             IMPORTED )
+
+include(ndk-stl-config.cmake)

@@ -3,6 +3,7 @@
 
 // ignore_for_file: invalid_use_of_internal_member, unused_import, unnecessary_import
 
+import '../../api/override_web_audio_api.dart';
 import '../../frb_generated.dart';
 import '../web_audio_api.dart';
 import 'media_streams.dart';
@@ -29,7 +30,8 @@ abstract class BlobEvent implements RustOpaqueInterface {
 }
 
 // Rust type: RustOpaqueMoi<flutter_rust_bridge::for_generated::RustAutoOpaqueInner<MediaRecorder>>
-abstract class MediaRecorder implements RustOpaqueInterface {
+abstract class MediaRecorder
+    implements RustOpaqueInterface, MediaRecorderMiscExt {
   void clearOndataavailable();
 
   void clearOnerror();
@@ -41,6 +43,11 @@ abstract class MediaRecorder implements RustOpaqueInterface {
   /// Only supports WAV file format currently.
   factory MediaRecorder({required MediaStream stream}) => RustLib.instance.api
       .webAudioApiMediaRecorderMediaRecorderNew(stream: stream);
+
+  void setOnDataAvailable(
+      {required FutureOr<void> Function(BlobEvent) callback});
+
+  void setOnStop({required FutureOr<void> Function(Event) callback});
 
   /// Begin recording media
   ///

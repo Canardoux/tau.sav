@@ -85,18 +85,8 @@ pub fn init_tau_core() -> bool {
 }
 
 // --------------------------------------------------
-use web_audio_api::context::{
-    AudioContext, AudioContextLatencyCategory, AudioContextOptions, BaseAudioContext,
-};
-use web_audio_api::node::{AudioNode, AudioScheduledSourceNode /*, OscillatorNode*/};
-
-/*
-use cpal;
-use cpal::*;
-use cpal::{Data, Sample, SampleFormat, FromSample};
-use cpal::traits::{DeviceTrait, HostTrait, StreamTrait};
-
- */
+use web_audio_api::context::{AudioContext, AudioContextLatencyCategory, AudioContextOptions, BaseAudioContext};
+use web_audio_api::node::{AudioNode, AudioScheduledSourceNode};
 
 //#[trace (prefix_enter="-> ", prefix_exit="<- ", logging)]
 pub fn rust_set_log_level(level: i32) {
@@ -116,38 +106,6 @@ pub fn greet(name: String) -> String {
     e!("An error!!!");
     log::trace!("Trace etc..");
     w!("a warning");
-    //rust_set_log_level(3);
-    //================================================================================
-    /*
-           let host = cpal::default_host();
-           let device = host.default_output_device().expect("no output device available");
-
-           let mut supported_configs_range = device.supported_output_configs()
-               .expect("error while querying configs");
-           let supported_config = supported_configs_range.next()
-               .expect("no supported config?!")
-               .with_max_sample_rate();
-           let sample_format = supported_config.sample_format();
-           let config = supported_config.into();
-           let err_fn = |err| eprintln!("an error occurred on the output audio stream: {}", err);
-
-           let stream = match sample_format {
-                   SampleFormat::F32 => device.build_output_stream(&config, write_silence::<f32>, err_fn, None),
-                   SampleFormat::I16 => device.build_output_stream(&config, write_silence::<i16>, err_fn, None),
-                   SampleFormat::U16 => device.build_output_stream(&config, write_silence::<u16>, err_fn, None),
-                   sample_format => panic!("Unsupported sample format '{sample_format}'")
-           }.unwrap();
-
-           fn write_silence<T: Sample>(data: &mut [T], _: &cpal::OutputCallbackInfo) {
-                   for sample in data.iter_mut() {
-                           *sample = Sample::EQUILIBRIUM;
-                           t!("write_silence");
-                   }
-           }
-           stream.play().unwrap();
-
-
-    */
     //================================================================================
 
     let latency_hint = match std::env::var("WEB_AUDIO_LATENCY").as_deref() {
@@ -160,7 +118,8 @@ pub fn greet(name: String) -> String {
         ..AudioContextOptions::default()
     });
 
-    t!("{context:?}");
+
+    //t!("{context:?}");
 
     log(Level::Trace, "coucou", "{context:?}");
 

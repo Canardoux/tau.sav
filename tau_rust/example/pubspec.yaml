@@ -121,6 +121,8 @@ flutter:
   - lib/MozillaEx/compressor/MozillaEx_Compressor_graph.png
   - lib/MozillaEx/script_processor/MozillaEx_ScriptProcessor_graph.png
   - lib/MozillaEx/panner_node/MozillaEx_PannerNode_graph.png
+  - lib/MozillaEx/offline_audio_context_promise/MozillaEx_OfflineAudioContextPromise_graph.png
+  - lib/MozillaEx/step_sequencer/MozillaEx_StepSequencer_graph.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

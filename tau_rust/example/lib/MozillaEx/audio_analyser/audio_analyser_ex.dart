@@ -19,7 +19,6 @@
 
 import 'package:flutter/material.dart';
 // For call to setLogLevel()
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:tau/tau.dart';
 import 'dart:typed_data';
 import 'package:flutter/services.dart' show rootBundle;
@@ -213,12 +212,12 @@ class _AudioAnalyserEx extends State<AudioAnalyserEx>
     Tau.tau.logger.d('Une bonne journée');
     Float32List pcmData = await getAssetData(pcmAsset);
 
-    AudioBuffer audioBuffer = await AudioBuffer.from(
+    AudioBuffer audioBuffer = AudioBuffer.from(
         samples: List<Float32List>.filled(2, pcmData), sampleRate: 48000);
 
     sourceNode = audioCtx!.createBufferSource();
     sourceNode!.setBuffer(audioBuffer: audioBuffer);
-    audioBuffer!.dispose();
+    audioBuffer.dispose();
     sourceNode!.setLoop(value: true);
     dest = audioCtx!.destination();
 
@@ -251,7 +250,7 @@ class _AudioAnalyserEx extends State<AudioAnalyserEx>
 
       // Get the time domain data for this sample
       var amplitudeArray =
-          await analyserNode!.getFloatTimeDomainData(len: frequencyBinCount);
+          analyserNode!.getFloatTimeDomainData(len: frequencyBinCount);
 
       // Draw the display when the audio is playing
       //var state = await audioCtx!.state();

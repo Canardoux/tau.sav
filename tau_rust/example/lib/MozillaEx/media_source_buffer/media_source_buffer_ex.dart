@@ -20,7 +20,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:tau/public/rust/third_party/web_audio_api/node.dart';
 import 'package:tau/tau.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -79,15 +78,10 @@ class _MediaSourceBufferEx extends State<MediaSourceBufferEx> {
 
     dest = audioCtx!.destination();
     await loadAudio();
-    //var media = MediaElement(inputPath: path);
+    var media = MediaElement(file: path);
 
-    //source = audioCtx!.createMediaElementSource(mediaElement: media);
-    gainNode = audioCtx!.createGain();
-
-    source!.connect(dest: gainNode!);
-    gainNode!.connect(dest: dest!);
-    //media.setCurrentTime(1.0);
-    //media!.play();
+    source = audioCtx!.createMediaElementSource(mediaElement: media);
+    source!.connect(dest: dest!);
     playDisabled = true;
     stopDisabled = false;
 

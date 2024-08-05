@@ -62,12 +62,12 @@ export 'package:tau/public/rust/third_party/web_audio_api/context.dart';
 export 'package:tau/public/rust/third_party/web_audio_api/media_devices.dart';
 export 'package:tau/public/rust/third_party/web_audio_api/media_recorder.dart';
 export 'package:tau/public/rust/third_party/web_audio_api/media_streams.dart';
+//export 'package:tau/public/rust/third_party/web_audio_api/media_element.dart';
 export 'package:tau/public/rust/third_party/web_audio_api/node.dart';
 export 'package:tau/public/rust/third_party/web_audio_api/worklet.dart';
 export 'package:tau/public/rust/api/override_web_audio_api.dart';
 export 'package:tau/public/rust/api/media_element.dart';
 //export 'package:tau/public/rust/third_party/iir'
-//export 'package:tau/public/media_element.dart';
 
 //==================================  Tau  ======================================
 
@@ -115,7 +115,7 @@ class Tau {
   /// Probably never called by the App
   Future<void> init({lg.Level lev = lg.Level.trace}) async {
     await RustLib.init(); // Initialisation of the Flutter-Rust-Bridge
-    await initTauCore(); // Initialisation of the TauCore module
+    initTauCore(); // Initialisation of the TauCore module
     setLogLevel(lev); // Initialisation of the Logger
     await _setup(); // Creation of the Stream to receive Logs from TauCore.
     //String platformVersion;

@@ -20,7 +20,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:tau/public/rust/third_party/web_audio_api/node.dart';
 import 'package:tau/tau.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -161,7 +160,7 @@ class _CompressorEx extends State<CompressorEx> {
               //color: Colors.indigo,
               child:  Text(
                 dataActive ? 'Remove compression' : 'Add compression',
-                style: TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black),
               ),
             ),
 

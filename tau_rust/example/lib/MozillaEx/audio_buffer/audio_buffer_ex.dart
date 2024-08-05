@@ -19,9 +19,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:tau/tau.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:flutter/services.dart' show rootBundle;
-import 'dart:io';
+import 'dart:math';
 
 /// This is a very simple example for τ beginners, that show how to playback a file.
 /// Its a translation to Dart from [Mozilla example](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
@@ -39,11 +37,12 @@ class _AudioBufferEx extends State<AudioBufferEx> {
   AudioDestinationNode? dest;
   AudioBufferSourceNode? source;
   AudioBuffer? audioBuffer;
-  final channels = 1;
+  final channels = 2;
   bool playDisabled = false;
   bool stopDisabled = true;
   var path = '';
 
+/*
   Future<void> loadAudio() async {
     var asset = await rootBundle.load(pcmAsset);
 
@@ -52,6 +51,7 @@ class _AudioBufferEx extends State<AudioBufferEx> {
     var file = File(path);
     file.writeAsBytesSync(asset.buffer.asInt8List());
   }
+  */
 
   void initPlatformState() async {
     audioCtx = AudioContext(
@@ -61,54 +61,15 @@ class _AudioBufferEx extends State<AudioBufferEx> {
       renderSizeHint: AudioContextRenderSizeCategory.default_,
       //sampleRate: 44100,
     ));
-    await loadAudio();
-    audioBuffer = audioCtx!.decodeAudioDataSync(inputPath: path);
+    //await loadAudio();
+    //audioBuffer = audioCtx!.decodeAudioDataSync(inputPath: path);
     setState(() {});
 
     Tau.tau.logger.d('Une bonne journée');
   }
 
-  // Here is the JS code executed when click on the button
-  /*
-      // Create an empty two second stereo buffer at the
-      // sample rate of the AudioContext
-      const frameCount = audioCtx.sampleRate * 2.0;
-
-      const buffer = new AudioBuffer({
-        numberOfChannels: channels,
-        length: frameCount,
-        sampleRate: audioCtx.sampleRate,
-      });
-
-      // Fill the buffer with white noise;
-      // just random values between -1.0 and 1.0
-      for (let channel = 0; channel < channels; channel++) {
-        // This gives us the actual array that contains the data
-        const nowBuffering = buffer.getChannelData(channel);
-        for (let i = 0; i < frameCount; i++) {
-          // Math.random() is in [0; 1.0]
-          // audio needs to be in [-1.0; 1.0]
-          nowBuffering[i] = Math.random() * 2 - 1;
-        }
-      }
-
-      // Get an AudioBufferSourceNode.
-      // This is the AudioNode to use when we want to play an AudioBuffer
-      const source = audioCtx.createBufferSource();
-      // Set the buffer in the AudioBufferSourceNode
-      source.buffer = buffer;
-      // Connect the AudioBufferSourceNode to the
-      // destination so we can hear the sound
-      source.connect(audioCtx.destination);
-      // start the source playing
-      source.start();
-
-      source.onended = () => {
-        console.log("White noise finished.");
-      };
- */
-  // And here is our dart code
   Future<void> hitPlayButton() async {
+    /*
     disposeEverything();
 
     source = audioCtx!.createBufferSource();
@@ -131,9 +92,9 @@ class _AudioBufferEx extends State<AudioBufferEx> {
     playDisabled = true;
     stopDisabled = false;
 
+    */
     /*
-    var sampleRate = await audioCtx!.sampleRate();
-    var frameCount = (sampleRate * 2.0).ceil();
+
     List<Float32List> buf = List<Float32List>.filled(
         channels,
         Float32List(
@@ -153,14 +114,55 @@ class _AudioBufferEx extends State<AudioBufferEx> {
         await AudioBuffer.from(samples: buf, sampleRate: 48000);
 
 
-    src = await audioCtx!.createBufferSource();
-    src!.setBuffer(audioBuffer: audioBuffer);
+      */
 
-    dest = await audioCtx!.destination();
-    src!.connect(dest: dest!);
-    await src!.setOnEnded(callback: finished);
-    src!.start();
-     */
+      // Create an empty two second stereo buffer at the
+      // sample rate of the AudioContext
+    var sampleRate = audioCtx!.sampleRate();
+    var frameCount = (sampleRate * 2.0).ceil();
+    AudioBufferOptions options = AudioBufferOptions
+    (
+        numberOfChannels: channels,
+        length: frameCount,
+        sampleRate: sampleRate,
+    );
+    var buffer = AudioBuffer
+    (
+        options: options
+    );
+      // Fill the buffer with white noise;
+      // just random values between -1.0 and 1.0
+    for (int channel = 0; channel < channels; channel++)
+    {
+        // This gives us the actual array that contains the data
+        //var nowBuffering = buffer.getChannelData(channel);
+        var rng = Random();
+        var x = List<double>.filled(frameCount, 0.0);
+        for (int i = 0; i < frameCount; i++) {
+          // Math.random() is in [0; 1.0]
+          // audio needs to be in [-1.0; 1.0]
+          var value = rng.nextDouble();
+          value = value * 2 - 1;
+
+          x[i] = value;
+          //buffer.setAt(channelNumber: channel, index: i, value: value);
+        }
+        buffer.setChannelData(source: x, channelNumber: channel);
+    }
+      // Get an AudioBufferSourceNode.
+      // This is the AudioNode to use when we want to play an AudioBuffer
+    source = audioCtx!.createBufferSource();
+      // Set the buffer in the AudioBufferSourceNode
+    source!.setBuffer(audioBuffer: buffer);
+
+      // Connect the AudioBufferSourceNode to the
+      // destination so we can hear the sound
+    dest = audioCtx!.destination();
+    source!.connect(dest: dest!);
+    source!.setOnEnded(callback: (event){Tau.tau.logger.i("White noise finished");});
+      // start the source playing
+    source!.start();
+
     if (mounted) {
       setState(() {});
     }

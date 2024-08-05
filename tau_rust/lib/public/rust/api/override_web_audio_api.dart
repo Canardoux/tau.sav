@@ -5,11 +5,14 @@
 
 import '../frb_generated.dart';
 import '../third_party/web_audio_api.dart';
+import '../third_party/web_audio_api/media_recorder.dart';
 import '../third_party/web_audio_api/media_streams.dart';
 import '../third_party/web_audio_api/node.dart';
 import '../third_party/web_audio_api/worklet.dart';
 import 'media_element.dart';
 import 'package:flutter_rust_bridge/flutter_rust_bridge_for_generated.dart';
+
+// These functions have error during generation (see debug logs or enable `stop_on_error: true` for more details): `set_on_error`, `set_on_error`
 
 abstract class AnalyserNodeExt {
   void connect({required AudioNode dest});
@@ -21,6 +24,28 @@ abstract class AnalyserNodeMiscExt {
   Uint8List getByteTimeDomainData({required int len});
 
   Float32List getFloatTimeDomainData({required int len});
+}
+
+abstract class AudioBufferExt {
+  Float32List copyFromChannel({required int channelNumber});
+
+  void copyToChannel(
+      {required List<double> source, required int channelNumber});
+
+  void copyToChannelWithOffset(
+      {required List<double> source,
+      required int channelNumber,
+      required int offset});
+
+  Float32List getChannelData({required int channelNumber});
+
+  double getAt({required int channelNumber, required int index});
+
+  void setAt(
+      {required int channelNumber, required int index, required double value});
+
+  void setChannelData(
+      {required List<double> source, required int channelNumber});
 }
 
 abstract class AudioBufferSourceNodeExt {
@@ -39,7 +64,7 @@ abstract class AudioBufferSourceNodeScheduledSourceNodeMiscExt {
 
 abstract class AudioContextExt {
   MediaElementAudioSourceNode createMediaElementSource(
-      {required MyMediaElement mediaElement});
+      {required MediaElement mediaElement});
 
   AudioBuffer decodeAudioDataSync({required String inputPath});
 
@@ -126,6 +151,13 @@ abstract class MediaElementAudioSourceNodeExt {
   void connect({required AudioNode dest});
 
   void setOnProcessorError({required FutureOr<void> Function(String) callback});
+}
+
+abstract class MediaRecorderMiscExt {
+  void setOnDataAvailable(
+      {required FutureOr<void> Function(BlobEvent) callback});
+
+  void setOnStop({required FutureOr<void> Function(Event) callback});
 }
 
 abstract class MediaStreamAudioDestinationNodeExt {

@@ -17,7 +17,6 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
 // For call to setLogLevel()
@@ -149,8 +148,8 @@ class _IirFilterNodeEx extends State<IirFilterNodeEx> {
   }
 
   AudioBufferSourceNode playSourceNode(audioContext, audioBuffer) {
-    AudioBufferSourceNode soundSource = audioCtx!.createBufferSource();
-    soundSource!.setBuffer(audioBuffer: audioBuffer!);
+    AudioBufferSourceNode soundSource = audioCtx.createBufferSource();
+    soundSource.setBuffer(audioBuffer: audioBuffer!);
 
     soundSource.connect(dest: dest);
     soundSource.start();

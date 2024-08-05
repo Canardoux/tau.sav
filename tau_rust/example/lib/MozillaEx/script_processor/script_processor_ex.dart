@@ -20,11 +20,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:tau/public/rust/third_party/web_audio_api/node.dart';
 import 'package:tau/tau.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:io';
+import 'dart:math';
 
 /// This is a very simple example for τ beginners, that show how to playback a file.
 /// Its a translation to Dart from [Mozilla example](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API)
@@ -53,7 +53,7 @@ class _ScriptProcessorEx extends State<ScriptProcessorEx> {
     var asset = await rootBundle.load(pcmAsset);
 
     var tempDir = await getTemporaryDirectory();
-    path = '${tempDir.path}/tau.wav';
+    path = '${tempDir.path}/tau.ogg';
     var file = File(path);
     file.writeAsBytesSync(asset.buffer.asInt8List());
   }
@@ -68,35 +68,46 @@ class _ScriptProcessorEx extends State<ScriptProcessorEx> {
     ));
     await loadAudio();
     audioBuffer = audioCtx!.decodeAudioDataSync(inputPath: path);
-    source = audioCtx!.createBufferSource();
-    source!.setBuffer(audioBuffer: audioBuffer!);
-    dest = audioCtx!.destination();
-    scriptProcessor =  audioCtx!.createScriptProcessor(bufferSize: 4096, numberOfInputChannels: 1, numberOfOutputChannels: 1);
-    scriptProcessor!.setOnaudioprocess(callback: (event)
-    {
-      AudioBuffer inputBuffer = event.inputBuffer;
-      AudioBuffer outputBuffer = event.outputBuffer;
-      for (int channel = 0; channel < outputBuffer.numberOfChannels(); ++channel)
-        {
-          var inputData = inputBuffer.getChannelData(channelNumber: channel);
-          var outputData = outputBuffer.getChannelData(channelNumber: channel);
-          for (int sample = 0; sample< inputBuffer.length(); ++sample)
-            {
-              //outputData[sample] = inputData[sample];
-              //outputData[sample] += Random() *2 - 1) * 0.1;
-            }
-        }
-    });
-    source!.connect(dest: scriptProcessor!);
-    scriptProcessor!.connect(dest: dest!);
-    source!.start();
-    source!.setOnEnded(callback: (event){source!.disconnect(); scriptProcessor!.disconnect();});
+   dest = audioCtx!.destination();
     setState(() {});
 
     Tau.tau.logger.d('Une bonne journée');
   }
 
 
+  void pressButton() {
+    scriptProcessor =  audioCtx!.createScriptProcessor(bufferSize: 4096, numberOfInputChannels: 1, numberOfOutputChannels: 1);
+    scriptProcessor!.setOnaudioprocess(callback: (event)
+    {
+      AudioBuffer inputBuffer = event.inputBuffer;
+      AudioBuffer outputBuffer = event.outputBuffer;
+      for (int channel = 0; channel < outputBuffer.numberOfChannels(); ++channel)
+      {
+        var inputData = inputBuffer.getChannelData(channelNumber: channel);
+        var outputData = outputBuffer.getChannelData(channelNumber: channel);
+        for (int sample = 0; sample< inputBuffer.length(); ++sample)
+        {
+          //var x = inputBuffer.getAt(channelNumber: channel, index: sample);
+          var x = inputData[sample];
+          x += (Random().nextDouble() * 2 - 1) * 0.1;
+          //outputBuffer.setAt(channelNumber: channel, index: sample, value: x);
+          outputData[sample] = inputData[sample];
+          outputData[sample] += (Random().nextDouble() * 2 - 1) * 0.1;
+        }
+        outputBuffer.setChannelData(source: outputData, channelNumber: channel);
+      }
+    });
+    source = audioCtx!.createBufferSource();
+    source!.setBuffer(audioBuffer: audioBuffer!);
+
+    source!.connect(dest:scriptProcessor!);
+    scriptProcessor!.connect(dest: dest!);
+    source!.start();
+    source!.setOnEnded(callback: (event){source!.disconnect(); scriptProcessor!.disconnect();});
+    setState(() {
+
+    });
+  }
 
   // Good citizens must dispose nodes and Audio Context
   void disposeEverything() {
@@ -147,11 +158,11 @@ class _ScriptProcessorEx extends State<ScriptProcessorEx> {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
 
             ElevatedButton(
-              onPressed: null,
+              onPressed: pressButton,
               //color: Colors.indigo,
               child:  Text(
-                dataActive ? 'Remove compression' : 'Add compression',
-                style: TextStyle(color: Colors.black),
+                dataActive ? 'Stop' : 'Start',
+                style: const TextStyle(color: Colors.black),
               ),
             ),
 
@@ -162,7 +173,7 @@ class _ScriptProcessorEx extends State<ScriptProcessorEx> {
     return Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: const Text('Compressor'),
+        title: const Text('Script Processor'),
         actions: const <Widget>[],
       ),
       body: makeBody(),

@@ -18,7 +18,6 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:tau/public/rust/third_party/web_audio_api/node.dart';
 import 'package:tau/tau.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:typed_data';
@@ -157,7 +156,7 @@ class _AudioContextStatesEx extends State<AudioContextStatesEx> {
       suspendContextDisabled = true;
       // Reset the text of the suspend/resume toggle:
       susresBtn = "Suspend context";
-      stopContextDisabled = true;;
+      stopContextDisabled = true;
       setState(() {});
     });
 
@@ -185,7 +184,7 @@ class _AudioContextStatesEx extends State<AudioContextStatesEx> {
               //color: Colors.indigo,
               child:  Text(
                 susresBtn,
-                style: TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black),
               ),
             ),
             const SizedBox(

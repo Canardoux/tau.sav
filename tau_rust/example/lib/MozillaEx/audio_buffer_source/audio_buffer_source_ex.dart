@@ -93,7 +93,7 @@ class _AudioBufferSourceEx extends State<AudioBufferSourceEx> {
   // And here is our dart code
   Future<void> hitPlayButton() async {
     disposeEverything();
-    var sampleRate = await audioCtx!.sampleRate();
+    var sampleRate = audioCtx!.sampleRate();
     var frameCount = (sampleRate * 2.0).ceil();
     List<Float32List> buf = List<Float32List>.filled(
         channels,
@@ -101,7 +101,7 @@ class _AudioBufferSourceEx extends State<AudioBufferSourceEx> {
           frameCount,
         ));
     List<Float32List>.filled(channels, Float32List(frameCount));
-    src = await audioCtx!.createBufferSource();
+    src = audioCtx!.createBufferSource();
     for (int channel = 0; channel < channels; ++channel) {
       Float32List nowBuffering = Float32List(frameCount);
       for (int i = 0; i < frameCount; ++i) {

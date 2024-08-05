@@ -93,10 +93,7 @@ class _OutputTimestampEx extends State<OutputTimestampEx> {
     playDisabled = true;
     stopDisabled = false;
 
-    if (timer == null)
-      {
-        timer = Timer.periodic(Duration(milliseconds: 50), timerFn);
-      }
+    timer ??= Timer.periodic(const Duration(milliseconds: 50), timerFn);
     if (mounted) {
       setState(() {});
     }
